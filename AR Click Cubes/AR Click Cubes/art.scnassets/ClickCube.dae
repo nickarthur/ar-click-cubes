@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author/>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments/>
+    </contributor>
+    <created>2019-02-21T13:05:46Z</created>
+    <keywords/>
+    <modified>2019-02-21T13:05:46Z</modified>
+    <revision/>
+    <subject/>
+    <title/>
+    <unit meter="0.010000" name="centimeter"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="lambert_positive_z" name="lambert_positive_z">
+      <instance_effect url="#lambert_positive_z-fx"/>
+    </material>
+    <material id="lambert_positive_y" name="lambert_positive_y">
+      <instance_effect url="#lambert_positive_y-fx"/>
+    </material>
+    <material id="lambert_negative_z" name="lambert_negative_z">
+      <instance_effect url="#lambert_negative_z-fx"/>
+    </material>
+    <material id="lambert_negative_y" name="lambert_negative_y">
+      <instance_effect url="#lambert_negative_y-fx"/>
+    </material>
+    <material id="lambert_positive_x" name="lambert_positive_x">
+      <instance_effect url="#lambert_positive_x-fx"/>
+    </material>
+    <material id="lambert_negative_x" name="lambert_negative_x">
+      <instance_effect url="#lambert_negative_x-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="lambert_positive_z-fx" name="lambert_positive_z">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.000000  0.000000 0.800000 1.000000</color>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">0.000000  0.000000 0.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="lambert_positive_y-fx" name="lambert_positive_y">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.000000  0.800000 0.000000 1.000000</color>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">0.000000  0.000000 0.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="lambert_negative_z-fx" name="lambert_negative_z">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.800000  0.800000 0.000000 1.000000</color>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">0.000000  0.000000 0.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="lambert_negative_y-fx" name="lambert_negative_y">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.800000  0.000000 0.800000 1.000000</color>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">0.000000  0.000000 0.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="lambert_positive_x-fx" name="lambert_positive_x">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.800000  0.000000 0.000000 1.000000</color>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">0.000000  0.000000 0.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="lambert_negative_x-fx" name="lambert_negative_x">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.000000  0.800000 0.800000 1.000000</color>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">0.000000  0.000000 0.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="ClickCube-lib" name="ClickCubeMesh">
+      <mesh>
+        <source id="ClickCube-POSITION">
+          <float_array id="ClickCube-POSITION-array" count="24">
+-0.050000 -0.050000 0.050000
+0.050000 -0.050000 0.050000
+-0.050000 0.050000 0.050000
+0.050000 0.050000 0.050000
+-0.050000 0.050000 -0.050000
+0.050000 0.050000 -0.050000
+-0.050000 -0.050000 -0.050000
+0.050000 -0.050000 -0.050000
+</float_array>
+          <technique_common>
+            <accessor source="#ClickCube-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ClickCube-Normal0">
+          <float_array id="ClickCube-Normal0-array" count="108">
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#ClickCube-Normal0-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ClickCube-UV0">
+          <float_array id="ClickCube-UV0-array" count="28">
+0.375000 0.000000
+0.625000 0.000000
+0.375000 0.250000
+0.625000 0.250000
+0.375000 0.500000
+0.625000 0.500000
+0.375000 0.750000
+0.625000 0.750000
+0.375000 1.000000
+0.625000 1.000000
+0.875000 0.000000
+0.875000 0.250000
+0.125000 0.000000
+0.125000 0.250000
+</float_array>
+          <technique_common>
+            <accessor source="#ClickCube-UV0-array" count="14" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ClickCube-VERTEX">
+          <input semantic="POSITION" source="#ClickCube-POSITION"/>
+        </vertices>
+        <triangles count="2" material="lambert_positive_z">
+          <input semantic="VERTEX" offset="0" source="#ClickCube-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#ClickCube-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#ClickCube-UV0"/>
+          <p> 0 0 0 1 1 1 2 2 2 2 3 2 1 4 1 3 5 3</p>
+        </triangles>
+        <triangles count="2" material="lambert_positive_y">
+          <input semantic="VERTEX" offset="0" source="#ClickCube-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#ClickCube-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#ClickCube-UV0"/>
+          <p> 2 6 2 3 7 3 4 8 4 4 9 4 3 10 3 5 11 5</p>
+        </triangles>
+        <triangles count="2" material="lambert_negative_z">
+          <input semantic="VERTEX" offset="0" source="#ClickCube-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#ClickCube-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#ClickCube-UV0"/>
+          <p> 4 12 4 5 13 5 6 14 6 6 15 6 5 16 5 7 17 7</p>
+        </triangles>
+        <triangles count="2" material="lambert_negative_y">
+          <input semantic="VERTEX" offset="0" source="#ClickCube-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#ClickCube-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#ClickCube-UV0"/>
+          <p> 6 18 6 7 19 7 0 20 8 0 21 8 7 22 7 1 23 9</p>
+        </triangles>
+        <triangles count="2" material="lambert_positive_x">
+          <input semantic="VERTEX" offset="0" source="#ClickCube-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#ClickCube-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#ClickCube-UV0"/>
+          <p> 1 24 1 7 25 10 3 26 3 3 27 3 7 28 10 5 29 11</p>
+        </triangles>
+        <triangles count="2" material="lambert_negative_x">
+          <input semantic="VERTEX" offset="0" source="#ClickCube-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#ClickCube-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#ClickCube-UV0"/>
+          <p> 6 30 12 0 31 0 4 32 13 4 33 13 0 34 0 2 35 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="ClickCube2" name="ClickCube2">
+      <node name="ClickCube" id="ClickCube" sid="ClickCube">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#ClickCube-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="lambert_positive_z" target="#lambert_positive_z"/>
+              <instance_material symbol="lambert_positive_y" target="#lambert_positive_y"/>
+              <instance_material symbol="lambert_negative_z" target="#lambert_negative_z"/>
+              <instance_material symbol="lambert_negative_y" target="#lambert_negative_y"/>
+              <instance_material symbol="lambert_positive_x" target="#lambert_positive_x"/>
+              <instance_material symbol="lambert_negative_x" target="#lambert_negative_x"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>24.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.041667</start_time>
+          <end_time>8.333333</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#ClickCube2"/>
+  </scene>
+</COLLADA>
