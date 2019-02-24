@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		731CE54F2221606800CAC9E5 /* SCNMaterial+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CE54E2221606800CAC9E5 /* SCNMaterial+Extensions.swift */; };
 		73535013221E825C00065E06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73535012221E825C00065E06 /* AppDelegate.swift */; };
 		73535015221E825C00065E06 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 73535014221E825C00065E06 /* art.scnassets */; };
 		73535017221E825C00065E06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73535016221E825C00065E06 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		731CE54E2221606800CAC9E5 /* SCNMaterial+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNMaterial+Extensions.swift"; sourceTree = "<group>"; };
 		7353500F221E825C00065E06 /* AR Click Cubes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Click Cubes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73535012221E825C00065E06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73535014221E825C00065E06 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		73CB1546221E918400D28E6E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				731CE54E2221606800CAC9E5 /* SCNMaterial+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				73CB154C221E984200D28E6E /* ClickCubeNode.swift in Sources */,
 				73CB1549221E924F00D28E6E /* ClickCubeSceneManager.swift in Sources */,
 				73535013221E825C00065E06 /* AppDelegate.swift in Sources */,
+				731CE54F2221606800CAC9E5 /* SCNMaterial+Extensions.swift in Sources */,
 				73CB154E221E9ECD00D28E6E /* ClickCubeScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

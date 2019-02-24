@@ -4,14 +4,14 @@
   <contributor>
    <authoring_tool>SceneKit Collada Exporter v1.0</authoring_tool>
   </contributor>
-  <created>2019-02-21T17:02:55Z</created>
-  <modified>2019-02-21T17:02:55Z</modified>
+  <created>2019-02-23T14:06:49Z</created>
+  <modified>2019-02-23T14:06:49Z</modified>
   <unit meter="1.000000"/>
   <up_axis>Y_UP</up_axis>
  </asset>
  <library_images>
   <image id="image1">
-   <init_from>Dark_1m x 1m.png</init_from>
+   <init_from>10x10-tan-4kx4k.png</init_from>
   </image>
  </library_images>
  <library_materials>
@@ -70,11 +70,6 @@
     <technique profile="SceneKit">
      <litPerPixel>1</litPerPixel>
      <ambient_diffuse_lock>1</ambient_diffuse_lock>
-     <intensities>
-      <diffuse>
-       <float>1</float>
-      </diffuse>
-     </intensities>
     </technique>
    </extra>
   </effect>

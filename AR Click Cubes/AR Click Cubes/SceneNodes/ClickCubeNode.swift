@@ -46,4 +46,13 @@ class ClickCubeNode: SCNNode {
     }
     return  newNode
   }
+  
+  
+  public func update(named: String, with material: SCNMaterial) {
+    
+  }
+  
+  public func updateAllMaterials(with materials: [SCNMaterial]) {
+    
+  }
 }
