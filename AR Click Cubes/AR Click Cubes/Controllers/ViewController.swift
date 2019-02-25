@@ -8,16 +8,76 @@
 
 import ARKit
 import SceneKit
-import SceneKit.ModelIO
 import UIKit
 
-class MyMaterial: SCNMaterial, Codable {
-}
-
 class ViewController: UIViewController, ARSCNViewDelegate {
-    let clickCubeSceneManager = ClickCubeSceneManager()
+
+    let workbenchYOffset: Float = -0.2
 
     @IBOutlet var sceneView: ARSCNView!
+
+    let clickCubeSceneManager = ClickCubeSceneManager()
+
+    @IBAction func performExperiment(_ sender: UIButton) {
+
+      let materialName = "material"
+      let filename = materialName.appending(".plist")
+      
+      do {
+        // setup experiment
+
+        // create and serialize an example material
+        let exampleMaterial = SCNMaterial()
+        exampleMaterial.name = materialName
+
+        let diffuseMap =  UIImage(named: "art.scnassets/HUGE-Terrain-4k.png")
+        exampleMaterial.diffuse.contents = diffuseMap
+        
+        // save the material
+        try exampleMaterial.saveMaterial(toFile: filename)
+        
+        // load the material
+        let gridMaterial = try SCNMaterial.loadMaterial(fromFile: filename)
+        
+        // place a cube with a reloaded serialized material on it
+        let position = SCNVector3(-0.15, workbenchYOffset, -0.15)
+        
+        let node = clickCubeSceneManager.placeClickCube(at: position, withSameMaterial: gridMaterial)
+        
+        do {
+          let orangeMaterial =  SCNMaterial()
+          orangeMaterial.name = "Orange"
+          orangeMaterial.diffuse.contents =  UIColor.orange
+          
+          try node.updateAllMaterials(with: [orangeMaterial,
+                                             orangeMaterial,
+                                             orangeMaterial,
+                                             orangeMaterial,
+                                             orangeMaterial,
+                                             orangeMaterial])
+          
+          let cyanMaterial =  SCNMaterial()
+          cyanMaterial.name = "Cyan"
+          cyanMaterial.diffuse.contents = UIColor.cyan
+          node.updateAllMaterials(withOne: cyanMaterial)
+
+          let magentaMaterial = SCNMaterial()
+          magentaMaterial.name = "Magenta"
+          magentaMaterial.diffuse.contents =  UIColor.magenta
+          node.update(named: "Orange", with: magentaMaterial)
+          
+        } catch ClickCubeNode.UpdateMaterialError.MaterialCountMismatch {
+          alert(title: "Bad Developer", message: "the developer messed up", completion: {
+            print("**** YO!")
+          })
+        }
+
+        
+      } catch {
+        print("Error: \(error.localizedDescription)")
+        alert(title: "Material Error", message: "Unable to load material", completion: nil)
+      }
+    }
 
     fileprivate func setupScene() {
         // Set the view's delegate
@@ -35,41 +95,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.scene = scene
     }
 
-    fileprivate func serializeMaterialExperiment() {
-        do {
-          
-            // create and serialize an example material
-            let exampleMaterial = SCNMaterial()
-            exampleMaterial.name = "example.mat"
-
-          try exampleMaterial.serialize(to: "example.mat")
-
-            // load it back in
-            let theReloadedMaterial = try SCNMaterial.deserialize(named: "example.mat")
-            print("LOADED: \(theReloadedMaterial.name ?? "no name found")")
-        } catch {
-          print("Error: \(error.localizedDescription)")
-        }
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      serializeMaterialExperiment() // TODO: remove this experiment
         setupScene()
     }
 
     fileprivate func placeSomeClickCubes() {
-//    for y in 0...4 {
-//      let yValue = Float(y) * 0.1  - 0.2
-//      let _ = clickCubeSceneManager.placeClickCube(at: SCNVector3(0.0, yValue, 0))
-//    }
-//
-//    for xz in 1...4 {
-//      let value = -Float(xz) * 0.1
-//      let _ = clickCubeSceneManager.placeClickCube(at: SCNVector3(value, -0.25, value))
-//    }
-
         // create some materials
         var colors: [UIColor] = [#colorLiteral(red: 0, green: 1, blue: 1, alpha: 1), #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1), #colorLiteral(red: 1, green: 0, blue: 1, alpha: 1), #colorLiteral(red: 1, green: 1, blue: 0, alpha: 1), #colorLiteral(red: 0, green: 1, blue: 0, alpha: 1), #colorLiteral(red: 0, green: 0, blue: 1, alpha: 1)] // order of colors matters
         var coloredMaterials: [SCNMaterial] = []

@@ -24,21 +24,29 @@ class ClickCubeSceneManager: NSObject {
   places instances of a ClickCube
 
   - Parameter at: the location where the ClickCube is placed
-**/
+  **/
   public func placeClickCube(at position: SCNVector3) -> ClickCubeNode {
-    return makeNode(at: position, with: nil)
+    return makeCubeNode(at: position, with: nil)
   }
   
-  public func placeClickCube(at position: SCNVector3, with material: SCNMaterial) -> ClickCubeNode {
-    let node = makeNode(at: position, with: material)
-    return node
+  /**
+   places a cube with same material applied to all sides
+ */
+  public func placeClickCube(at position: SCNVector3, withSameMaterial material: SCNMaterial) -> ClickCubeNode {
+    let cube = makeCubeNode(at: position, with: material)
+    cube.updateAllMaterials(withOne: material)
+    
+    return cube
   }
   
+  /**
+   places a cube with unique materials applied to each face
+ */
   public func placeClickCube(at position: SCNVector3, with materials: [SCNMaterial]) -> ClickCubeNode {
     
     let dummyMaterial = SCNMaterial()
     // node with default matrials
-    let node = makeNode(at: position, with: dummyMaterial)
+    let node = makeCubeNode(at: position, with: dummyMaterial)
 
     // add new matirials to the node
     for index in 0..<materials.count {
@@ -53,7 +61,7 @@ class ClickCubeSceneManager: NSObject {
   }
   
   // MARK: - Private Helpers
-  fileprivate func makeNode(at position: SCNVector3, with material: SCNMaterial?) -> ClickCubeNode {
+  fileprivate func makeCubeNode(at position: SCNVector3, with material: SCNMaterial?) -> ClickCubeNode {
     let cubeNode = clickCubeNode.duplicate(with: material)
     cubeNode.position = position
     scene.rootNode.addChildNode(cubeNode)

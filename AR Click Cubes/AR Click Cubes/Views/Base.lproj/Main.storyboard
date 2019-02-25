@@ -21,11 +21,20 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbs-7z-qdo">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59x-8w-bFl">
+                                <rect key="frame" x="118" y="601" width="139" height="30"/>
+                                <state key="normal" title="Serialize Experiment"/>
+                                <connections>
+                                    <action selector="performExperiment:" destination="Zfh-9N-TYc" eventType="touchUpInside" id="sf8-Q9-R8A"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="top" secondItem="nbs-7z-qdo" secondAttribute="top" id="6X6-Ow-tZa"/>
                             <constraint firstItem="bbR-tj-JVP" firstAttribute="trailing" secondItem="nbs-7z-qdo" secondAttribute="trailing" id="Ifz-rm-PEd"/>
+                            <constraint firstItem="59x-8w-bFl" firstAttribute="centerX" secondItem="nbs-7z-qdo" secondAttribute="centerX" id="OPv-iu-hzN"/>
+                            <constraint firstItem="59x-8w-bFl" firstAttribute="bottom" secondItem="bbR-tj-JVP" secondAttribute="bottom" constant="-36" id="ana-iv-Olm"/>
                             <constraint firstItem="bbR-tj-JVP" firstAttribute="bottom" secondItem="nbs-7z-qdo" secondAttribute="bottom" id="eh4-hR-8WV"/>
                             <constraint firstItem="nbs-7z-qdo" firstAttribute="leading" secondItem="bbR-tj-JVP" secondAttribute="leading" id="sa9-a9-hMF"/>
                         </constraints>

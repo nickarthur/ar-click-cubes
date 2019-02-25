@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		731CE54F2221606800CAC9E5 /* SCNMaterial+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CE54E2221606800CAC9E5 /* SCNMaterial+Extensions.swift */; };
+		733B156B2222D3280083E5FE /* ClickCubeNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733B156A2222D3280083E5FE /* ClickCubeNodeTests.swift */; };
 		73535013221E825C00065E06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73535012221E825C00065E06 /* AppDelegate.swift */; };
 		73535015221E825C00065E06 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 73535014221E825C00065E06 /* art.scnassets */; };
 		73535017221E825C00065E06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73535016221E825C00065E06 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 		7353501F221E825D00065E06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7353501D221E825D00065E06 /* LaunchScreen.storyboard */; };
 		7353502A221E825D00065E06 /* AR_Click_CubesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73535029221E825D00065E06 /* AR_Click_CubesTests.swift */; };
 		73535035221E825D00065E06 /* AR_Click_CubesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73535034221E825D00065E06 /* AR_Click_CubesUITests.swift */; };
+		7395FD482222A00C005357F2 /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395FD472222A00C005357F2 /* ViewController+Extensions.swift */; };
 		73CB1549221E924F00D28E6E /* ClickCubeSceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CB1548221E924F00D28E6E /* ClickCubeSceneManager.swift */; };
 		73CB154C221E984200D28E6E /* ClickCubeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CB154B221E984200D28E6E /* ClickCubeNode.swift */; };
 		73CB154E221E9ECD00D28E6E /* ClickCubeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CB154D221E9ECD00D28E6E /* ClickCubeScene.swift */; };
@@ -40,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		731CE54E2221606800CAC9E5 /* SCNMaterial+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNMaterial+Extensions.swift"; sourceTree = "<group>"; };
+		733B156A2222D3280083E5FE /* ClickCubeNodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickCubeNodeTests.swift; sourceTree = "<group>"; };
 		7353500F221E825C00065E06 /* AR Click Cubes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Click Cubes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73535012221E825C00065E06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73535014221E825C00065E06 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		73535030221E825D00065E06 /* AR Click CubesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR Click CubesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73535034221E825D00065E06 /* AR_Click_CubesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_Click_CubesUITests.swift; sourceTree = "<group>"; };
 		73535036221E825D00065E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7395FD472222A00C005357F2 /* ViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
 		73CB1548221E924F00D28E6E /* ClickCubeSceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickCubeSceneManager.swift; sourceTree = "<group>"; };
 		73CB154B221E984200D28E6E /* ClickCubeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickCubeNode.swift; sourceTree = "<group>"; };
 		73CB154D221E9ECD00D28E6E /* ClickCubeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickCubeScene.swift; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 			children = (
 				73535029221E825D00065E06 /* AR_Click_CubesTests.swift */,
 				7353502B221E825D00065E06 /* Info.plist */,
+				733B156A2222D3280083E5FE /* ClickCubeNodeTests.swift */,
 			);
 			path = "AR Click CubesTests";
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				731CE54E2221606800CAC9E5 /* SCNMaterial+Extensions.swift */,
+				7395FD472222A00C005357F2 /* ViewController+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -326,6 +332,7 @@
 				73535013221E825C00065E06 /* AppDelegate.swift in Sources */,
 				731CE54F2221606800CAC9E5 /* SCNMaterial+Extensions.swift in Sources */,
 				73CB154E221E9ECD00D28E6E /* ClickCubeScene.swift in Sources */,
+				7395FD482222A00C005357F2 /* ViewController+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7353502A221E825D00065E06 /* AR_Click_CubesTests.swift in Sources */,
+				733B156B2222D3280083E5FE /* ClickCubeNodeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

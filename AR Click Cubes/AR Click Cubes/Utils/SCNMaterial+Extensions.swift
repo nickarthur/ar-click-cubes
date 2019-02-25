@@ -10,37 +10,23 @@ import Foundation
 import SceneKit
 
 extension SCNMaterial {
-  
-  
-  public func serialize(to filename: String) throws {
-
-    do {
-      let data = try NSKeyedArchiver.archivedData(withRootObject: self, requiringSecureCoding: false)
-      try data.write(to: SCNMaterial.createMaterialURL(from: filename))
-    } catch {
-      throw error
+    public func saveMaterial(toFile filename: String) throws {
+        let data = try NSKeyedArchiver.archivedData(withRootObject: self, requiringSecureCoding: true)
+        try data.write(to: SCNMaterial.createMaterialURL(with: filename))
     }
-  }
-  
-  public static func deserialize(named filename: String) throws -> SCNMaterial {
-    var material: SCNMaterial
-    do {
-      let materialFileData = try Data(contentsOf: SCNMaterial.createMaterialURL(from: filename))
-      material = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(materialFileData) as! SCNMaterial
-    } catch let error {
-      throw error
-    }
-    return material
-  }
 
-  // MARK: - Private Helpers
-  fileprivate static func createMaterialURL(from filename: String) -> URL {
-  
-  guard let documentsPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first else {
-    fatalError("Uable to get document directory path")
-  }
-    
-    let materialFilePath = documentsPath.appending("/").appending(filename)
-    return URL(fileURLWithPath: materialFilePath)
-  }
+    public static func loadMaterial(fromFile filename: String) throws -> SCNMaterial {
+        var material: SCNMaterial
+        let materialFileData = try Data(contentsOf: SCNMaterial.createMaterialURL(with: filename))
+        material = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(materialFileData) as! SCNMaterial
+        return material
+    }
+
+    // MARK: - Private Helpers
+
+    fileprivate static func createMaterialURL(with filename: String) -> URL {
+        var materialURL = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
+        materialURL.appendPathComponent(filename)
+        return materialURL
+    }
 }
