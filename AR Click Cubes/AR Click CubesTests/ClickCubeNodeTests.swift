@@ -12,15 +12,23 @@ import SceneKit
 
 class ClickCubeNodeTests: XCTestCase {
 
-  var material: SCNMaterial!
-  var cubeNode: ClickCubeNode!
+  var orangeMaterial: SCNMaterial!
+  var magentaMaterial: SCNMaterial!
+  var blueMaterials: [SCNMaterial]!
+  
+  var nodeUnderTest: ClickCubeNode!
   
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-      material = SCNMaterial()
-      material.name = "Orange"
       
-      cubeNode = ClickCubeNode()
+      // create materials
+      magentaMaterial = SCNMaterial()
+      magentaMaterial.name = "Magenta"
+      orangeMaterial = SCNMaterial()
+      orangeMaterial.name = "Orange"
+    
+      // create node under test
+      nodeUnderTest = ClickCubeNode()
 
     }
 
@@ -28,24 +36,66 @@ class ClickCubeNodeTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-  func testUpdate() {
-    cubeNode.updateAllMaterials(withOne: material)
-    let result =  cubeNode.geometry?.firstMaterial?.name
-    let expected = "Orange"
-    
-    XCTAssertEqual(expected, result, "YO day not equal man!")
+  func testUpdateAllMaterialsWithOneMaterial() {
+    nodeUnderTest.updateAllMaterials(withOne: magentaMaterial)
+    let expectedMaterial = magentaMaterial
+    guard let geometry = nodeUnderTest.geometry else {
+      XCTFail("node has no materials")
+      return
+    }
+
+    for resultMaterial in geometry.materials {
+      XCTAssertEqual(expectedMaterial, resultMaterial,
+                     "Expected: \(String(describing: expectedMaterial)) but found: \(String(describing: resultMaterial))")
+    }
   }
   
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+  func testUpdateAllMaterialsWithIncorrectMaterialCountShouldThrow() {
+    // arrange
+    let expectedMaterials = [orangeMaterial!,
+                             orangeMaterial!,
+                             orangeMaterial!,
+                             orangeMaterial!,
+                             orangeMaterial!]
+    //act and assert
+    XCTAssertThrowsError(try nodeUnderTest.updateAllMaterials(with: expectedMaterials), "Expected to throw, but it did not throw")
+  }
+  
+  func testUpdateAllMaterialsWithAnArrayOfMaterialsDoesNotThrow() {
+    
+    // arrange
+    let expectedMaterials = [orangeMaterial!,
+                             orangeMaterial!,
+                             orangeMaterial!,
+                             orangeMaterial!,
+                             orangeMaterial!,
+                             orangeMaterial!]
+    // act and assert
+    XCTAssertNoThrow(try nodeUnderTest.updateAllMaterials(with: expectedMaterials), "Not Expected to throw, but it did throw")
+  }
+
+  func testUpdateNamedMaterialWithMaterial() {
+    let expectedMaterial = magentaMaterial!
+  
+    // arrange
+    let materialToReplace = SCNMaterial()
+    materialToReplace.name = "Replace Me"
+    nodeUnderTest.updateAllMaterials(withOne: materialToReplace)
+    
+    // act
+    nodeUnderTest.update(named: "Replace Me", with: expectedMaterial)
+    
+    // assert
+    guard let geometry = nodeUnderTest.geometry else {
+      XCTFail("node has no geometry")
+      return
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    for resultMaterial in geometry.materials {
+      XCTAssertEqual(resultMaterial.name, "Magenta" )
+      XCTAssertEqual(expectedMaterial,
+                     resultMaterial,
+                     "Materials did not match expectations")
     }
-
+  }
 }

@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "arclickcubes-20190307112131-authRole",
+            "UnauthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190307112131-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190307112131-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "arclickcubes-20190307112131-deployment",
+            "UnauthRoleName": "arclickcubes-20190307112131-unauthRole",
+            "StackName": "arclickcubes-20190307112131",
+            "StackId": "arn:aws:cloudformation:us-east-1:038748457762:stack/arclickcubes-20190307112131/755fb1a0-40fd-11e9-b7ae-0e1e9f06bbc4"
+        },
+        "categories": {
+            "auth": {
+                "cognitode9da07f": {}
+            }
+        }
+    }
+}
