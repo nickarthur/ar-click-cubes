@@ -1,6 +1,6 @@
 {
 	"auth": {
-		"cognitod49e6648": {
+		"cognitode9da07f": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation"
 		}
@@ -12,12 +12,6 @@
 			"output": {
 				"securityType": "AMAZON_COGNITO_USER_POOLS"
 			}
-		}
-	},
-	"storage": {
-		"scene": {
-			"service": "S3",
-			"providerPlugin": "awscloudformation"
 		}
 	}
 }

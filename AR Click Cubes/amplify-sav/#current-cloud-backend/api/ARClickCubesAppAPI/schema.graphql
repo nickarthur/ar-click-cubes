@@ -1,0 +1,24 @@
+type Blog
+  @model
+  @auth(
+    rules: [
+      { allow: groups, groups: ["Managers"], queries: null, mutations: [create, update, delete] }
+      { allow: groups, groups: ["Employees"], queries: [get, list], mutations: null }
+    ]
+  ) {
+  id: ID!
+  name: String!
+  content: String!
+  posts: [Post] @connection(name: "BlogPosts")
+}
+type Post @model {
+  id: ID!
+  title: String!
+  blog: Blog @connection(name: "BlogPosts")
+  comments: [Comment] @connection(name: "PostComments")
+}
+type Comment @model {
+  id: ID!
+  content: String
+  post: Post @connection(name: "PostComments")
+}

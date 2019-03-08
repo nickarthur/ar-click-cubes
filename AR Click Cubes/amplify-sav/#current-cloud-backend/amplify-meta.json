@@ -1,0 +1,56 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "arclickcubes-20190307112131-authRole",
+			"UnauthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190307112131-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190307112131-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "arclickcubes-20190307112131-deployment",
+			"UnauthRoleName": "arclickcubes-20190307112131-unauthRole",
+			"StackName": "arclickcubes-20190307112131",
+			"StackId": "arn:aws:cloudformation:us-east-1:038748457762:stack/arclickcubes-20190307112131/755fb1a0-40fd-11e9-b7ae-0e1e9f06bbc4"
+		}
+	},
+	"auth": {
+		"cognitode9da07f": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/arclickcubes-20190307112131-deployment/amplify-cfn-templates/auth/cognitode9da07f-cloudformation-template.yml",
+				"logicalId": "authcognitode9da07f"
+			},
+			"lastPushTimeStamp": "2019-03-07T22:32:20.154Z",
+			"output": {
+				"AppClientSecret": "1mv0sogjeml0eeusl5esr4nvaerd1vvo72lgq6jadib7e2rv2jif",
+				"UserPoolId": "us-east-1_srMCS9oUL",
+				"AppClientIDWeb": "458u4qrublngbb2817abos0nu2",
+				"AppClientID": "70ilosrg85i6k41v7kfanfi76l",
+				"IdentityPoolId": "us-east-1:f3c6adb3-aeb9-46f1-8b8c-e77785ebbe20",
+				"IdentityPoolName": "cognitode9da07f_identitypool_de9da07f__dev",
+				"UserPoolName": "cognitode9da07f_userpool_de9da07f"
+			},
+			"lastPushDirHash": "crTYtAvrn8ojJp0zDI2AJIrJ6SQ="
+		}
+	},
+	"api": {
+		"ARClickCubesAppAPI": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "AMAZON_COGNITO_USER_POOLS",
+				"GraphQLAPIIdOutput": "qa6azxasc5epfkatj6zmxeust4",
+				"GraphQLAPIEndpointOutput": "https://hxh2vaea6ja3bocyfx6sej7vfi.appsync-api.us-east-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-bal4il6z6beirou736iqa2ng74",
+				"AuthCognitoUserPoolIdOutput": "us-east-1_srMCS9oUL",
+				"AuthCognitoUserPoolNativeClientId": "See UserPool: us-east-1_srMCS9oUL",
+				"AuthCognitoUserPoolJSClientId": "See UserPool: us-east-1_srMCS9oUL"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/arclickcubes-20190307112131-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apiARClickCubesAppAPI"
+			},
+			"lastPushTimeStamp": "2019-03-07T22:32:25.099Z",
+			"lastPushDirHash": "8Ajb6d7zVr8V9d4oi3Xp4vk6I/8="
+		}
+	}
+}

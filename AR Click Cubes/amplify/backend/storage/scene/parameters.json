@@ -1,0 +1,13 @@
+{
+    "bucketName": "arclickcubesappapid3fed4d989b14ed3b801f53073bea822",
+    "authPolicyName": "s3_amplify_69f32ced",
+    "unauthPolicyName": "s3_amplify_69f32ced",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authPermissions": "rw",
+    "unauthPermissions": "r"
+}

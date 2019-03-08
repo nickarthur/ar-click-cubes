@@ -1,0 +1,16 @@
+projects:
+  ARClickCubesAppAPI:
+    schemaPath: graphql/schema.json
+    includes:
+      - graphql/**/*.graphql
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: swift
+        generatedFileName: BlogAPI.swift
+        docsFilePath: graphql
+        graphQLApiId: zaprvsijb5ebxnis4gj4u7upze
+      endpoints:
+        prod: >-
+          https://myah7knjy5cbrnz6qhgdig77ru.appsync-api.us-east-1.amazonaws.com/graphql

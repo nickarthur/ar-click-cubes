@@ -1,24 +1,99 @@
-type Blog
-  @searchable
+type Issue
   @model
+  @searchable
+  @versioned
   @auth(
     rules: [
-      { allow: groups, groups: ["Managers"], queries: null, mutations: [create, update, delete] }
-      { allow: groups, groups: ["Employees"], queries: [get, list], mutations: null }
+      {
+        allow: owner
+        ownerField: "owner"
+        mutations: [create, update, delete]
+        queries: [get, list]
+      }
     ]
   ) {
   id: ID!
   name: String!
-  posts: [Post] @connection(name: "BlogPosts")
+  scenes: [Post] @connection(name: "IssueScenes")
+  owner: String
+  location: Location
 }
-type Post @model {
+
+type Scene
+@model
+@searchable
+@versioned
+@auth(
+    rules: [
+      {allow: owner, ownerField: "owner", mutations: [create, update, delete], queries: [get, list]},
+    ])
+{
   id: ID!
   title: String!
-  blog: Blog @connection(name: "BlogPosts")
-  comments: [Comment] @connection(name: "PostComments")
+  content: String!
+  blog: Blog @connection(name: "IssueScenes")
+  comments: [Comment] @connection(name: "SceneComments")
+  owner: String
+  location: Location
 }
-type Comment @model {
+
+type Comment
+  @model
+  @searchable
+  @versioned
+  @auth(
+    rules: [
+      {
+        allow: owner
+        ownerField: "owner"
+        mutations: [create, update, delete]
+        queries: [get, list]
+      }
+    ]
+  )
+{
   id: ID!
   content: String
-  post: Post @connection(name: "PostComments")
+  post: Post @connection(name: "SceneComments")
+  location: Location
+}
+
+type Draft
+  @model
+  @searchable
+  @versioned
+  @auth(
+    rules: [
+      # Defaults to use the "owner" field.
+      { allow: owner }
+      # Authorize the update mutation and both queries. Use `queries: null` to disable auth for queries.
+      { allow: owner, ownerField: "editors", mutations: [update] }
+      # Admin users can access any operation.
+      { allow: groups, groups: ["Admin"] }
+      # Each record may specify which groups may read them.
+      { allow: groups, groupsField: "groupsCanAccess", mutations: [], queries: [get, list] }
+    ]
+  ) {
+  id: ID!
+  title: String!
+  content: String
+  owner: String
+  editors: [String]!
+  groupsCanAccess: [String]!
+}
+
+type Location {
+  lat: Float
+  lon: Float
+}
+
+input LocationInput {
+  lat: Float
+  lon: Float
+}
+
+type Query {
+  nearbyIssues(location: LocationInput!, km: Int): IssueConnection
+  nearbyScenes(location: LocationInput!, km: Int): SceneConnection
+  nearbyComments(location: LocationInput!, km: Int): CommentConnection
 }
