@@ -1,17 +1,23 @@
 {
 	"auth": {
-		"cognito12bfc276": {
+		"cognitod49e6648": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation"
 		}
 	},
 	"api": {
-		"BlendAPI": {
+		"ARClickCubesAppAPI": {
 			"service": "AppSync",
 			"providerPlugin": "awscloudformation",
 			"output": {
 				"securityType": "AMAZON_COGNITO_USER_POOLS"
 			}
+		}
+	},
+	"storage": {
+		"scene": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
 		}
 	}
 }

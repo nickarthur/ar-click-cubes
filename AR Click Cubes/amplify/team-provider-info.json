@@ -1,18 +1,18 @@
 {
     "dev": {
         "awscloudformation": {
-            "AuthRoleName": "arclickcubesappapi-20190307165332-authRole",
-            "UnauthRoleArn": "arn:aws:iam::038748457762:role/arclickcubesappapi-20190307165332-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::038748457762:role/arclickcubesappapi-20190307165332-authRole",
+            "AuthRoleName": "blend-api-20190307220036-authRole",
+            "UnauthRoleArn": "arn:aws:iam::038748457762:role/blend-api-20190307220036-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::038748457762:role/blend-api-20190307220036-authRole",
             "Region": "us-east-1",
-            "DeploymentBucketName": "arclickcubesappapi-20190307165332-deployment",
-            "UnauthRoleName": "arclickcubesappapi-20190307165332-unauthRole",
-            "StackName": "arclickcubesappapi-20190307165332",
-            "StackId": "arn:aws:cloudformation:us-east-1:038748457762:stack/arclickcubesappapi-20190307165332/d798b820-412b-11e9-a026-0e33f445a498"
+            "DeploymentBucketName": "blend-api-20190307220036-deployment",
+            "UnauthRoleName": "blend-api-20190307220036-unauthRole",
+            "StackName": "blend-api-20190307220036",
+            "StackId": "arn:aws:cloudformation:us-east-1:038748457762:stack/blend-api-20190307220036/bc0444a0-4156-11e9-b86b-0a129e2750f4"
         },
         "categories": {
             "auth": {
-                "cognitod49e6648": {}
+                "cognito12bfc276": {}
             }
         }
     }
