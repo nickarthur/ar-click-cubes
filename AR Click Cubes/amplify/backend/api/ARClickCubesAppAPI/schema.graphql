@@ -14,7 +14,7 @@ type Issue
   ) {
   id: ID!
   name: String!
-  scenes: [Post] @connection(name: "IssueScenes")
+  scenes: [Scene] @connection(name: "IssueScenes")
   owner: String
   location: Location
 }
@@ -31,7 +31,7 @@ type Scene
   id: ID!
   title: String!
   content: String!
-  blog: Blog @connection(name: "IssueScenes")
+  issue: Issue @connection(name: "IssueScenes")
   comments: [Comment] @connection(name: "SceneComments")
   owner: String
   location: Location
@@ -54,7 +54,7 @@ type Comment
 {
   id: ID!
   content: String
-  post: Post @connection(name: "SceneComments")
+  scene: Scene @connection(name: "SceneComments")
   location: Location
 }
 
@@ -93,7 +93,7 @@ input LocationInput {
 }
 
 type Query {
-  nearbyIssues(location: LocationInput!, km: Int): IssueConnection
-  nearbyScenes(location: LocationInput!, km: Int): SceneConnection
-  nearbyComments(location: LocationInput!, km: Int): CommentConnection
+  nearbyIssues(location: LocationInput!, km: Int): [Issue]
+  nearbyScenes(location: LocationInput!, km: Int): [Scene]
+  nearbyComments(location: LocationInput!, km: Int): [Comment]
 }
