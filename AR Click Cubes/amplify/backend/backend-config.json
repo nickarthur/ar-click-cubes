@@ -1,17 +1,8 @@
 {
 	"auth": {
-		"cognito12bfc276": {
+		"cognitod00ba995": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation"
-		}
-	},
-	"api": {
-		"BlendAPI": {
-			"service": "AppSync",
-			"providerPlugin": "awscloudformation",
-			"output": {
-				"securityType": "AMAZON_COGNITO_USER_POOLS"
-			}
 		}
 	}
 }

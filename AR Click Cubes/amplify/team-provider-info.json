@@ -1,18 +1,18 @@
 {
     "dev": {
         "awscloudformation": {
-            "AuthRoleName": "blend-api-20190307220036-authRole",
-            "UnauthRoleArn": "arn:aws:iam::038748457762:role/blend-api-20190307220036-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::038748457762:role/blend-api-20190307220036-authRole",
+            "AuthRoleName": "arclickcubes-20190308173004-authRole",
+            "UnauthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190308173004-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190308173004-authRole",
             "Region": "us-east-1",
-            "DeploymentBucketName": "blend-api-20190307220036-deployment",
-            "UnauthRoleName": "blend-api-20190307220036-unauthRole",
-            "StackName": "blend-api-20190307220036",
-            "StackId": "arn:aws:cloudformation:us-east-1:038748457762:stack/blend-api-20190307220036/bc0444a0-4156-11e9-b86b-0a129e2750f4"
+            "DeploymentBucketName": "arclickcubes-20190308173004-deployment",
+            "UnauthRoleName": "arclickcubes-20190308173004-unauthRole",
+            "StackName": "arclickcubes-20190308173004",
+            "StackId": "arn:aws:cloudformation:us-east-1:038748457762:stack/arclickcubes-20190308173004/1bf3e930-41fa-11e9-9ccb-0a545e22b5be"
         },
         "categories": {
             "auth": {
-                "cognito12bfc276": {}
+                "cognitod00ba995": {}
             }
         }
     }
