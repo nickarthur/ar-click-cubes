@@ -87,7 +87,6 @@ mutation CreateScene($input: CreateSceneInput!) {
       items {
         id
         content
-        owner
         version
       }
       nextToken
@@ -122,7 +121,6 @@ mutation UpdateScene($input: UpdateSceneInput!) {
       items {
         id
         content
-        owner
         version
       }
       nextToken
@@ -157,7 +155,6 @@ mutation DeleteScene($input: DeleteSceneInput!) {
       items {
         id
         content
-        owner
         version
       }
       nextToken
@@ -198,7 +195,6 @@ mutation CreateComment($input: CreateCommentInput!) {
       lat
       lon
     }
-    owner
     version
   }
 }
@@ -230,7 +226,6 @@ mutation UpdateComment($input: UpdateCommentInput!) {
       lat
       lon
     }
-    owner
     version
   }
 }
@@ -262,7 +257,6 @@ mutation DeleteComment($input: DeleteCommentInput!) {
       lat
       lon
     }
-    owner
     version
   }
 }

@@ -43,7 +43,6 @@ query NearbyScenes($location: LocationInput!, $km: Int) {
       items {
         id
         content
-        owner
         version
       }
       nextToken
@@ -84,7 +83,6 @@ query NearbyComments($location: LocationInput!, $km: Int) {
       lat
       lon
     }
-    owner
     version
   }
 }
@@ -154,7 +152,6 @@ query GetScene($id: ID!) {
       items {
         id
         content
-        owner
         version
       }
       nextToken
@@ -224,7 +221,6 @@ query GetComment($id: ID!) {
       lat
       lon
     }
-    owner
     version
   }
 }
@@ -248,7 +244,6 @@ query ListComments(
         lat
         lon
       }
-      owner
       version
     }
     nextToken
@@ -372,7 +367,6 @@ query SearchComments(
         lat
         lon
       }
-      owner
       version
     }
     nextToken

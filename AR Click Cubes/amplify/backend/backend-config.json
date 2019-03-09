@@ -1,12 +1,12 @@
 {
 	"auth": {
-		"cognitod00ba995": {
+		"cognitobbf7a4f2": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation"
 		}
 	},
 	"api": {
-		"ARClickCubes20190308173004": {
+		"arclickcubes20190308204937": {
 			"service": "AppSync",
 			"providerPlugin": "awscloudformation",
 			"output": {

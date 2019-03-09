@@ -60,7 +60,6 @@ type Comment
   content: String
   scene: Scene @connection(name: "SceneComments")
   location: Location
-  owner: String
 }
 
 type Draft

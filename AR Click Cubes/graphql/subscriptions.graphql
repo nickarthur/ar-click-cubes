@@ -87,7 +87,6 @@ subscription OnCreateScene {
       items {
         id
         content
-        owner
         version
       }
       nextToken
@@ -122,7 +121,6 @@ subscription OnUpdateScene {
       items {
         id
         content
-        owner
         version
       }
       nextToken
@@ -157,7 +155,6 @@ subscription OnDeleteScene {
       items {
         id
         content
-        owner
         version
       }
       nextToken
@@ -198,7 +195,6 @@ subscription OnCreateComment {
       lat
       lon
     }
-    owner
     version
   }
 }
@@ -230,7 +226,6 @@ subscription OnUpdateComment {
       lat
       lon
     }
-    owner
     version
   }
 }
@@ -262,7 +257,6 @@ subscription OnDeleteComment {
       lat
       lon
     }
-    owner
     version
   }
 }
