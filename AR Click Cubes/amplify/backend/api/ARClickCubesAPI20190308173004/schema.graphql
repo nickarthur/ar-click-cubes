@@ -1,0 +1,104 @@
+type Issue
+  @model
+  @searchable
+  @versioned
+  @auth(
+    rules: [
+      {
+        allow: owner
+        ownerField: "owner"
+        mutations: [create, update, delete]
+        queries: [get, list]
+      }
+    ]
+  ) {
+  id: ID!
+  name: String!
+  scenes: [Scene] @connection(name: "IssueScenes")
+  owner: String
+  location: Location
+}
+
+type Scene
+  @model
+  @searchable
+  @versioned
+  @auth(
+    rules: [
+      {
+        allow: owner
+        ownerField: "owner"
+        mutations: [create, update, delete]
+        queries: [get, list]
+      }
+    ]
+  ) {
+  id: ID!
+  title: String!
+  content: String!
+  issue: Issue @connection(name: "IssueScenes")
+  comments: [Comment] @connection(name: "SceneComments")
+  owner: String
+  location: Location
+}
+
+type Comment
+  @model
+  @searchable
+  @versioned
+  @auth(
+    rules: [
+      {
+        allow: owner
+        ownerField: "owner"
+        mutations: [create, update, delete]
+        queries: [get, list]
+      }
+    ]
+  ) {
+  id: ID!
+  content: String
+  scene: Scene @connection(name: "SceneComments")
+  location: Location
+  owner: String
+}
+
+type Draft
+  @model
+  @searchable
+  @versioned
+  @auth(
+    rules: [
+      # Defaults to use the "owner" field.
+      { allow: owner }
+      # Authorize the update mutation and both queries. Use `queries: null` to disable auth for queries.
+      { allow: owner, ownerField: "editors", mutations: [update] }
+      # Admin users can access any operation.
+      { allow: groups, groups: ["Admin"] }
+      # Each record may specify which groups may read them.
+      { allow: groups, groupsField: "groupsCanAccess", mutations: [], queries: [get, list] }
+    ]
+  ) {
+  id: ID!
+  title: String!
+  content: String
+  owner: String
+  editors: [String]!
+  groupsCanAccess: [String]!
+}
+
+type Location {
+  lat: Float
+  lon: Float
+}
+
+input LocationInput {
+  lat: Float
+  lon: Float
+}
+
+type Query {
+  nearbyIssues(location: LocationInput!, km: Int): [Issue]
+  nearbyScenes(location: LocationInput!, km: Int): [Scene]
+  nearbyComments(location: LocationInput!, km: Int): [Comment]
+}
