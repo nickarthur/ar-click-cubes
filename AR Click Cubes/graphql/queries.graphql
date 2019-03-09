@@ -1,0 +1,404 @@
+# this is an auto generated file. This will be overwritten
+query NearbyIssues($location: LocationInput!, $km: Int) {
+  nearbyIssues(location: $location, km: $km) {
+    id
+    name
+    scenes {
+      items {
+        id
+        title
+        content
+        owner
+        version
+      }
+      nextToken
+    }
+    owner
+    location {
+      lat
+      lon
+    }
+    version
+  }
+}
+query NearbyScenes($location: LocationInput!, $km: Int) {
+  nearbyScenes(location: $location, km: $km) {
+    id
+    title
+    content
+    issue {
+      id
+      name
+      scenes {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    comments {
+      items {
+        id
+        content
+        owner
+        version
+      }
+      nextToken
+    }
+    owner
+    location {
+      lat
+      lon
+    }
+    version
+  }
+}
+query NearbyComments($location: LocationInput!, $km: Int) {
+  nearbyComments(location: $location, km: $km) {
+    id
+    content
+    scene {
+      id
+      title
+      content
+      issue {
+        id
+        name
+        owner
+        version
+      }
+      comments {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    location {
+      lat
+      lon
+    }
+    owner
+    version
+  }
+}
+query GetIssue($id: ID!) {
+  getIssue(id: $id) {
+    id
+    name
+    scenes {
+      items {
+        id
+        title
+        content
+        owner
+        version
+      }
+      nextToken
+    }
+    owner
+    location {
+      lat
+      lon
+    }
+    version
+  }
+}
+query ListIssues(
+  $filter: ModelIssueFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listIssues(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      scenes {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    nextToken
+  }
+}
+query GetScene($id: ID!) {
+  getScene(id: $id) {
+    id
+    title
+    content
+    issue {
+      id
+      name
+      scenes {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    comments {
+      items {
+        id
+        content
+        owner
+        version
+      }
+      nextToken
+    }
+    owner
+    location {
+      lat
+      lon
+    }
+    version
+  }
+}
+query ListScenes(
+  $filter: ModelSceneFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listScenes(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      title
+      content
+      issue {
+        id
+        name
+        owner
+        version
+      }
+      comments {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    nextToken
+  }
+}
+query GetComment($id: ID!) {
+  getComment(id: $id) {
+    id
+    content
+    scene {
+      id
+      title
+      content
+      issue {
+        id
+        name
+        owner
+        version
+      }
+      comments {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    location {
+      lat
+      lon
+    }
+    owner
+    version
+  }
+}
+query ListComments(
+  $filter: ModelCommentFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listComments(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      content
+      scene {
+        id
+        title
+        content
+        owner
+        version
+      }
+      location {
+        lat
+        lon
+      }
+      owner
+      version
+    }
+    nextToken
+  }
+}
+query GetDraft($id: ID!) {
+  getDraft(id: $id) {
+    id
+    title
+    content
+    owner
+    editors
+    groupsCanAccess
+    version
+  }
+}
+query ListDrafts(
+  $filter: ModelDraftFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listDrafts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      title
+      content
+      owner
+      editors
+      groupsCanAccess
+      version
+    }
+    nextToken
+  }
+}
+query SearchIssues(
+  $filter: SearchableIssueFilterInput
+  $sort: SearchableIssueSortInput
+  $limit: Int
+  $nextToken: Int
+) {
+  searchIssues(
+    filter: $filter
+    sort: $sort
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      name
+      scenes {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    nextToken
+  }
+}
+query SearchScenes(
+  $filter: SearchableSceneFilterInput
+  $sort: SearchableSceneSortInput
+  $limit: Int
+  $nextToken: Int
+) {
+  searchScenes(
+    filter: $filter
+    sort: $sort
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      title
+      content
+      issue {
+        id
+        name
+        owner
+        version
+      }
+      comments {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    nextToken
+  }
+}
+query SearchComments(
+  $filter: SearchableCommentFilterInput
+  $sort: SearchableCommentSortInput
+  $limit: Int
+  $nextToken: Int
+) {
+  searchComments(
+    filter: $filter
+    sort: $sort
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      content
+      scene {
+        id
+        title
+        content
+        owner
+        version
+      }
+      location {
+        lat
+        lon
+      }
+      owner
+      version
+    }
+    nextToken
+  }
+}
+query SearchDrafts(
+  $filter: SearchableDraftFilterInput
+  $sort: SearchableDraftSortInput
+  $limit: Int
+  $nextToken: Int
+) {
+  searchDrafts(
+    filter: $filter
+    sort: $sort
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      title
+      content
+      owner
+      editors
+      groupsCanAccess
+      version
+    }
+    nextToken
+  }
+}

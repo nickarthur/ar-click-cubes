@@ -1,0 +1,301 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateIssue($input: CreateIssueInput!) {
+  createIssue(input: $input) {
+    id
+    name
+    scenes {
+      items {
+        id
+        title
+        content
+        owner
+        version
+      }
+      nextToken
+    }
+    owner
+    location {
+      lat
+      lon
+    }
+    version
+  }
+}
+mutation UpdateIssue($input: UpdateIssueInput!) {
+  updateIssue(input: $input) {
+    id
+    name
+    scenes {
+      items {
+        id
+        title
+        content
+        owner
+        version
+      }
+      nextToken
+    }
+    owner
+    location {
+      lat
+      lon
+    }
+    version
+  }
+}
+mutation DeleteIssue($input: DeleteIssueInput!) {
+  deleteIssue(input: $input) {
+    id
+    name
+    scenes {
+      items {
+        id
+        title
+        content
+        owner
+        version
+      }
+      nextToken
+    }
+    owner
+    location {
+      lat
+      lon
+    }
+    version
+  }
+}
+mutation CreateScene($input: CreateSceneInput!) {
+  createScene(input: $input) {
+    id
+    title
+    content
+    issue {
+      id
+      name
+      scenes {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    comments {
+      items {
+        id
+        content
+        owner
+        version
+      }
+      nextToken
+    }
+    owner
+    location {
+      lat
+      lon
+    }
+    version
+  }
+}
+mutation UpdateScene($input: UpdateSceneInput!) {
+  updateScene(input: $input) {
+    id
+    title
+    content
+    issue {
+      id
+      name
+      scenes {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    comments {
+      items {
+        id
+        content
+        owner
+        version
+      }
+      nextToken
+    }
+    owner
+    location {
+      lat
+      lon
+    }
+    version
+  }
+}
+mutation DeleteScene($input: DeleteSceneInput!) {
+  deleteScene(input: $input) {
+    id
+    title
+    content
+    issue {
+      id
+      name
+      scenes {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    comments {
+      items {
+        id
+        content
+        owner
+        version
+      }
+      nextToken
+    }
+    owner
+    location {
+      lat
+      lon
+    }
+    version
+  }
+}
+mutation CreateComment($input: CreateCommentInput!) {
+  createComment(input: $input) {
+    id
+    content
+    scene {
+      id
+      title
+      content
+      issue {
+        id
+        name
+        owner
+        version
+      }
+      comments {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    location {
+      lat
+      lon
+    }
+    owner
+    version
+  }
+}
+mutation UpdateComment($input: UpdateCommentInput!) {
+  updateComment(input: $input) {
+    id
+    content
+    scene {
+      id
+      title
+      content
+      issue {
+        id
+        name
+        owner
+        version
+      }
+      comments {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    location {
+      lat
+      lon
+    }
+    owner
+    version
+  }
+}
+mutation DeleteComment($input: DeleteCommentInput!) {
+  deleteComment(input: $input) {
+    id
+    content
+    scene {
+      id
+      title
+      content
+      issue {
+        id
+        name
+        owner
+        version
+      }
+      comments {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    location {
+      lat
+      lon
+    }
+    owner
+    version
+  }
+}
+mutation CreateDraft($input: CreateDraftInput!) {
+  createDraft(input: $input) {
+    id
+    title
+    content
+    owner
+    editors
+    groupsCanAccess
+    version
+  }
+}
+mutation UpdateDraft($input: UpdateDraftInput!) {
+  updateDraft(input: $input) {
+    id
+    title
+    content
+    owner
+    editors
+    groupsCanAccess
+    version
+  }
+}
+mutation DeleteDraft($input: DeleteDraftInput!) {
+  deleteDraft(input: $input) {
+    id
+    title
+    content
+    owner
+    editors
+    groupsCanAccess
+    version
+  }
+}

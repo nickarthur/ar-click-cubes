@@ -1,0 +1,301 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateIssue {
+  onCreateIssue {
+    id
+    name
+    scenes {
+      items {
+        id
+        title
+        content
+        owner
+        version
+      }
+      nextToken
+    }
+    owner
+    location {
+      lat
+      lon
+    }
+    version
+  }
+}
+subscription OnUpdateIssue {
+  onUpdateIssue {
+    id
+    name
+    scenes {
+      items {
+        id
+        title
+        content
+        owner
+        version
+      }
+      nextToken
+    }
+    owner
+    location {
+      lat
+      lon
+    }
+    version
+  }
+}
+subscription OnDeleteIssue {
+  onDeleteIssue {
+    id
+    name
+    scenes {
+      items {
+        id
+        title
+        content
+        owner
+        version
+      }
+      nextToken
+    }
+    owner
+    location {
+      lat
+      lon
+    }
+    version
+  }
+}
+subscription OnCreateScene {
+  onCreateScene {
+    id
+    title
+    content
+    issue {
+      id
+      name
+      scenes {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    comments {
+      items {
+        id
+        content
+        owner
+        version
+      }
+      nextToken
+    }
+    owner
+    location {
+      lat
+      lon
+    }
+    version
+  }
+}
+subscription OnUpdateScene {
+  onUpdateScene {
+    id
+    title
+    content
+    issue {
+      id
+      name
+      scenes {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    comments {
+      items {
+        id
+        content
+        owner
+        version
+      }
+      nextToken
+    }
+    owner
+    location {
+      lat
+      lon
+    }
+    version
+  }
+}
+subscription OnDeleteScene {
+  onDeleteScene {
+    id
+    title
+    content
+    issue {
+      id
+      name
+      scenes {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    comments {
+      items {
+        id
+        content
+        owner
+        version
+      }
+      nextToken
+    }
+    owner
+    location {
+      lat
+      lon
+    }
+    version
+  }
+}
+subscription OnCreateComment {
+  onCreateComment {
+    id
+    content
+    scene {
+      id
+      title
+      content
+      issue {
+        id
+        name
+        owner
+        version
+      }
+      comments {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    location {
+      lat
+      lon
+    }
+    owner
+    version
+  }
+}
+subscription OnUpdateComment {
+  onUpdateComment {
+    id
+    content
+    scene {
+      id
+      title
+      content
+      issue {
+        id
+        name
+        owner
+        version
+      }
+      comments {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    location {
+      lat
+      lon
+    }
+    owner
+    version
+  }
+}
+subscription OnDeleteComment {
+  onDeleteComment {
+    id
+    content
+    scene {
+      id
+      title
+      content
+      issue {
+        id
+        name
+        owner
+        version
+      }
+      comments {
+        nextToken
+      }
+      owner
+      location {
+        lat
+        lon
+      }
+      version
+    }
+    location {
+      lat
+      lon
+    }
+    owner
+    version
+  }
+}
+subscription OnCreateDraft {
+  onCreateDraft {
+    id
+    title
+    content
+    owner
+    editors
+    groupsCanAccess
+    version
+  }
+}
+subscription OnUpdateDraft {
+  onUpdateDraft {
+    id
+    title
+    content
+    owner
+    editors
+    groupsCanAccess
+    version
+  }
+}
+subscription OnDeleteDraft {
+  onDeleteDraft {
+    id
+    title
+    content
+    owner
+    editors
+    groupsCanAccess
+    version
+  }
+}
