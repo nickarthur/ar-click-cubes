@@ -17,6 +17,7 @@
 		7353501C221E825D00065E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7353501B221E825D00065E06 /* Assets.xcassets */; };
 		7353501F221E825D00065E06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7353501D221E825D00065E06 /* LaunchScreen.storyboard */; };
 		73535035221E825D00065E06 /* AR_Click_CubesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73535034221E825D00065E06 /* AR_Click_CubesUITests.swift */; };
+		738BD2C022347ABA007D94D9 /* API in Resources */ = {isa = PBXBuildFile; fileRef = 738BD2BF22347ABA007D94D9 /* API */; };
 		7395FD482222A00C005357F2 /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395FD472222A00C005357F2 /* ViewController+Extensions.swift */; };
 		73CB1549221E924F00D28E6E /* ClickCubeSceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CB1548221E924F00D28E6E /* ClickCubeSceneManager.swift */; };
 		73CB154C221E984200D28E6E /* ClickCubeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CB154B221E984200D28E6E /* ClickCubeNode.swift */; };
@@ -61,6 +62,7 @@
 		73535030221E825D00065E06 /* AR Click CubesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR Click CubesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73535034221E825D00065E06 /* AR_Click_CubesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_Click_CubesUITests.swift; sourceTree = "<group>"; };
 		73535036221E825D00065E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		738BD2BF22347ABA007D94D9 /* API */ = {isa = PBXFileReference; lastKnownFileType = folder; name = API; path = "AR Click Cubes/API"; sourceTree = "<group>"; };
 		7395FD472222A00C005357F2 /* ViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
 		73CB1548221E924F00D28E6E /* ClickCubeSceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickCubeSceneManager.swift; sourceTree = "<group>"; };
 		73CB154B221E984200D28E6E /* ClickCubeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickCubeNode.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		73535006221E825C00065E06 = {
 			isa = PBXGroup;
 			children = (
+				738BD2BF22347ABA007D94D9 /* API */,
 				73535011221E825C00065E06 /* AR Click Cubes */,
 				73535028221E825D00065E06 /* AR Click CubesTests */,
 				73535033221E825D00065E06 /* AR Click CubesUITests */,
@@ -228,7 +231,6 @@
 				1CDD77C4408FE1BF4FD9E972 /* Pods-AR Click CubesUITests.debug.xcconfig */,
 				F98A74D3ED23E9F95923BF98 /* Pods-AR Click CubesUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -343,6 +345,7 @@
 				73535015221E825C00065E06 /* art.scnassets in Resources */,
 				7353501F221E825D00065E06 /* LaunchScreen.storyboard in Resources */,
 				7353501C221E825D00065E06 /* Assets.xcassets in Resources */,
+				738BD2C022347ABA007D94D9 /* API in Resources */,
 				7353501A221E825C00065E06 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +446,7 @@
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -452,6 +456,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

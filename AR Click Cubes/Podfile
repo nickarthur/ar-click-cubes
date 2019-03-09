@@ -8,6 +8,7 @@ target 'AR Click Cubes' do
 
   # Pods for AR Click Cubes
   pod 'AWSAppSync', ' ~> 2.10.0'
+  pod 'SSZipArchive'
 
   target 'AR Click CubesTests' do
     inherit! :search_paths
