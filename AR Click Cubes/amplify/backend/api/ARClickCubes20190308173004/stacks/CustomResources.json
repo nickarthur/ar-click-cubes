@@ -37,7 +37,7 @@
 				"ApiId": {
 					"Ref": "AppSyncApiId"
 				},
-				"DataSourceName": "ar-blend-comic-book-domain",
+				"DataSourceName": "ElasticSearchDomain",
 				"TypeName": "Query",
 				"FieldName": "nearbyIssues",
 				"RequestMappingTemplateS3Location": {
@@ -74,7 +74,7 @@
 				"ApiId": {
 					"Ref": "AppSyncApiId"
 				},
-				"DataSourceName": "ar-blend-comic-book-domain",
+				"DataSourceName": "ElasticSearchDomain",
 				"TypeName": "Query",
 				"FieldName": "nearbyScenes",
 				"RequestMappingTemplateS3Location": {
@@ -111,7 +111,7 @@
 				"ApiId": {
 					"Ref": "AppSyncApiId"
 				},
-				"DataSourceName": "ar-blend-comic-book-domain",
+				"DataSourceName": "ElasticSearchDomain",
 				"TypeName": "Query",
 				"FieldName": "nearbyComments",
 				"RequestMappingTemplateS3Location": {

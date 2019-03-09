@@ -6,7 +6,7 @@
 		}
 	},
 	"api": {
-		"ARClickCubesAPI20190308173004": {
+		"ARClickCubes20190308173004": {
 			"service": "AppSync",
 			"providerPlugin": "awscloudformation",
 			"output": {

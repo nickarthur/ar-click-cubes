@@ -1,5 +1,5 @@
 projects:
-  ARClickCubesAPI20190308173004:
+  ARClickCubes20190308173004:
     schemaPath: graphql/schema.json
     includes:
       - graphql/**/*.graphql
