@@ -17,6 +17,7 @@
 		7353501C221E825D00065E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7353501B221E825D00065E06 /* Assets.xcassets */; };
 		7353501F221E825D00065E06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7353501D221E825D00065E06 /* LaunchScreen.storyboard */; };
 		73535035221E825D00065E06 /* AR_Click_CubesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73535034221E825D00065E06 /* AR_Click_CubesUITests.swift */; };
+		7376D544223590A600909108 /* amplify in Resources */ = {isa = PBXBuildFile; fileRef = 7376D543223590A600909108 /* amplify */; };
 		738BD2C022347ABA007D94D9 /* API in Resources */ = {isa = PBXBuildFile; fileRef = 738BD2BF22347ABA007D94D9 /* API */; };
 		7395FD482222A00C005357F2 /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395FD472222A00C005357F2 /* ViewController+Extensions.swift */; };
 		73CB1549221E924F00D28E6E /* ClickCubeSceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CB1548221E924F00D28E6E /* ClickCubeSceneManager.swift */; };
@@ -62,6 +63,7 @@
 		73535030221E825D00065E06 /* AR Click CubesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR Click CubesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73535034221E825D00065E06 /* AR_Click_CubesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_Click_CubesUITests.swift; sourceTree = "<group>"; };
 		73535036221E825D00065E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7376D543223590A600909108 /* amplify */ = {isa = PBXFileReference; lastKnownFileType = folder; path = amplify; sourceTree = "<group>"; };
 		738BD2BF22347ABA007D94D9 /* API */ = {isa = PBXFileReference; lastKnownFileType = folder; name = API; path = "AR Click Cubes/API"; sourceTree = "<group>"; };
 		7395FD472222A00C005357F2 /* ViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
 		73CB1548221E924F00D28E6E /* ClickCubeSceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickCubeSceneManager.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		73535006221E825C00065E06 = {
 			isa = PBXGroup;
 			children = (
+				7376D543223590A600909108 /* amplify */,
 				738BD2BF22347ABA007D94D9 /* API */,
 				73535011221E825C00065E06 /* AR Click Cubes */,
 				73535028221E825D00065E06 /* AR Click CubesTests */,
@@ -345,6 +348,7 @@
 				73535015221E825C00065E06 /* art.scnassets in Resources */,
 				7353501F221E825D00065E06 /* LaunchScreen.storyboard in Resources */,
 				7353501C221E825D00065E06 /* Assets.xcassets in Resources */,
+				7376D544223590A600909108 /* amplify in Resources */,
 				738BD2C022347ABA007D94D9 /* API in Resources */,
 				7353501A221E825C00065E06 /* Main.storyboard in Resources */,
 			);
@@ -443,7 +447,13 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AR Click Cubes/Pods-AR Click Cubes-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AWSAppSync/AWSAppSync.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthUI/AWSAuthUI.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSUserPoolsSignIn/AWSUserPoolsSignIn.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
@@ -453,7 +463,13 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAppSync.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSUserPoolsSignIn.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",

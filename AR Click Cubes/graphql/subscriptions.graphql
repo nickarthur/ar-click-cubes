@@ -9,14 +9,16 @@ subscription OnCreateIssue {
         title
         content
         owner
+        thumbnailUrl
+        sponsored
         version
       }
       nextToken
     }
     owner
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
     version
   }
@@ -31,14 +33,16 @@ subscription OnUpdateIssue {
         title
         content
         owner
+        thumbnailUrl
+        sponsored
         version
       }
       nextToken
     }
     owner
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
     version
   }
@@ -53,14 +57,16 @@ subscription OnDeleteIssue {
         title
         content
         owner
+        thumbnailUrl
+        sponsored
         version
       }
       nextToken
     }
     owner
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
     version
   }
@@ -78,14 +84,15 @@ subscription OnCreateScene {
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
       version
     }
     comments {
       items {
         id
+        owner
         content
         version
       }
@@ -93,9 +100,14 @@ subscription OnCreateScene {
     }
     owner
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
+    sceneFile {
+      ...S3Object
+    }
+    thumbnailUrl
+    sponsored
     version
   }
 }
@@ -112,14 +124,15 @@ subscription OnUpdateScene {
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
       version
     }
     comments {
       items {
         id
+        owner
         content
         version
       }
@@ -127,9 +140,14 @@ subscription OnUpdateScene {
     }
     owner
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
+    sceneFile {
+      ...S3Object
+    }
+    thumbnailUrl
+    sponsored
     version
   }
 }
@@ -146,14 +164,15 @@ subscription OnDeleteScene {
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
       version
     }
     comments {
       items {
         id
+        owner
         content
         version
       }
@@ -161,15 +180,21 @@ subscription OnDeleteScene {
     }
     owner
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
+    sceneFile {
+      ...S3Object
+    }
+    thumbnailUrl
+    sponsored
     version
   }
 }
 subscription OnCreateComment {
   onCreateComment {
     id
+    owner
     content
     scene {
       id
@@ -186,14 +211,19 @@ subscription OnCreateComment {
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
+      sceneFile {
+        ...S3Object
+      }
+      thumbnailUrl
+      sponsored
       version
     }
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
     version
   }
@@ -201,6 +231,7 @@ subscription OnCreateComment {
 subscription OnUpdateComment {
   onUpdateComment {
     id
+    owner
     content
     scene {
       id
@@ -217,14 +248,19 @@ subscription OnUpdateComment {
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
+      sceneFile {
+        ...S3Object
+      }
+      thumbnailUrl
+      sponsored
       version
     }
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
     version
   }
@@ -232,6 +268,7 @@ subscription OnUpdateComment {
 subscription OnDeleteComment {
   onDeleteComment {
     id
+    owner
     content
     scene {
       id
@@ -248,14 +285,19 @@ subscription OnDeleteComment {
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
+      sceneFile {
+        ...S3Object
+      }
+      thumbnailUrl
+      sponsored
       version
     }
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
     version
   }
@@ -266,6 +308,7 @@ subscription OnCreateDraft {
     title
     content
     owner
+    author
     editors
     groupsCanAccess
     version
@@ -277,6 +320,7 @@ subscription OnUpdateDraft {
     title
     content
     owner
+    author
     editors
     groupsCanAccess
     version
@@ -288,6 +332,7 @@ subscription OnDeleteDraft {
     title
     content
     owner
+    author
     editors
     groupsCanAccess
     version

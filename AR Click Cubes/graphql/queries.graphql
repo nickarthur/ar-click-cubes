@@ -1,5 +1,5 @@
 # this is an auto generated file. This will be overwritten
-query NearbyIssues($location: LocationInput!, $km: Int) {
+query NearbyIssues($location: GeoCoordinatesInput!, $km: Int) {
   nearbyIssues(location: $location, km: $km) {
     id
     name
@@ -9,19 +9,21 @@ query NearbyIssues($location: LocationInput!, $km: Int) {
         title
         content
         owner
+        thumbnailUrl
+        sponsored
         version
       }
       nextToken
     }
     owner
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
     version
   }
 }
-query NearbyScenes($location: LocationInput!, $km: Int) {
+query NearbyScenes($location: GeoCoordinatesInput!, $km: Int) {
   nearbyScenes(location: $location, km: $km) {
     id
     title
@@ -34,14 +36,15 @@ query NearbyScenes($location: LocationInput!, $km: Int) {
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
       version
     }
     comments {
       items {
         id
+        owner
         content
         version
       }
@@ -49,15 +52,21 @@ query NearbyScenes($location: LocationInput!, $km: Int) {
     }
     owner
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
+    sceneFile {
+      ...S3Object
+    }
+    thumbnailUrl
+    sponsored
     version
   }
 }
-query NearbyComments($location: LocationInput!, $km: Int) {
+query NearbyComments($location: GeoCoordinatesInput!, $km: Int) {
   nearbyComments(location: $location, km: $km) {
     id
+    owner
     content
     scene {
       id
@@ -74,14 +83,19 @@ query NearbyComments($location: LocationInput!, $km: Int) {
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
+      sceneFile {
+        ...S3Object
+      }
+      thumbnailUrl
+      sponsored
       version
     }
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
     version
   }
@@ -96,14 +110,16 @@ query GetIssue($id: ID!) {
         title
         content
         owner
+        thumbnailUrl
+        sponsored
         version
       }
       nextToken
     }
     owner
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
     version
   }
@@ -122,8 +138,8 @@ query ListIssues(
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
       version
     }
@@ -143,14 +159,15 @@ query GetScene($id: ID!) {
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
       version
     }
     comments {
       items {
         id
+        owner
         content
         version
       }
@@ -158,9 +175,14 @@ query GetScene($id: ID!) {
     }
     owner
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
+    sceneFile {
+      ...S3Object
+    }
+    thumbnailUrl
+    sponsored
     version
   }
 }
@@ -185,9 +207,14 @@ query ListScenes(
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
+      sceneFile {
+        ...S3Object
+      }
+      thumbnailUrl
+      sponsored
       version
     }
     nextToken
@@ -196,6 +223,7 @@ query ListScenes(
 query GetComment($id: ID!) {
   getComment(id: $id) {
     id
+    owner
     content
     scene {
       id
@@ -212,14 +240,19 @@ query GetComment($id: ID!) {
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
+      sceneFile {
+        ...S3Object
+      }
+      thumbnailUrl
+      sponsored
       version
     }
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
     version
   }
@@ -232,17 +265,20 @@ query ListComments(
   listComments(filter: $filter, limit: $limit, nextToken: $nextToken) {
     items {
       id
+      owner
       content
       scene {
         id
         title
         content
         owner
+        thumbnailUrl
+        sponsored
         version
       }
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
       version
     }
@@ -255,6 +291,7 @@ query GetDraft($id: ID!) {
     title
     content
     owner
+    author
     editors
     groupsCanAccess
     version
@@ -271,6 +308,7 @@ query ListDrafts(
       title
       content
       owner
+      author
       editors
       groupsCanAccess
       version
@@ -298,8 +336,8 @@ query SearchIssues(
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
       version
     }
@@ -333,9 +371,14 @@ query SearchScenes(
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
+      sceneFile {
+        ...S3Object
+      }
+      thumbnailUrl
+      sponsored
       version
     }
     nextToken
@@ -355,17 +398,20 @@ query SearchComments(
   ) {
     items {
       id
+      owner
       content
       scene {
         id
         title
         content
         owner
+        thumbnailUrl
+        sponsored
         version
       }
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
       version
     }
@@ -389,6 +435,7 @@ query SearchDrafts(
       title
       content
       owner
+      author
       editors
       groupsCanAccess
       version

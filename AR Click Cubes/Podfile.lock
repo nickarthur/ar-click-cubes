@@ -1,9 +1,24 @@
 PODS:
-  - AWSAppSync (2.10.2):
+  - AWSAppSync (2.9.2):
     - AWSCore (~> 2.8.0)
     - ReachabilitySwift (~> 4.3.0)
     - SQLite.swift (= 0.11.5)
+  - AWSAuthCore (2.8.4):
+    - AWSCore (= 2.8.4)
+  - AWSAuthUI (2.8.4):
+    - AWSAuthCore (= 2.8.4)
+    - AWSCore (= 2.8.4)
+  - AWSCognitoIdentityProvider (2.8.4):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+    - AWSCore (= 2.8.4)
+  - AWSCognitoIdentityProviderASF (1.0.1)
   - AWSCore (2.8.4)
+  - AWSMobileClient (2.8.4):
+    - AWSAuthCore (= 2.8.4)
+    - AWSCognitoIdentityProvider (= 2.8.4)
+  - AWSUserPoolsSignIn (2.8.4):
+    - AWSAuthCore (= 2.8.4)
+    - AWSCognitoIdentityProvider (= 2.8.4)
   - ReachabilitySwift (4.3.0)
   - SQLite.swift (0.11.5):
     - SQLite.swift/standard (= 0.11.5)
@@ -11,24 +26,39 @@ PODS:
   - SSZipArchive (2.1.4)
 
 DEPENDENCIES:
-  - AWSAppSync (~> 2.10.0)
+  - AWSAppSync (~> 2.9.0)
+  - AWSAuthUI (~> 2.8.0)
+  - AWSMobileClient (~> 2.8.0)
+  - AWSUserPoolsSignIn (~> 2.8.0)
   - SSZipArchive
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AWSAppSync
+    - AWSAuthCore
+    - AWSAuthUI
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
     - AWSCore
+    - AWSMobileClient
+    - AWSUserPoolsSignIn
     - ReachabilitySwift
     - SQLite.swift
     - SSZipArchive
 
 SPEC CHECKSUMS:
-  AWSAppSync: 791a9916d06df4eb682e1265ebc57eb083832d6b
+  AWSAppSync: 8abeeedb432c6354699e7f55abab805e411dfd8c
+  AWSAuthCore: ac2536f54f73a2914c236e266cbec02a49f57d69
+  AWSAuthUI: dd68ce1af153c0f5aa7521c0bd89a633d0a24cc5
+  AWSCognitoIdentityProvider: ba1858e7524b29254172ae333e1f96ddc93507dc
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
   AWSCore: 734b0d67c2c77f6edae9e5520431a37310ea4193
+  AWSMobileClient: 59072ca49e82706c6d958f7a08e4a285d7197af1
+  AWSUserPoolsSignIn: 1eb61512db85bf0d043f79eda77de0ee09035bcf
   ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
   SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
   SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
 
-PODFILE CHECKSUM: 231a15222b8b60f4a2fc18425d5e246c3f57f182
+PODFILE CHECKSUM: add19878c875bd073e19b29e86ceb2abc8ac4ac5
 
 COCOAPODS: 1.6.0.beta.1

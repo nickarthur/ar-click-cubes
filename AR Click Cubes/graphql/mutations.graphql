@@ -9,14 +9,16 @@ mutation CreateIssue($input: CreateIssueInput!) {
         title
         content
         owner
+        thumbnailUrl
+        sponsored
         version
       }
       nextToken
     }
     owner
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
     version
   }
@@ -31,14 +33,16 @@ mutation UpdateIssue($input: UpdateIssueInput!) {
         title
         content
         owner
+        thumbnailUrl
+        sponsored
         version
       }
       nextToken
     }
     owner
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
     version
   }
@@ -53,14 +57,16 @@ mutation DeleteIssue($input: DeleteIssueInput!) {
         title
         content
         owner
+        thumbnailUrl
+        sponsored
         version
       }
       nextToken
     }
     owner
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
     version
   }
@@ -78,14 +84,15 @@ mutation CreateScene($input: CreateSceneInput!) {
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
       version
     }
     comments {
       items {
         id
+        owner
         content
         version
       }
@@ -93,9 +100,14 @@ mutation CreateScene($input: CreateSceneInput!) {
     }
     owner
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
+    sceneFile {
+      ...S3Object
+    }
+    thumbnailUrl
+    sponsored
     version
   }
 }
@@ -112,14 +124,15 @@ mutation UpdateScene($input: UpdateSceneInput!) {
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
       version
     }
     comments {
       items {
         id
+        owner
         content
         version
       }
@@ -127,9 +140,14 @@ mutation UpdateScene($input: UpdateSceneInput!) {
     }
     owner
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
+    sceneFile {
+      ...S3Object
+    }
+    thumbnailUrl
+    sponsored
     version
   }
 }
@@ -146,14 +164,15 @@ mutation DeleteScene($input: DeleteSceneInput!) {
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
       version
     }
     comments {
       items {
         id
+        owner
         content
         version
       }
@@ -161,15 +180,21 @@ mutation DeleteScene($input: DeleteSceneInput!) {
     }
     owner
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
+    sceneFile {
+      ...S3Object
+    }
+    thumbnailUrl
+    sponsored
     version
   }
 }
 mutation CreateComment($input: CreateCommentInput!) {
   createComment(input: $input) {
     id
+    owner
     content
     scene {
       id
@@ -186,14 +211,19 @@ mutation CreateComment($input: CreateCommentInput!) {
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
+      sceneFile {
+        ...S3Object
+      }
+      thumbnailUrl
+      sponsored
       version
     }
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
     version
   }
@@ -201,6 +231,7 @@ mutation CreateComment($input: CreateCommentInput!) {
 mutation UpdateComment($input: UpdateCommentInput!) {
   updateComment(input: $input) {
     id
+    owner
     content
     scene {
       id
@@ -217,14 +248,19 @@ mutation UpdateComment($input: UpdateCommentInput!) {
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
+      sceneFile {
+        ...S3Object
+      }
+      thumbnailUrl
+      sponsored
       version
     }
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
     version
   }
@@ -232,6 +268,7 @@ mutation UpdateComment($input: UpdateCommentInput!) {
 mutation DeleteComment($input: DeleteCommentInput!) {
   deleteComment(input: $input) {
     id
+    owner
     content
     scene {
       id
@@ -248,14 +285,19 @@ mutation DeleteComment($input: DeleteCommentInput!) {
       }
       owner
       location {
-        lat
-        lon
+        latitude
+        longitude
       }
+      sceneFile {
+        ...S3Object
+      }
+      thumbnailUrl
+      sponsored
       version
     }
     location {
-      lat
-      lon
+      latitude
+      longitude
     }
     version
   }
@@ -266,6 +308,7 @@ mutation CreateDraft($input: CreateDraftInput!) {
     title
     content
     owner
+    author
     editors
     groupsCanAccess
     version
@@ -277,6 +320,7 @@ mutation UpdateDraft($input: UpdateDraftInput!) {
     title
     content
     owner
+    author
     editors
     groupsCanAccess
     version
@@ -288,6 +332,7 @@ mutation DeleteDraft($input: DeleteDraftInput!) {
     title
     content
     owner
+    author
     editors
     groupsCanAccess
     version
