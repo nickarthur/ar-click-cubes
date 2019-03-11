@@ -1,6 +1,6 @@
 # this is an auto generated file. This will be overwritten
-query NearbyIssues($location: GeoCoordinatesInput!, $km: Int) {
-  nearbyIssues(location: $location, km: $km) {
+query NearbyIssues($geo: GeoCoordinatesInput!, $km: Int) {
+  nearbyIssues(geo: $geo, km: $km) {
     id
     name
     scenes {
@@ -16,15 +16,15 @@ query NearbyIssues($location: GeoCoordinatesInput!, $km: Int) {
       nextToken
     }
     owner
-    location {
+    geo {
       latitude
       longitude
     }
     version
   }
 }
-query NearbyScenes($location: GeoCoordinatesInput!, $km: Int) {
-  nearbyScenes(location: $location, km: $km) {
+query NearbyScenes($geo: GeoCoordinatesInput!, $km: Int) {
+  nearbyScenes(geo: $geo, km: $km) {
     id
     title
     content
@@ -35,7 +35,7 @@ query NearbyScenes($location: GeoCoordinatesInput!, $km: Int) {
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -51,7 +51,7 @@ query NearbyScenes($location: GeoCoordinatesInput!, $km: Int) {
       nextToken
     }
     owner
-    location {
+    geo {
       latitude
       longitude
     }
@@ -63,8 +63,8 @@ query NearbyScenes($location: GeoCoordinatesInput!, $km: Int) {
     version
   }
 }
-query NearbyComments($location: GeoCoordinatesInput!, $km: Int) {
-  nearbyComments(location: $location, km: $km) {
+query NearbyComments($geo: GeoCoordinatesInput!, $km: Int) {
+  nearbyComments(geo: $geo, km: $km) {
     id
     owner
     content
@@ -82,7 +82,7 @@ query NearbyComments($location: GeoCoordinatesInput!, $km: Int) {
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -93,7 +93,7 @@ query NearbyComments($location: GeoCoordinatesInput!, $km: Int) {
       sponsored
       version
     }
-    location {
+    geo {
       latitude
       longitude
     }
@@ -117,7 +117,7 @@ query GetIssue($id: ID!) {
       nextToken
     }
     owner
-    location {
+    geo {
       latitude
       longitude
     }
@@ -137,7 +137,7 @@ query ListIssues(
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -158,7 +158,7 @@ query GetScene($id: ID!) {
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -174,7 +174,7 @@ query GetScene($id: ID!) {
       nextToken
     }
     owner
-    location {
+    geo {
       latitude
       longitude
     }
@@ -206,7 +206,7 @@ query ListScenes(
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -239,7 +239,7 @@ query GetComment($id: ID!) {
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -250,7 +250,7 @@ query GetComment($id: ID!) {
       sponsored
       version
     }
-    location {
+    geo {
       latitude
       longitude
     }
@@ -276,7 +276,7 @@ query ListComments(
         sponsored
         version
       }
-      location {
+      geo {
         latitude
         longitude
       }
@@ -290,6 +290,10 @@ query GetDraft($id: ID!) {
     id
     title
     content
+    geo {
+      latitude
+      longitude
+    }
     owner
     author
     editors
@@ -307,6 +311,10 @@ query ListDrafts(
       id
       title
       content
+      geo {
+        latitude
+        longitude
+      }
       owner
       author
       editors
@@ -335,7 +343,7 @@ query SearchIssues(
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -370,7 +378,7 @@ query SearchScenes(
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -409,7 +417,7 @@ query SearchComments(
         sponsored
         version
       }
-      location {
+      geo {
         latitude
         longitude
       }
@@ -434,6 +442,10 @@ query SearchDrafts(
       id
       title
       content
+      geo {
+        latitude
+        longitude
+      }
       owner
       author
       editors

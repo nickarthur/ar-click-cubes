@@ -16,7 +16,7 @@ subscription OnCreateIssue {
       nextToken
     }
     owner
-    location {
+    geo {
       latitude
       longitude
     }
@@ -40,7 +40,7 @@ subscription OnUpdateIssue {
       nextToken
     }
     owner
-    location {
+    geo {
       latitude
       longitude
     }
@@ -64,7 +64,7 @@ subscription OnDeleteIssue {
       nextToken
     }
     owner
-    location {
+    geo {
       latitude
       longitude
     }
@@ -83,7 +83,7 @@ subscription OnCreateScene {
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -99,7 +99,7 @@ subscription OnCreateScene {
       nextToken
     }
     owner
-    location {
+    geo {
       latitude
       longitude
     }
@@ -123,7 +123,7 @@ subscription OnUpdateScene {
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -139,7 +139,7 @@ subscription OnUpdateScene {
       nextToken
     }
     owner
-    location {
+    geo {
       latitude
       longitude
     }
@@ -163,7 +163,7 @@ subscription OnDeleteScene {
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -179,7 +179,7 @@ subscription OnDeleteScene {
       nextToken
     }
     owner
-    location {
+    geo {
       latitude
       longitude
     }
@@ -210,7 +210,7 @@ subscription OnCreateComment {
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -221,7 +221,7 @@ subscription OnCreateComment {
       sponsored
       version
     }
-    location {
+    geo {
       latitude
       longitude
     }
@@ -247,7 +247,7 @@ subscription OnUpdateComment {
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -258,7 +258,7 @@ subscription OnUpdateComment {
       sponsored
       version
     }
-    location {
+    geo {
       latitude
       longitude
     }
@@ -284,7 +284,7 @@ subscription OnDeleteComment {
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -295,7 +295,7 @@ subscription OnDeleteComment {
       sponsored
       version
     }
-    location {
+    geo {
       latitude
       longitude
     }
@@ -307,6 +307,10 @@ subscription OnCreateDraft {
     id
     title
     content
+    geo {
+      latitude
+      longitude
+    }
     owner
     author
     editors
@@ -319,6 +323,10 @@ subscription OnUpdateDraft {
     id
     title
     content
+    geo {
+      latitude
+      longitude
+    }
     owner
     author
     editors
@@ -331,6 +339,10 @@ subscription OnDeleteDraft {
     id
     title
     content
+    geo {
+      latitude
+      longitude
+    }
     owner
     author
     editors

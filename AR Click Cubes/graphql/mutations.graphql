@@ -16,7 +16,7 @@ mutation CreateIssue($input: CreateIssueInput!) {
       nextToken
     }
     owner
-    location {
+    geo {
       latitude
       longitude
     }
@@ -40,7 +40,7 @@ mutation UpdateIssue($input: UpdateIssueInput!) {
       nextToken
     }
     owner
-    location {
+    geo {
       latitude
       longitude
     }
@@ -64,7 +64,7 @@ mutation DeleteIssue($input: DeleteIssueInput!) {
       nextToken
     }
     owner
-    location {
+    geo {
       latitude
       longitude
     }
@@ -83,7 +83,7 @@ mutation CreateScene($input: CreateSceneInput!) {
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -99,7 +99,7 @@ mutation CreateScene($input: CreateSceneInput!) {
       nextToken
     }
     owner
-    location {
+    geo {
       latitude
       longitude
     }
@@ -123,7 +123,7 @@ mutation UpdateScene($input: UpdateSceneInput!) {
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -139,7 +139,7 @@ mutation UpdateScene($input: UpdateSceneInput!) {
       nextToken
     }
     owner
-    location {
+    geo {
       latitude
       longitude
     }
@@ -163,7 +163,7 @@ mutation DeleteScene($input: DeleteSceneInput!) {
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -179,7 +179,7 @@ mutation DeleteScene($input: DeleteSceneInput!) {
       nextToken
     }
     owner
-    location {
+    geo {
       latitude
       longitude
     }
@@ -210,7 +210,7 @@ mutation CreateComment($input: CreateCommentInput!) {
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -221,7 +221,7 @@ mutation CreateComment($input: CreateCommentInput!) {
       sponsored
       version
     }
-    location {
+    geo {
       latitude
       longitude
     }
@@ -247,7 +247,7 @@ mutation UpdateComment($input: UpdateCommentInput!) {
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -258,7 +258,7 @@ mutation UpdateComment($input: UpdateCommentInput!) {
       sponsored
       version
     }
-    location {
+    geo {
       latitude
       longitude
     }
@@ -284,7 +284,7 @@ mutation DeleteComment($input: DeleteCommentInput!) {
         nextToken
       }
       owner
-      location {
+      geo {
         latitude
         longitude
       }
@@ -295,7 +295,7 @@ mutation DeleteComment($input: DeleteCommentInput!) {
       sponsored
       version
     }
-    location {
+    geo {
       latitude
       longitude
     }
@@ -307,6 +307,10 @@ mutation CreateDraft($input: CreateDraftInput!) {
     id
     title
     content
+    geo {
+      latitude
+      longitude
+    }
     owner
     author
     editors
@@ -319,6 +323,10 @@ mutation UpdateDraft($input: UpdateDraftInput!) {
     id
     title
     content
+    geo {
+      latitude
+      longitude
+    }
     owner
     author
     editors
@@ -331,6 +339,10 @@ mutation DeleteDraft($input: DeleteDraftInput!) {
     id
     title
     content
+    geo {
+      latitude
+      longitude
+    }
     owner
     author
     editors
