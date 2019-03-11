@@ -13,12 +13,6 @@ Parameters:
     Type: String
 
     
-  resourceName:
-    Type: String
-            
-  authSelections:
-    Type: String
-                                                    
   userPoolName:
     Type: String
                   
@@ -100,6 +94,12 @@ Parameters:
   userpoolClientSetAttributes:
     Type: String
           
+  resourceName:
+    Type: String
+            
+  authSelections:
+    Type: String
+                                                    
   identityPoolName:
     Type: String
               
@@ -126,7 +126,10 @@ Parameters:
             
   useDefault:
     Type: String
-          
+                  
+  userpoolClientWriteAttributes:
+    Type: CommaDelimitedList
+    
 Conditions:
   ShouldNotCreateEnvResources: !Equals [ !Ref env, NONE ]
 
@@ -186,10 +189,10 @@ Resources:
       Policies:
         PasswordPolicy:
           MinimumLength: !Ref passwordPolicyMinLength
-          RequireLowercase: true
-          RequireNumbers: true
-          RequireSymbols: true
-          RequireUppercase: true
+          RequireLowercase: false
+          RequireNumbers: false
+          RequireSymbols: false
+          RequireUppercase: false
       MfaConfiguration: !Ref mfaConfiguration
       SmsVerificationMessage: !Ref smsVerificationMessage
       SmsConfiguration: 
@@ -203,6 +206,9 @@ Resources:
     Properties:
       ClientName: cognitobbf7a4f2_app_clientWeb
       
+      ReadAttributes: !Ref userpoolClientReadAttributes
+      WriteAttributes: !Ref userpoolClientWriteAttributes
+      
       RefreshTokenValidity: !Ref userpoolClientRefreshTokenValidity
       UserPoolId: !Ref UserPool
     DependsOn: UserPool
@@ -212,6 +218,9 @@ Resources:
     Type: "AWS::Cognito::UserPoolClient"
     Properties:
       ClientName: !Ref userpoolClientName
+      
+      ReadAttributes: !Ref userpoolClientReadAttributes
+      WriteAttributes: !Ref userpoolClientWriteAttributes
       
       GenerateSecret: !Ref userpoolClientGenerateSecret
       RefreshTokenValidity: !Ref userpoolClientRefreshTokenValidity
@@ -321,50 +330,8 @@ Resources:
     DependsOn: UserPoolClientLogPolicy
   
     
-  # BEGIN IDENTITY POOL RESOURCES
-  
-  
-  IdentityPool:
-  # Always created
-    Type: AWS::Cognito::IdentityPool
-    Properties: 
-      IdentityPoolName: !If [ShouldNotCreateEnvResources, 'cognitobbf7a4f2_identitypool_bbf7a4f2', !Join ['',['cognitobbf7a4f2_identitypool_bbf7a4f2', '__', !Ref env]]]
-      
-      CognitoIdentityProviders:
-        - ClientId:  !Ref UserPoolClient
-          ProviderName: !Sub
-            - cognito-idp.${region}.amazonaws.com/${client}
-            - { region: !Ref "AWS::Region",  client: !Ref UserPool}
-        - ClientId:  !Ref UserPoolClientWeb
-          ProviderName: !Sub
-            - cognito-idp.${region}.amazonaws.com/${client}
-            - { region: !Ref "AWS::Region",  client: !Ref UserPool}
-            
-      AllowUnauthenticatedIdentities: !Ref allowUnauthenticatedIdentities
-       
-       
-    DependsOn: UserPoolClientInputs 
-    
-  
-  IdentityPoolRoleMap:
-  # Created to map Auth and Unauth roles to the identity pool
-  # Depends on Identity Pool for ID ref
-    Type: AWS::Cognito::IdentityPoolRoleAttachment
-    Properties: 
-      IdentityPoolId: !Ref IdentityPool
-      Roles:
-          unauthenticated: !Ref unauthRoleArn
-          authenticated: !Ref authRoleArn
-    DependsOn: IdentityPool
-  
 
 Outputs :
-  
-  IdentityPoolId:
-    Value: !Ref 'IdentityPool'
-    Description:  Id for the identity pool
-  IdentityPoolName:
-    Value: !GetAtt IdentityPool.Name 
   
   
   UserPoolId:

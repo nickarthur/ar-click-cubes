@@ -1,14 +1,31 @@
 {
+    "devtwo": {
+        "awscloudformation": {
+            "AuthRoleName": "arclickcubes-20190310195726-authRole",
+            "UnauthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190310195726-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190310195726-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "arclickcubes-20190310195726-deployment",
+            "UnauthRoleName": "arclickcubes-20190310195726-unauthRole",
+            "StackName": "arclickcubes-20190310195726",
+            "StackId": "arn:aws:cloudformation:us-east-1:038748457762:stack/arclickcubes-20190310195726/a3bb93a0-4398-11e9-a417-0a79b0f3a14a"
+        },
+        "categories": {
+            "auth": {
+                "cognitobbf7a4f2": {}
+            }
+        }
+    },
     "dev": {
         "awscloudformation": {
-            "AuthRoleName": "arclickcubes-20190308204937-authRole",
-            "UnauthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190308204937-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190308204937-authRole",
+            "AuthRoleName": "arclickcubes-20190310221117-authRole",
+            "UnauthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190310221117-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190310221117-authRole",
             "Region": "us-east-1",
-            "DeploymentBucketName": "arclickcubes-20190308204937-deployment",
-            "UnauthRoleName": "arclickcubes-20190308204937-unauthRole",
-            "StackName": "arclickcubes-20190308204937",
-            "StackId": "arn:aws:cloudformation:us-east-1:038748457762:stack/arclickcubes-20190308204937/fae74e00-4215-11e9-93a2-12d7c29d9238"
+            "DeploymentBucketName": "arclickcubes-20190310221117-deployment",
+            "UnauthRoleName": "arclickcubes-20190310221117-unauthRole",
+            "StackName": "arclickcubes-20190310221117",
+            "StackId": "arn:aws:cloudformation:us-east-1:038748457762:stack/arclickcubes-20190310221117/5815c0c0-43ab-11e9-a9c1-12d99c723360"
         },
         "categories": {
             "auth": {
