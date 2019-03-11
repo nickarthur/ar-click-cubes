@@ -16,7 +16,7 @@ type Issue
       name: String!
       scenes: [Scene] @connection(name: "IssueScenes")
       owner: String
-      location: GeoCoordinates
+      geo: GeoCoordinates
 }
 
 type Scene
@@ -39,7 +39,7 @@ type Scene
       issue: Issue @connection(name: "IssueScenes")
       comments: [Comment] @connection(name: "SceneComments")
       owner: String
-      location: GeoCoordinates
+      geo: GeoCoordinates
       sceneFile: S3Object
       thumbnailUrl: AWSURL
       sponsored: Boolean
@@ -63,7 +63,7 @@ type Comment
       owner: String!
       content: String!
       scene: Scene! @connection(name: "SceneComments")
-      location: GeoCoordinates
+      geo: GeoCoordinates
 }
 
 type Draft
@@ -85,6 +85,7 @@ type Draft
       id: ID!
       title: String!
       content: String
+      geo: GeoCoordinates
       owner: String
       author: String
       editors: [String]!
@@ -102,9 +103,9 @@ input GeoCoordinatesInput {
 }
 
 type Query {
-  nearbyIssues(location: GeoCoordinatesInput!, km: Int): [Issue]
-  nearbyScenes(location: GeoCoordinatesInput!, km: Int): [Scene]
-  nearbyComments(location: GeoCoordinatesInput!, km: Int): [Comment]
+  nearbyIssues(geo: GeoCoordinatesInput!, km: Int): [Issue]
+  nearbyScenes(geo: GeoCoordinatesInput!, km: Int): [Scene]
+  nearbyComments(geo: GeoCoordinatesInput!, km: Int): [Comment]
 }
 
 type S3Object {
