@@ -32,5 +32,22 @@
                 "cognitobbf7a4f2": {}
             }
         }
+    },
+    "test": {
+        "awscloudformation": {
+            "AuthRoleName": "arclickcubes-20190311111707-authRole",
+            "UnauthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190311111707-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190311111707-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "arclickcubes-20190311111707-deployment",
+            "UnauthRoleName": "arclickcubes-20190311111707-unauthRole",
+            "StackName": "arclickcubes-20190311111707",
+            "StackId": "arn:aws:cloudformation:us-east-1:038748457762:stack/arclickcubes-20190311111707/1dcdab80-4419-11e9-b07c-0a2e8057061e"
+        },
+        "categories": {
+            "auth": {
+                "cognitobbf7a4f2": {}
+            }
+        }
     }
 }
