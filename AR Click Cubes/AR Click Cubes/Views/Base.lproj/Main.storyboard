@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Click Cube View Controller-->
         <scene sceneID="mDM-3H-vjj">
             <objects>
-                <viewController id="Zfh-9N-TYc" customClass="ViewController" customModule="AR_Click_Cubes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Zfh-9N-TYc" customClass="NANClickCubeViewController" customModule="AR_Click_Cubes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zgi-7v-0BA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

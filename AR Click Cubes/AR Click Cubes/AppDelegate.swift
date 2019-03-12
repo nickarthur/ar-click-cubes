@@ -7,15 +7,25 @@
 //
 
 import UIKit
+import AWSMobileClient
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
 
-
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+    
+    // TODO: MOVED TO VIEWCONTROLLER
+//    AWSMobileClient.sharedInstance().initialize { (userState, error) in
+//        if let userState = userState {
+//            print("***** UserState: \(userState.rawValue)")
+//        } else if let error = error {
+//            print("***** error: \(error.localizedDescription)")
+//        }
+//    }
+    
     return true
   }
 

@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension ViewController {
+extension UIViewController {
   typealias callback = () -> Void
-  public func alert(title: String, message: String, completion: callback?) {
+  func alert(title: String, message: String, completion: callback?) {
     
     let alert = UIAlertController(title: title,
                                   message: message,

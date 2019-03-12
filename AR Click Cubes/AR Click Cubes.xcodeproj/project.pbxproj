@@ -12,14 +12,18 @@
 		733B156B2222D3280083E5FE /* ClickCubeNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733B156A2222D3280083E5FE /* ClickCubeNodeTests.swift */; };
 		73535013221E825C00065E06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73535012221E825C00065E06 /* AppDelegate.swift */; };
 		73535015221E825C00065E06 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 73535014221E825C00065E06 /* art.scnassets */; };
-		73535017221E825C00065E06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73535016221E825C00065E06 /* ViewController.swift */; };
+		73535017221E825C00065E06 /* NANClickCubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73535016221E825C00065E06 /* NANClickCubeViewController.swift */; };
 		7353501A221E825C00065E06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73535018221E825C00065E06 /* Main.storyboard */; };
 		7353501C221E825D00065E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7353501B221E825D00065E06 /* Assets.xcassets */; };
 		7353501F221E825D00065E06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7353501D221E825D00065E06 /* LaunchScreen.storyboard */; };
 		73535035221E825D00065E06 /* AR_Click_CubesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73535034221E825D00065E06 /* AR_Click_CubesUITests.swift */; };
 		7376D544223590A600909108 /* amplify in Resources */ = {isa = PBXBuildFile; fileRef = 7376D543223590A600909108 /* amplify */; };
+		7376D5462237E24A00909108 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7376D5452237E24900909108 /* awsconfiguration.json */; };
+		7376D5482237E25700909108 /* graphql in Resources */ = {isa = PBXBuildFile; fileRef = 7376D5472237E25700909108 /* graphql */; };
+		7376D54A2237E27C00909108 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7376D5492237E27B00909108 /* Podfile */; };
+		7376D54C2237E30B00909108 /* AR-Click-Cubes.ma in Resources */ = {isa = PBXBuildFile; fileRef = 7376D54B2237E30B00909108 /* AR-Click-Cubes.ma */; };
 		738BD2C022347ABA007D94D9 /* API in Resources */ = {isa = PBXBuildFile; fileRef = 738BD2BF22347ABA007D94D9 /* API */; };
-		7395FD482222A00C005357F2 /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395FD472222A00C005357F2 /* ViewController+Extensions.swift */; };
+		7395FD482222A00C005357F2 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395FD472222A00C005357F2 /* UIViewController+Extensions.swift */; };
 		73CB1549221E924F00D28E6E /* ClickCubeSceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CB1548221E924F00D28E6E /* ClickCubeSceneManager.swift */; };
 		73CB154C221E984200D28E6E /* ClickCubeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CB154B221E984200D28E6E /* ClickCubeNode.swift */; };
 		73CB154E221E9ECD00D28E6E /* ClickCubeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CB154D221E9ECD00D28E6E /* ClickCubeScene.swift */; };
@@ -53,7 +57,7 @@
 		7353500F221E825C00065E06 /* AR Click Cubes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Click Cubes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73535012221E825C00065E06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73535014221E825C00065E06 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		73535016221E825C00065E06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73535016221E825C00065E06 /* NANClickCubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NANClickCubeViewController.swift; sourceTree = "<group>"; };
 		73535019221E825C00065E06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7353501B221E825D00065E06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7353501E221E825D00065E06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,8 +68,12 @@
 		73535034221E825D00065E06 /* AR_Click_CubesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_Click_CubesUITests.swift; sourceTree = "<group>"; };
 		73535036221E825D00065E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7376D543223590A600909108 /* amplify */ = {isa = PBXFileReference; lastKnownFileType = folder; path = amplify; sourceTree = "<group>"; };
+		7376D5452237E24900909108 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		7376D5472237E25700909108 /* graphql */ = {isa = PBXFileReference; lastKnownFileType = folder; path = graphql; sourceTree = "<group>"; };
+		7376D5492237E27B00909108 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		7376D54B2237E30B00909108 /* AR-Click-Cubes.ma */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "AR-Click-Cubes.ma"; sourceTree = "<group>"; };
 		738BD2BF22347ABA007D94D9 /* API */ = {isa = PBXFileReference; lastKnownFileType = folder; name = API; path = "AR Click Cubes/API"; sourceTree = "<group>"; };
-		7395FD472222A00C005357F2 /* ViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
+		7395FD472222A00C005357F2 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		73CB1548221E924F00D28E6E /* ClickCubeSceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickCubeSceneManager.swift; sourceTree = "<group>"; };
 		73CB154B221E984200D28E6E /* ClickCubeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickCubeNode.swift; sourceTree = "<group>"; };
 		73CB154D221E9ECD00D28E6E /* ClickCubeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickCubeScene.swift; sourceTree = "<group>"; };
@@ -118,6 +126,10 @@
 		73535006221E825C00065E06 = {
 			isa = PBXGroup;
 			children = (
+				7376D5452237E24900909108 /* awsconfiguration.json */,
+				7376D54B2237E30B00909108 /* AR-Click-Cubes.ma */,
+				7376D5492237E27B00909108 /* Podfile */,
+				7376D5472237E25700909108 /* graphql */,
 				7376D543223590A600909108 /* amplify */,
 				738BD2BF22347ABA007D94D9 /* API */,
 				73535011221E825C00065E06 /* AR Click Cubes */,
@@ -193,7 +205,7 @@
 		73CB1545221E914800D28E6E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				73535016221E825C00065E06 /* ViewController.swift */,
+				73535016221E825C00065E06 /* NANClickCubeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -202,7 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				731CE54E2221606800CAC9E5 /* SCNMaterial+Extensions.swift */,
-				7395FD472222A00C005357F2 /* ViewController+Extensions.swift */,
+				7395FD472222A00C005357F2 /* UIViewController+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -346,10 +358,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				73535015221E825C00065E06 /* art.scnassets in Resources */,
+				7376D5462237E24A00909108 /* awsconfiguration.json in Resources */,
 				7353501F221E825D00065E06 /* LaunchScreen.storyboard in Resources */,
 				7353501C221E825D00065E06 /* Assets.xcassets in Resources */,
 				7376D544223590A600909108 /* amplify in Resources */,
 				738BD2C022347ABA007D94D9 /* API in Resources */,
+				7376D54A2237E27C00909108 /* Podfile in Resources */,
+				7376D5482237E25700909108 /* graphql in Resources */,
+				7376D54C2237E30B00909108 /* AR-Click-Cubes.ma in Resources */,
 				7353501A221E825C00065E06 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,13 +502,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73535017221E825C00065E06 /* ViewController.swift in Sources */,
+				73535017221E825C00065E06 /* NANClickCubeViewController.swift in Sources */,
 				73CB154C221E984200D28E6E /* ClickCubeNode.swift in Sources */,
 				73CB1549221E924F00D28E6E /* ClickCubeSceneManager.swift in Sources */,
 				73535013221E825C00065E06 /* AppDelegate.swift in Sources */,
 				731CE54F2221606800CAC9E5 /* SCNMaterial+Extensions.swift in Sources */,
 				73CB154E221E9ECD00D28E6E /* ClickCubeScene.swift in Sources */,
-				7395FD482222A00C005357F2 /* ViewController+Extensions.swift in Sources */,
+				7395FD482222A00C005357F2 /* UIViewController+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

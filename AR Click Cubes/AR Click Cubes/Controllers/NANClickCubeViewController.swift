@@ -7,11 +7,11 @@
 //
 
 import ARKit
+import AWSMobileClient
 import SceneKit
 import UIKit
 
-class ViewController: UIViewController, ARSCNViewDelegate {
-
+class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
     let workbenchYOffset: Float = -0.2
 
     @IBOutlet var sceneView: ARSCNView!
@@ -19,64 +19,62 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     let clickCubeSceneManager = ClickCubeSceneManager()
 
     @IBAction func performExperiment(_ sender: UIButton) {
+        let materialName = "material"
+        let filename = materialName.appending(".plist")
 
-      let materialName = "material"
-      let filename = materialName.appending(".plist")
-      
-      do {
-        // setup experiment
-
-        // create and serialize an example material
-        let exampleMaterial = SCNMaterial()
-        exampleMaterial.name = materialName
-
-        let diffuseMap =  UIImage(named: "art.scnassets/HUGE-Terrain-4k.png")
-        exampleMaterial.diffuse.contents = diffuseMap
-        
-        // save the material
-        try exampleMaterial.saveMaterial(toFile: filename)
-        
-        // load the material
-        let gridMaterial = try SCNMaterial.loadMaterial(fromFile: filename)
-        
-        // place a cube with a reloaded serialized material on it
-        let position = SCNVector3(-0.15, workbenchYOffset, -0.15)
-        
-        let node = clickCubeSceneManager.placeClickCube(at: position, withSameMaterial: gridMaterial)
-        
         do {
-          let orangeMaterial =  SCNMaterial()
-          orangeMaterial.name = "Orange"
-          orangeMaterial.diffuse.contents =  UIColor.orange
-          
-          try node.updateAllMaterials(with: [orangeMaterial,
-                                             orangeMaterial,
-                                             orangeMaterial,
-                                             orangeMaterial,
-                                             orangeMaterial,
-                                             orangeMaterial])
-          
-          let cyanMaterial =  SCNMaterial()
-          cyanMaterial.name = "Cyan"
-          cyanMaterial.diffuse.contents = UIColor.cyan
-          node.updateAllMaterials(withOne: cyanMaterial)
+            // setup experiment
 
-          let magentaMaterial = SCNMaterial()
-          magentaMaterial.name = "Magenta"
-          magentaMaterial.diffuse.contents =  UIColor.magenta
-          node.update(named: "Orange", with: magentaMaterial)
-          
-        } catch ClickCubeNode.UpdateMaterialError.MaterialCountMismatch {
-          alert(title: "Bad Developer", message: "the developer messed up", completion: {
-            print("**** YO!")
-          })
+            // create and serialize an example material
+            let exampleMaterial = SCNMaterial()
+            exampleMaterial.name = materialName
+
+            let diffuseMap = UIImage(named: "art.scnassets/HUGE-Terrain-4k.png")
+            exampleMaterial.diffuse.contents = diffuseMap
+
+            // save the material
+            try exampleMaterial.saveMaterial(toFile: filename)
+
+            // load the material
+            let gridMaterial = try SCNMaterial.loadMaterial(fromFile: filename)
+
+            // place a cube with a reloaded serialized material on it
+            let position = SCNVector3(-0.15, workbenchYOffset, -0.15)
+
+            let node = clickCubeSceneManager.placeClickCube(at: position, withSameMaterial: gridMaterial)
+
+            do {
+                let orangeMaterial = SCNMaterial()
+                orangeMaterial.name = "Orange"
+                orangeMaterial.diffuse.contents = UIColor.orange
+
+                try node.updateAllMaterials(with: [orangeMaterial,
+                                                   orangeMaterial,
+                                                   orangeMaterial,
+                                                   orangeMaterial,
+                                                   orangeMaterial,
+                                                   orangeMaterial])
+
+                let cyanMaterial = SCNMaterial()
+                cyanMaterial.name = "Cyan"
+                cyanMaterial.diffuse.contents = UIColor.cyan
+                node.updateAllMaterials(withOne: cyanMaterial)
+
+                let magentaMaterial = SCNMaterial()
+                magentaMaterial.name = "Magenta"
+                magentaMaterial.diffuse.contents = UIColor.magenta
+                node.update(named: "Orange", with: magentaMaterial)
+
+            } catch ClickCubeNode.UpdateMaterialError.MaterialCountMismatch {
+                alert(title: "Bad Developer", message: "the developer messed up", completion: {
+                    print("**** YO!")
+                })
+            }
+
+        } catch {
+            print("Error: \(error.localizedDescription)")
+            alert(title: "Material Error", message: "Unable to load material", completion: nil)
         }
-
-        
-      } catch {
-        print("Error: \(error.localizedDescription)")
-        alert(title: "Material Error", message: "Unable to load material", completion: nil)
-      }
     }
 
     fileprivate func setupScene() {
@@ -97,7 +95,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupAppSyncClient()
         setupScene()
     }
 
@@ -164,5 +162,17 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     func sessionInterruptionEnded(_ session: ARSession) {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
+    }
+
+    // MARK: - AppSync
+
+    func setupAppSyncClient() {
+        AWSMobileClient.sharedInstance().initialize { userState, error in
+            if let userState = userState {
+                print("UserState: \(userState.rawValue)")
+            } else if let error = error {
+                print("error: \(error.localizedDescription)")
+            }
+        }
     }
 }
