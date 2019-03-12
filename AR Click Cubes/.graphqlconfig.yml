@@ -10,7 +10,7 @@ projects:
         codeGenTarget: swift
         generatedFileName: AR Click Cubes/API/ARClickCubesAPI.swift
         docsFilePath: graphql
-        graphQLApiId: 7vfg5ut25fcavmw2fikad2hxzm
+        graphQLApiId: sbfpfnxcvrbdrihmevl7nzfhm4
       endpoints:
         prod: >-
-          https://sncajiwr3vhvdgae7pix7stzxq.appsync-api.us-east-1.amazonaws.com/graphql
+          https://nyeiz2h4 bzchbkg6qpes7ivoga.appsync-api.us-east-1.amazonaws.com/graphql
