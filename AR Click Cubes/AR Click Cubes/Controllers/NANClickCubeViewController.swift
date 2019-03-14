@@ -15,7 +15,9 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
     let workbenchYOffset: Float = -0.2
 
     @IBOutlet var sceneView: ARSCNView!
-
+    @IBOutlet weak var signInStateLabel: UILabel!
+    
+    
     let clickCubeSceneManager = ClickCubeSceneManager()
 
     @IBAction func performExperiment(_ sender: UIButton) {
@@ -167,11 +169,29 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
     // MARK: - AppSync
 
     func setupAppSyncClient() {
-        AWSMobileClient.sharedInstance().initialize { userState, error in
+
+        //AWSMobileClient.sharedInstance().initialize { (userState, error) in
+        AWSMobileClient.sharedInstance().initialize { (userState, error) in
             if let userState = userState {
-                print("UserState: \(userState.rawValue)")
+                switch(userState){
+                case .signedIn:
+                    DispatchQueue.main.async {
+                        self.signInStateLabel.text = "Logged In"
+                    }
+                case .signedOut:
+                    AWSMobileClient.sharedInstance().showSignIn(navigationController: self.navigationController!, { (userState, error) in
+                        if(error == nil){       //Successful signin
+                            DispatchQueue.main.async {
+                                self.signInStateLabel.text = "Logged In"
+                            }
+                        }
+                    })
+                default:
+                    AWSMobileClient.sharedInstance().signOut()
+                }
+                
             } else if let error = error {
-                print("error: \(error.localizedDescription)")
+                print(error.localizedDescription)
             }
         }
     }

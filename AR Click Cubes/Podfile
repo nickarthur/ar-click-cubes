@@ -7,10 +7,10 @@ target 'AR Click Cubes' do
   use_frameworks!
 
   # Pods for AR Click Cubes
-  pod 'AWSAppSync', ' ~> 2.9.0'
-  pod 'AWSMobileClient', '~> 2.8.0'      # Required dependency
-  pod 'AWSAuthUI', '~> 2.8.0'            # Optional dependency required to use drop-in UI
-  pod 'AWSUserPoolsSignIn', '~> 2.8.0'   # Optional dependency required to use drop-in UI
+  pod 'AWSAppSync', ' ~> 2.10.0'
+  pod 'AWSMobileClient', '~> 2.9.0'      # Required dependency
+  pod 'AWSAuthUI', '~> 2.9.0'            # Optional dependency required to use drop-in UI
+  pod 'AWSUserPoolsSignIn', '~> 2.9.0'   # Optional dependency required to use drop-in UI
 
   pod 'SSZipArchive'
 
