@@ -1,5 +1,5 @@
 projects:
-  arclickcubes20190308204937:
+  arclickcubesapi:
     schemaPath: graphql/schema.json
     includes:
       - graphql/**/*.graphql
@@ -10,7 +10,7 @@ projects:
         codeGenTarget: swift
         generatedFileName: AR Click Cubes/API/ARClickCubesAPI.swift
         docsFilePath: graphql
-        graphQLApiId: sbfpfnxcvrbdrihmevl7nzfhm4
+        graphQLApiId: nc6cwv72q5au3aws5wutdr2ujy
       endpoints:
         prod: >-
-          https://nyeiz2h4 bzchbkg6qpes7ivoga.appsync-api.us-east-1.amazonaws.com/graphql
+          https://kzsppaynend2phethi7kkhjzxe.appsync-api.us-east-1.amazonaws.com/graphql

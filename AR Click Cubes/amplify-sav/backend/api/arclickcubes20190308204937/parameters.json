@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "arclickcubes20190308204937",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognitobbf7a4f2",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

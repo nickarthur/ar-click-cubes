@@ -1,22 +1,16 @@
 {
-	"auth": {
-		"cognitobbf7a4f2": {
-			"service": "Cognito",
-			"providerPlugin": "awscloudformation"
-		}
-	},
 	"api": {
-		"arclickcubes20190308204937": {
+		"arclickcubesapi": {
 			"service": "AppSync",
 			"providerPlugin": "awscloudformation",
 			"output": {
-				"securityType": "AMAZON_COGNITO_USER_POOLS"
+				"securityType": "API_KEY"
 			}
 		}
 	},
-	"storage": {
-		"ARScenes": {
-			"service": "S3",
+	"auth": {
+		"cognito1aeb71d0": {
+			"service": "Cognito",
 			"providerPlugin": "awscloudformation"
 		}
 	}

@@ -6,17 +6,37 @@
 //  Copyright © 2019 Lawrence Nickerson. All rights reserved.
 //
 
+// MARK: imports
 import ARKit
-import AWSMobileClient
 import SceneKit
 import UIKit
 
+import AWSMobileClient
+import AWSAppSync
+import AWSAuthUI
+import AWSUserPoolsSignIn
+
 class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
-    let workbenchYOffset: Float = -0.2
+
+    // MARK: - IBOutlets
 
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet weak var signInStateLabel: UILabel!
+
     
+    
+    // MARK: - Variables
+    //var isLoggedIn = false // TODO: delete me
+    
+    lazy var  appSyncClient: AWSAppSyncClient? = {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        return appDelegate.appSyncClient
+    }()
+
+    let workbenchYOffset: Float = -0.2
+    
+    
+    // MARK: IBActions
     
     let clickCubeSceneManager = ClickCubeSceneManager()
 
@@ -97,10 +117,42 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(toggleLoginTapped))
         setupAppSyncClient()
-        setupScene()
-    }
 
+        setupScene()
+        
+    }
+    
+    @objc func toggleLoginTapped() {
+        let isSignedIn = AWSMobileClient.sharedInstance().isSignedIn
+        // let isLoggedIn = AWSMobileClient.sharedInstance().isLoggedIn
+        
+        switch isSignedIn {
+        case true:
+            AWSMobileClient.sharedInstance().signOut()
+            navigationItem.rightBarButtonItem?.title =  "Login"
+            self.signInStateLabel.text = "Logged Out"
+        case false:
+            AWSMobileClient.sharedInstance().showSignIn(navigationController: self.navigationController!, { (userState, error) in
+                if(error == nil){       //Successful signin
+                    DispatchQueue.main.async { [weak self] in
+                        self?.navigationItem.rightBarButtonItem?.title = "Logout"
+                        self?.signInStateLabel.text = "Logged In"
+                    }
+                }
+            })
+
+        }
+
+        
+        // _ = navigationController?.popViewController(animated: true)
+        
+        _ = navigationController?.popToRootViewController(animated: true)
+        
+    }
+    
     fileprivate func placeSomeClickCubes() {
         // create some materials
         var colors: [UIColor] = [#colorLiteral(red: 0, green: 1, blue: 1, alpha: 1), #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1), #colorLiteral(red: 1, green: 0, blue: 1, alpha: 1), #colorLiteral(red: 1, green: 1, blue: 0, alpha: 1), #colorLiteral(red: 0, green: 1, blue: 0, alpha: 1), #colorLiteral(red: 0, green: 0, blue: 1, alpha: 1)] // order of colors matters
@@ -170,7 +222,6 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
 
     func setupAppSyncClient() {
 
-        //AWSMobileClient.sharedInstance().initialize { (userState, error) in
         AWSMobileClient.sharedInstance().initialize { (userState, error) in
             if let userState = userState {
                 switch(userState){
@@ -184,10 +235,13 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
                             DispatchQueue.main.async {
                                 self.signInStateLabel.text = "Logged In"
                             }
+                        } else {
+                            print("error logging in: \(String(describing: error?.localizedDescription))")
                         }
                     })
                 default:
                     AWSMobileClient.sharedInstance().signOut()
+                    self.signInStateLabel.text = "Logged Out"
                 }
                 
             } else if let error = error {
@@ -195,4 +249,7 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
             }
         }
     }
+    
+    
+    
 }

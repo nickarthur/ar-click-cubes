@@ -1,0 +1,69 @@
+{
+    "identityPoolName": "arclickcubesapi1aeb71d0_identitypool_1aeb71d0",
+    "allowUnauthenticatedIdentities": true,
+    "thirdPartyAuth": false,
+    "lambdaLogPolicy": "cognito1aeb71d0_lambda_log_policy",
+    "openIdLambdaRoleName": "cognito1aeb71d0_openid_lambda_role",
+    "openIdRolePolicy": "cognito1aeb71d0_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "cognito1aeb71d0_openid_lambda_iam_policy",
+    "openIdLogPolicy": "cognito1aeb71d0_openid_lambda_log_policy",
+    "userPoolName": "arclickcubesapi1aeb71d0_userpool_1aeb71d0",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "cognito1aeb71d0_sns-role",
+    "roleExternalId": "cognito1aeb71d0_role_external_id",
+    "policyName": "cognito1aeb71d0-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": true,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "cognito1aeb71d0_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "cognito1aeb71d0_totp_lambda_role",
+    "mfaLambdaLogPolicy": "cognito1aeb71d0_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "cognito1aeb71d0_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "cognito1aeb71d0_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "cognito1aeb71d0_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "cognito1aeb71d0_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "cognito1aeb71d0_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": true,
+    "useDefault": "manual",
+    "authSelections": "identityPoolAndUserPool",
+    "resourceName": "cognito1aeb71d0",
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+{
+	"auth": {
+		"cognito225f69ee": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"api": {
+		"arclickcubes20190308204937": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "API_KEY"
+			}
+		}
+	},
+	"storage": {
+		"ARScenes": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

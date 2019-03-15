@@ -1,0 +1,115 @@
+type Issue
+  @model
+  @searchable
+  @versioned
+  @auth(
+    rules: [
+      {
+        allow: owner
+        ownerField: "owner"
+        mutations: [create, update, delete]
+        queries: [get, list]
+      }
+    ]
+  ) {
+      id: ID!
+      name: String!
+      scenes: [Scene] @connection(name: "IssueScenes")
+      owner: String
+      geo: GeoCoordinates
+}
+
+type Scene
+  @model
+  @searchable
+  @versioned
+  @auth(
+    rules: [
+      {
+        allow: owner
+        ownerField: "owner"
+        mutations: [create, update, delete]
+        queries: [get, list]
+      }
+    ]
+  ) {
+      id: ID!
+      title: String!
+      content: String!
+      issue: Issue @connection(name: "IssueScenes")
+      comments: [Comment] @connection(name: "SceneComments")
+      owner: String
+      geo: GeoCoordinates
+      sceneFile: S3Object
+      thumbnailUrl: AWSURL
+      sponsored: Boolean
+}
+
+type Comment
+  @model
+  @searchable
+  @versioned
+  @auth(
+    rules: [
+      {
+        allow: owner
+        ownerField: "owner"
+        mutations: [create, update, delete]
+        queries: [get, list]
+      }
+    ]
+  ) {
+      id: ID!
+      owner: String!
+      content: String!
+      scene: Scene! @connection(name: "SceneComments")
+      geo: GeoCoordinates
+}
+
+type Draft
+  @model
+  @searchable
+  @versioned
+  @auth(
+    rules: [
+      # Defaults to use the "owner" field.
+      { allow: owner }
+      # Authorize the update mutation and both queries. Use `queries: null` to disable auth for queries.
+      { allow: owner, ownerField: "editors", mutations: [update] }
+      # Admin users can access any operation.
+      { allow: groups, groups: ["Admin"] }
+      # Each record may specify which groups may read them.
+      { allow: groups, groupsField: "groupsCanAccess", mutations: [], queries: [get, list] }
+    ]
+  ) {
+      id: ID!
+      title: String!
+      content: String
+      geo: GeoCoordinates
+      owner: String
+      author: String
+      editors: [String]!
+      groupsCanAccess: [String]!
+}
+
+type GeoCoordinates {
+  latitude: Float
+  longitude: Float
+}
+
+input GeoCoordinatesInput {
+  latitude: Float
+  longitude: Float
+}
+
+type Query {
+  nearbyIssues(geo: GeoCoordinatesInput!, km: Int): [Issue]
+  nearbyScenes(geo: GeoCoordinatesInput!, km: Int): [Scene]
+  nearbyComments(geo: GeoCoordinatesInput!, km: Int): [Comment]
+}
+
+type S3Object {
+  bucket: String!
+  region: String!
+  key: String!
+}

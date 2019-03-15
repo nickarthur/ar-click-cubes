@@ -1,0 +1,73 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "arclickcubes-20190310221117-authRole",
+			"UnauthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190310221117-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190310221117-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "arclickcubes-20190310221117-deployment",
+			"UnauthRoleName": "arclickcubes-20190310221117-unauthRole",
+			"StackName": "arclickcubes-20190310221117",
+			"StackId": "arn:aws:cloudformation:us-east-1:038748457762:stack/arclickcubes-20190310221117/5815c0c0-43ab-11e9-a9c1-12d99c723360"
+		},
+		"categories": {
+			"auth": {
+				"cognitobbf7a4f2": {}
+			}
+		}
+	},
+	"auth": {
+		"cognitobbf7a4f2": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"AppClientSecret": "1atk8v0ojbapibh7ab24bi9sd5hnb8cish1d8e5krusec58agspn",
+				"UserPoolId": "us-east-1_lqxemx2th",
+				"AppClientIDWeb": "1p2fngrss917hhkfg8ttuo4nfq",
+				"AppClientID": "50e8ku5pr6121g0tht0r2keeca",
+				"UserPoolName": "cognitobbf7a4f2_userpool_bbf7a4f2"
+			},
+			"lastPushTimeStamp": "2019-03-11T19:49:11.247Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/arclickcubes-20190310221117-deployment/amplify-cfn-templates/auth/cognitobbf7a4f2-cloudformation-template.yml",
+				"logicalId": "authcognitobbf7a4f2"
+			}
+		}
+	},
+	"api": {
+		"arclickcubes20190308204937": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "AMAZON_COGNITO_USER_POOLS",
+				"GraphQLAPIIdOutput": "7vfg5ut25fcavmw2fikad2hxzm",
+				"GraphQLAPIEndpointOutput": "https://sncajiwr3vhvdgae7pix7stzxq.appsync-api.us-east-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-npghxnzqgvbmrm77l6fack73yi",
+				"AuthCognitoUserPoolIdOutput": "us-east-1_lqxemx2th",
+				"AuthCognitoUserPoolNativeClientId": "See UserPool: us-east-1_lqxemx2th",
+				"AuthCognitoUserPoolJSClientId": "See UserPool: us-east-1_lqxemx2th"
+			},
+			"lastPushTimeStamp": "2019-03-11T19:49:13.661Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/arclickcubes-20190310221117-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apiarclickcubes20190308204937"
+			},
+			"lastPushDirHash": "w+caYBU6VNgvAy4Qt0u0g1D+1VM="
+		}
+	},
+	"storage": {
+		"ARScenes": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"BucketName": "ar-click-cube-scenes-dev",
+				"Region": "us-east-1"
+			},
+			"lastPushTimeStamp": "2019-03-11T19:49:11.331Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/arclickcubes-20190310221117-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+				"logicalId": "storageARScenes"
+			}
+		}
+	}
+}

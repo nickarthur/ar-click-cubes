@@ -1,52 +1,18 @@
 {
     "dev": {
         "awscloudformation": {
-            "AuthRoleName": "arclickcubes-20190310221117-authRole",
-            "UnauthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190310221117-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190310221117-authRole",
+            "AuthRoleName": "arclickcubesapi-20190314032259-authRole",
+            "UnauthRoleArn": "arn:aws:iam::038748457762:role/arclickcubesapi-20190314032259-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::038748457762:role/arclickcubesapi-20190314032259-authRole",
             "Region": "us-east-1",
-            "DeploymentBucketName": "arclickcubes-20190310221117-deployment",
-            "UnauthRoleName": "arclickcubes-20190310221117-unauthRole",
-            "StackName": "arclickcubes-20190310221117",
-            "StackId": "arn:aws:cloudformation:us-east-1:038748457762:stack/arclickcubes-20190310221117/5815c0c0-43ab-11e9-a9c1-12d99c723360"
+            "DeploymentBucketName": "arclickcubesapi-20190314032259-deployment",
+            "UnauthRoleName": "arclickcubesapi-20190314032259-unauthRole",
+            "StackName": "arclickcubesapi-20190314032259",
+            "StackId": "arn:aws:cloudformation:us-east-1:038748457762:stack/arclickcubesapi-20190314032259/62be7970-4632-11e9-a167-0a1b7b252ffe"
         },
         "categories": {
             "auth": {
-                "cognitobbf7a4f2": {}
-            }
-        }
-    },
-    "prod": {
-        "awscloudformation": {
-            "AuthRoleName": "arclickcubes-20190311113105-authRole",
-            "UnauthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190311113105-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190311113105-authRole",
-            "Region": "us-east-1",
-            "DeploymentBucketName": "arclickcubes-20190311113105-deployment",
-            "UnauthRoleName": "arclickcubes-20190311113105-unauthRole",
-            "StackName": "arclickcubes-20190311113105",
-            "StackId": "arn:aws:cloudformation:us-east-1:038748457762:stack/arclickcubes-20190311113105/11c35310-441b-11e9-9c1b-0e0d0d1329e4"
-        },
-        "categories": {
-            "auth": {
-                "cognitobbf7a4f2": {}
-            }
-        }
-    },
-    "test": {
-        "awscloudformation": {
-            "AuthRoleName": "arclickcubes-20190311145057-authRole",
-            "UnauthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190311145057-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::038748457762:role/arclickcubes-20190311145057-authRole",
-            "Region": "us-east-1",
-            "DeploymentBucketName": "arclickcubes-20190311145057-deployment",
-            "UnauthRoleName": "arclickcubes-20190311145057-unauthRole",
-            "StackName": "arclickcubes-20190311145057",
-            "StackId": "arn:aws:cloudformation:us-east-1:038748457762:stack/arclickcubes-20190311145057/ff0fa950-4436-11e9-be64-12391cfc54f4"
-        },
-        "categories": {
-            "auth": {
-                "cognitobbf7a4f2": {}
+                "cognito1aeb71d0": {}
             }
         }
     }

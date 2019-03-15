@@ -1,0 +1,13 @@
+{
+    "bucketName": "ar-click-cube-scenes",
+    "authPolicyName": "s3_amplify_331bd810",
+    "unauthPolicyName": "s3_amplify_331bd810",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authPermissions": "rw",
+    "unauthPermissions": "r"
+}
