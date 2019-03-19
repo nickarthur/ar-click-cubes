@@ -86,6 +86,7 @@
 		73A11A7F2240A0D9004D9270 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		73A11A812240B48F004D9270 /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fastlane; sourceTree = "<group>"; };
 		73A11A822240C37A004D9270 /* TestResults */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TestResults; sourceTree = "<group>"; };
+		73A11A842240DEF7004D9270 /* amplify */ = {isa = PBXFileReference; lastKnownFileType = folder; path = amplify; sourceTree = "<group>"; };
 		73CB1548221E924F00D28E6E /* ClickCubeSceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickCubeSceneManager.swift; sourceTree = "<group>"; };
 		73CB154B221E984200D28E6E /* ClickCubeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickCubeNode.swift; sourceTree = "<group>"; };
 		73CB154D221E9ECD00D28E6E /* ClickCubeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickCubeScene.swift; sourceTree = "<group>"; };
@@ -145,6 +146,7 @@
 		73535006221E825C00065E06 = {
 			isa = PBXGroup;
 			children = (
+				73A11A842240DEF7004D9270 /* amplify */,
 				73A11A822240C37A004D9270 /* TestResults */,
 				73A11A812240B48F004D9270 /* fastlane */,
 				7376D5452237E24900909108 /* awsconfiguration.json */,
