@@ -26,13 +26,11 @@ class FastLaneUITests: XCTestCase {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-        snapshot("Cubes")
-        sleep(5)
-        XCUIDevice.shared.orientation = .portrait
-        XCUIDevice.shared.orientation = .faceUp
-        XCUIDevice.shared.orientation = .portrait
-        XCUIApplication().buttons["Serialize Experiment"].tap()
-        Thread.sleep(forTimeInterval: 5)
+
+        
+        let tablesQuery = XCUIApplication().tables
+        tablesQuery.cells.containing(.staticText, identifier:"USER NAME").children(matching: .textField).element.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Password"]/*[[".cells.staticTexts[\"Password\"]",".staticTexts[\"Password\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         
         snapshot("Cubes")
 
