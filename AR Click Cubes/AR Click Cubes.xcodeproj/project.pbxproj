@@ -185,7 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				73535012221E825C00065E06 /* AppDelegate.swift */,
-				73CB1544221E914000D28E6E /* Models */,
+				73DA08902241178F00E2EEC8 /* Models */,
 				73CB1543221E913400D28E6E /* Views */,
 				73CB1545221E914800D28E6E /* Controllers */,
 				73CB1547221E920B00D28E6E /* Scenes */,
@@ -244,13 +244,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		73CB1544221E914000D28E6E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		73CB1545221E914800D28E6E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +276,13 @@
 				73CB154B221E984200D28E6E /* ClickCubeNode.swift */,
 			);
 			path = SceneNodes;
+			sourceTree = "<group>";
+		};
+		73DA08902241178F00E2EEC8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9DDD2E2B6D05D8E695EC30DD /* Pods */ = {

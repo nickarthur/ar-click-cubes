@@ -34,14 +34,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeq-U4-1Hw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </sceneKitView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="alC-KM-YSx" firstAttribute="top" secondItem="bbR-tj-JVP" secondAttribute="top" id="0fU-CZ-y7E"/>
+                            <constraint firstItem="xeq-U4-1Hw" firstAttribute="leading" secondItem="bbR-tj-JVP" secondAttribute="leading" id="6Nm-xN-lyN"/>
                             <constraint firstAttribute="top" secondItem="nbs-7z-qdo" secondAttribute="top" id="6X6-Ow-tZa"/>
+                            <constraint firstItem="bbR-tj-JVP" firstAttribute="top" secondItem="xeq-U4-1Hw" secondAttribute="top" constant="64" id="AId-vB-t7f"/>
+                            <constraint firstItem="bbR-tj-JVP" firstAttribute="trailing" secondItem="xeq-U4-1Hw" secondAttribute="trailing" id="Gtz-Ur-2HG"/>
                             <constraint firstItem="bbR-tj-JVP" firstAttribute="trailing" secondItem="nbs-7z-qdo" secondAttribute="trailing" id="Ifz-rm-PEd"/>
                             <constraint firstItem="alC-KM-YSx" firstAttribute="trailing" secondItem="bbR-tj-JVP" secondAttribute="trailing" id="MFn-7k-fhz"/>
                             <constraint firstItem="59x-8w-bFl" firstAttribute="centerX" secondItem="nbs-7z-qdo" secondAttribute="centerX" id="OPv-iu-hzN"/>
+                            <constraint firstItem="bbR-tj-JVP" firstAttribute="bottom" secondItem="xeq-U4-1Hw" secondAttribute="bottom" id="Q7i-pS-fp5"/>
                             <constraint firstItem="59x-8w-bFl" firstAttribute="bottom" secondItem="bbR-tj-JVP" secondAttribute="bottom" constant="-36" id="ana-iv-Olm"/>
                             <constraint firstItem="bbR-tj-JVP" firstAttribute="bottom" secondItem="nbs-7z-qdo" secondAttribute="bottom" id="eh4-hR-8WV"/>
                             <constraint firstItem="alC-KM-YSx" firstAttribute="leading" secondItem="bbR-tj-JVP" secondAttribute="leading" id="iiy-rD-RgR"/>
@@ -53,6 +61,7 @@
                     <connections>
                         <outlet property="sceneView" destination="nbs-7z-qdo" id="KxH-px-fa9"/>
                         <outlet property="signInStateLabel" destination="alC-KM-YSx" id="rkW-hr-VvC"/>
+                        <outlet property="tempLaunchSceneView" destination="xeq-U4-1Hw" id="xzs-Y3-xX9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TXJ-Fk-2Aw" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -21,6 +21,7 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
     
     // MARK: - IBOutlets
 
+    @IBOutlet weak var tempLaunchSceneView: SCNView!
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet var signInStateLabel: UILabel!
 
@@ -131,6 +132,8 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupTempLaunchSceneView()
+        
         setupNavigation()
         
         setupAppSyncClient()
@@ -185,21 +188,11 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
     // MARK: ARKit & SceneKit
     
     fileprivate func placeSomeClickCubes() {
-        // create some materials
-        var colors: [UIColor] = [#colorLiteral(red: 0, green: 1, blue: 1, alpha: 1), #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1), #colorLiteral(red: 1, green: 0, blue: 1, alpha: 1), #colorLiteral(red: 1, green: 1, blue: 0, alpha: 1), #colorLiteral(red: 0, green: 1, blue: 0, alpha: 1), #colorLiteral(red: 0, green: 0, blue: 1, alpha: 1)] // order of colors matters
-        var coloredMaterials: [SCNMaterial] = []
-        
-        let upperLimit = 5
-        for index in 0 ... upperLimit {
-            let i = upperLimit - index
-            let material = SCNMaterial()
-            material.name = "coloredMaterial_\(i)"
-            material.diffuse.contents = colors[i]
-            coloredMaterials.append(material)
-        }
+
+        let coloredMaterials = SCNMaterial.coloredCubeMaterials
         
         // place a cube with unique unshared textures
-        var position = SCNVector3(0.2, -0.1, -0.2)
+        var position = SCNVector3(0.0, 0.0, -0.2)
         _ = clickCubeSceneManager.placeClickCube(at: position, with: coloredMaterials)
         
         // place a default textured cube
@@ -251,7 +244,7 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
         sceneView.delegate = self
         
         // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
+        // sceneView.showsStatistics = true
         
         // Create a new scene
         guard let scene = clickCubeSceneManager.scene else {
@@ -262,5 +255,73 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
         sceneView.scene = scene
     }
 
+    func setupTempLaunchSceneView() {
+
+        let cubeScene = SCNScene()
+        let cubeGeometry = SCNBox(width: 1.0, height: 1.0, length: 1.0, chamferRadius: 0)
+        
+        cubeGeometry.materials =  SCNMaterial.coloredCubeMaterials
+        let cubeNode = SCNNode(geometry: cubeGeometry)
+        cubeNode.position = SCNVector3(0.0, 0.0, 0.0)
+        cubeNode.rotation = SCNVector4(0.0, 1.0, 0.0, Float.pi/4)
+        cubeScene.rootNode.addChildNode(cubeNode)
+        
+        cubeNode.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 1, y: 2, z: 1, duration: 10)))
+        
+        let cameraEye = SCNNode()
+        let cameraFocus = SCNNode()
+
+        cameraEye.name = "Camera Eye"
+        cameraFocus.name = "Camera Focus"
+        
+        cameraFocus.isHidden = true
+        cameraFocus.position  =  SCNVector3(x: 0, y: 0, z: -10)
+        
+        cameraEye.camera = SCNCamera()
+        cameraEye.constraints = []
+        cameraEye.position = SCNVector3(x: 0, y: 0, z: 3)
+        
+        let vConstraint = SCNLookAtConstraint(target: cubeNode)
+        vConstraint.isGimbalLockEnabled = true
+        cameraEye.constraints = [vConstraint]
+
+        // Add camera and focus nodes to your Scenekit nodes
+        
+        cubeScene.rootNode.addChildNode(cameraEye)
+        cubeScene.rootNode.addChildNode(cameraFocus)
+
+        tempLaunchSceneView.scene = cubeScene
+        tempLaunchSceneView.pointOfView = cameraEye
+        
+        
+//        let explicitAnimation = CABasicAnimation(keyPath: "opacity")
+//        explicitAnimation.fromValue = 1
+//        explicitAnimation.toValue = 0
+//        explicitAnimation.duration = 10
+  
+        
+        // remove the temp view
+        let _ = Timer.scheduledTimer(withTimeInterval: 7.0, repeats: false, block: { [weak self] _ in
+            UIView.animate(withDuration: 1.5, delay: 0.0, options: .curveEaseOut, animations: {
+                self?.tempLaunchSceneView?.alpha = 0
+            }, completion: {_ in
+                self?.tempLaunchSceneView.removeFromSuperview()
+            })
+//            self?.tempLaunchSceneView.layer.add(explicitAnimation, forKey: "animatAlpha")
+
+            //performImplicitAnimation(target: self)
+        })
+        
+        func performImplicitAnimation(target: NANClickCubeViewController?) {
+            // Outer transaction animates `opacity` to 0 over 2 seconds
+            CATransaction.begin()
+            CATransaction.setAnimationDuration(20)
+            CATransaction.setCompletionBlock {
+                target?.tempLaunchSceneView.removeFromSuperview()
+            }
+            target?.tempLaunchSceneView.alpha = 0
+            CATransaction.commit()
+        }
+    }
 
 }

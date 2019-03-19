@@ -25,15 +25,17 @@ class FastLaneUITests: XCTestCase {
 
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
 
+        snapshot("AR Click Cubes")
         
-        let tablesQuery = XCUIApplication().tables
+        let app = XCUIApplication()
+        let tablesQuery = app.tables
         tablesQuery.cells.containing(.staticText, identifier:"USER NAME").children(matching: .textField).element.tap()
         tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Password"]/*[[".cells.staticTexts[\"Password\"]",".staticTexts[\"Password\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.secureTextFields.containing(.button, identifier:"Show").element/*[[".cells.secureTextFields.containing(.button, identifier:\"Show\").element",".secureTextFields.containing(.button, identifier:\"Show\").element"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.buttons["Sign In"].tap()
         
-        snapshot("Cubes")
-
+        snapshot("AR Click Cubes")
     }
 
 }

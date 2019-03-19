@@ -10,6 +10,24 @@ import Foundation
 import SceneKit
 
 extension SCNMaterial {
+    
+    static var coloredCubeMaterials: [SCNMaterial] {
+        get {
+            // create some materials
+            var colors: [UIColor] = [#colorLiteral(red: 0, green: 1, blue: 1, alpha: 1), #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1), #colorLiteral(red: 1, green: 0, blue: 1, alpha: 1), #colorLiteral(red: 1, green: 1, blue: 0, alpha: 1), #colorLiteral(red: 0, green: 1, blue: 0, alpha: 1), #colorLiteral(red: 0, green: 0, blue: 1, alpha: 1)] // order of colors matters
+            var coloredMaterials: [SCNMaterial] = []
+            
+            let upperLimit = 5
+            for index in 0 ... upperLimit {
+                let i = upperLimit - index
+                let material = SCNMaterial()
+                material.name = "coloredMaterial_\(i)"
+                material.diffuse.contents = colors[i]
+                coloredMaterials.append(material)
+            }
+            return coloredMaterials
+        }
+    }
     public func saveMaterial(toFile filename: String) throws {
         let data = try NSKeyedArchiver.archivedData(withRootObject: self, requiringSecureCoding: true)
         try data.write(to: SCNMaterial.createMaterialURL(with: filename))
