@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>9E4ECDC5-9C2C-4ED7-884B-B0A20E93F9CB</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>04DF57ED-5D18-4D08-BE25-708C5D18EAFD</string>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.unit.cocoaUnitTest</string>
+			<key>fileName</key>
+			<string>Run-AR Click Cubes-2019.03.19_01-02-23--0500.xcresult</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AR Click Cubes project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AR Click Cubes</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run AR Click Cubes</string>
+			<key>timeStartedRecording</key>
+			<real>574668143.92650104</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run AR Click Cubes</string>
+			<key>uniqueIdentifier</key>
+			<string>9E4ECDC5-9C2C-4ED7-884B-B0A20E93F9CB</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

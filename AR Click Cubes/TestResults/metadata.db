@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FormatVersion</key>
+	<integer>1</integer>
+	<key>Store</key>
+	<dict>
+		<key>AR Click CubesTests</key>
+		<dict>
+			<key>ClickCubeNodeTests</key>
+			<dict>
+				<key>testUpdateAllMaterialsWithAnArrayOfMaterialsDoesNotThrow()</key>
+				<dict>
+					<key>mrnet</key>
+					<real>0.024412989616394043</real>
+				</dict>
+				<key>testUpdateAllMaterialsWithIncorrectMaterialCountShouldThrow()</key>
+				<dict>
+					<key>mrnet</key>
+					<real>0.0056160688400268555</real>
+				</dict>
+				<key>testUpdateAllMaterialsWithOneMaterial()</key>
+				<dict>
+					<key>mrnet</key>
+					<real>0.0047509670257568359</real>
+				</dict>
+				<key>testUpdateNamedMaterialWithMaterial()</key>
+				<dict>
+					<key>mrnet</key>
+					<real>0.0049480199813842773</real>
+				</dict>
+			</dict>
+		</dict>
+		<key>FastLaneUITests</key>
+		<dict>
+			<key>FastLaneUITests</key>
+			<dict>
+				<key>testExample()</key>
+				<dict>
+					<key>mrnet</key>
+					<real>42.618825912475586</real>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

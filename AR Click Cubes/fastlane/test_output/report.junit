@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='FastLaneUITests.xctest' tests='5' failures='1'>
+  <testsuite name='AR_Click_CubesTests.ClickCubeNodeTests' tests='4' failures='0'>
+    <testcase classname='AR_Click_CubesTests.ClickCubeNodeTests' name='testUpdateAllMaterialsWithAnArrayOfMaterialsDoesNotThrow' time='0.024'/>
+    <testcase classname='AR_Click_CubesTests.ClickCubeNodeTests' name='testUpdateAllMaterialsWithIncorrectMaterialCountShouldThrow' time='0.006'/>
+    <testcase classname='AR_Click_CubesTests.ClickCubeNodeTests' name='testUpdateAllMaterialsWithOneMaterial' time='0.005'/>
+    <testcase classname='AR_Click_CubesTests.ClickCubeNodeTests' name='testUpdateNamedMaterialWithMaterial' time='0.005'/>
+  </testsuite>
+  <testsuite name='FastLaneUITests.FastLaneUITests' tests='1' failures='1'>
+    <testcase classname='FastLaneUITests.FastLaneUITests' name='testExample'>
+      <failure message='No matches found for Find: Elements matching predicate &apos;&quot;Serialize Experiment&quot; IN identifiers&apos; from input {('>FastLaneUITests.swift:34</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>ActionResult</key>
+			<dict>
+				<key>AnalyzerWarningCount</key>
+				<integer>0</integer>
+				<key>ErrorCount</key>
+				<integer>0</integer>
+				<key>HasCodeCoverage</key>
+				<false/>
+				<key>Status</key>
+				<string>IDEActionResultStatus_NotRequested</string>
+				<key>TestsCount</key>
+				<integer>0</integer>
+				<key>TestsFailedCount</key>
+				<integer>0</integer>
+				<key>WarningCount</key>
+				<integer>0</integer>
+			</dict>
+			<key>BuildResult</key>
+			<dict>
+				<key>AnalyzerWarningCount</key>
+				<integer>0</integer>
+				<key>AnalyzerWarningSummaries</key>
+				<array/>
+				<key>ErrorCount</key>
+				<integer>0</integer>
+				<key>ErrorSummaries</key>
+				<array/>
+				<key>HasCodeCoverage</key>
+				<false/>
+				<key>LogPath</key>
+				<string>1_Run/build.xcactivitylog</string>
+				<key>Status</key>
+				<string>IDEActionResultStatus_Succeeded</string>
+				<key>TestFailureSummaries</key>
+				<array/>
+				<key>TestsCount</key>
+				<integer>0</integer>
+				<key>TestsFailedCount</key>
+				<integer>0</integer>
+				<key>WarningCount</key>
+				<integer>0</integer>
+				<key>WarningSummaries</key>
+				<array/>
+			</dict>
+			<key>EndedTime</key>
+			<date>2019-03-19T06:17:49Z</date>
+			<key>RunDestination</key>
+			<dict>
+				<key>LocalComputer</key>
+				<dict>
+					<key>BusSpeedInMHz</key>
+					<integer>100</integer>
+					<key>CPUCount</key>
+					<integer>1</integer>
+					<key>CPUKind</key>
+					<string>Intel Core i7</string>
+					<key>CPUSpeedInMHz</key>
+					<integer>2900</integer>
+					<key>Identifier</key>
+					<string>1EB34D1D-B659-5086-B8B3-2F4B9F68A370</string>
+					<key>IsConcreteDevice</key>
+					<true/>
+					<key>LogicalCPUCoresPerPackage</key>
+					<integer>4</integer>
+					<key>ModelCode</key>
+					<string>MacBookPro9,2</string>
+					<key>ModelName</key>
+					<string>MacBook Pro</string>
+					<key>ModelUTI</key>
+					<string>com.apple.macbookpro-13-unibody</string>
+					<key>Name</key>
+					<string>My Mac</string>
+					<key>NativeArchitecture</key>
+					<string>x86_64</string>
+					<key>OperatingSystemVersion</key>
+					<string>10.14.1</string>
+					<key>OperatingSystemVersionWithBuildNumber</key>
+					<string>10.14.1 (18B75)</string>
+					<key>PhysicalCPUCoresPerPackage</key>
+					<integer>2</integer>
+					<key>Platform</key>
+					<dict>
+						<key>Identifier</key>
+						<string>com.apple.platform.macosx</string>
+						<key>Name</key>
+						<string>macOS</string>
+					</dict>
+					<key>RAMSizeInMegabytes</key>
+					<integer>8192</integer>
+				</dict>
+				<key>Name</key>
+				<string>iPhone 5s</string>
+				<key>TargetArchitecture</key>
+				<string>x86_64</string>
+				<key>TargetDevice</key>
+				<dict>
+					<key>Identifier</key>
+					<string>8F4700C8-CBC8-433C-B21E-B950E94F94F6</string>
+					<key>IsConcreteDevice</key>
+					<true/>
+					<key>ModelCode</key>
+					<string>iPhone6,1</string>
+					<key>ModelName</key>
+					<string>iPhone 5s</string>
+					<key>ModelUTI</key>
+					<string>com.apple.iphone-5s-a1453-d4c5b3</string>
+					<key>Name</key>
+					<string>iPhone 5s</string>
+					<key>NativeArchitecture</key>
+					<string>x86_64</string>
+					<key>OperatingSystemVersion</key>
+					<string>12.1</string>
+					<key>OperatingSystemVersionWithBuildNumber</key>
+					<string>12.1 (16B91)</string>
+					<key>Platform</key>
+					<dict>
+						<key>Identifier</key>
+						<string>com.apple.platform.iphonesimulator</string>
+						<key>Name</key>
+						<string>iOS Simulator</string>
+					</dict>
+				</dict>
+				<key>TargetSDK</key>
+				<dict>
+					<key>Identifier</key>
+					<string>iphonesimulator12.1</string>
+					<key>IsInternal</key>
+					<false/>
+					<key>Name</key>
+					<string>Simulator - iOS 12.1</string>
+					<key>OperatingSystemVersion</key>
+					<string>12.1</string>
+				</dict>
+			</dict>
+			<key>SchemeCommand</key>
+			<string>Run</string>
+			<key>SchemeTask</key>
+			<string>Build</string>
+			<key>StartedTime</key>
+			<date>2019-03-19T06:02:23Z</date>
+			<key>Title</key>
+			<string>Build "AR Click Cubes"</string>
+		</dict>
+		<dict>
+			<key>ActionResult</key>
+			<dict>
+				<key>AnalyzerWarningCount</key>
+				<integer>0</integer>
+				<key>AnalyzerWarningSummaries</key>
+				<array/>
+				<key>ErrorCount</key>
+				<integer>1</integer>
+				<key>ErrorSummaries</key>
+				<array>
+					<dict>
+						<key>IssueType</key>
+						<string>Uncategorized</string>
+						<key>Message</key>
+						<string>AR Click CubesUITests-Runner.app encountered an error (Early unexpected exit, operation never finished bootstrapping - no restart will be attempted. (Underlying error: Lost connection to testmanagerd))</string>
+					</dict>
+				</array>
+				<key>HasCodeCoverage</key>
+				<false/>
+				<key>LogPath</key>
+				<string>2_Test/action.xcactivitylog</string>
+				<key>Status</key>
+				<string>IDEActionResultStatus_Failed</string>
+				<key>TestFailureSummaries</key>
+				<array>
+					<dict>
+						<key>DocumentLocationData</key>
+						<data>
+						YnBsaXN0MDDUAQIDBAUGIiNYJHZl
+						cnNpb25YJG9iamVjdHNZJGFyY2hp
+						dmVyVCR0b3ASAAGGoKQHCBkaVSRu
+						dWxs2gkKCwwNDg8QERITFBQVFRYX
+						GBcUW2RvY3VtZW50VVJMXxAUc3Rh
+						cnRpbmdDb2x1bW5OdW1iZXJfEBJl
+						bmRpbmdDb2x1bW5OdW1iZXJfEBFj
+						aGFyYWN0ZXJSYW5nZUxlbl8QEGxv
+						Y2F0aW9uRW5jb2RpbmdWJGNsYXNz
+						XxAQZW5kaW5nTGluZU51bWJlcll0
+						aW1lc3RhbXBfEBJzdGFydGluZ0xp
+						bmVOdW1iZXJfEBFjaGFyYWN0ZXJS
+						YW5nZUxvY4ACE///////////EACA
+						AxAhgABfEH9maWxlOi8vL1ZvbHVt
+						ZXMvRy1EUklWRS1tb2JpbGUtVVNC
+						L2Rldi9pb3MtYXBwcy9hci1hcHBz
+						L2FyLWNsaWNrLWN1YmVzL0FSJTIw
+						Q2xpY2slMjBDdWJlcy9GYXN0TGFu
+						ZVVJVGVzdHMvRmFzdExhbmVVSVRl
+						c3RzLnN3aWZ00hscHR5aJGNsYXNz
+						bmFtZVgkY2xhc3Nlc18QF0RWVFRl
+						eHREb2N1bWVudExvY2F0aW9uox8g
+						IV8QF0RWVFRleHREb2N1bWVudExv
+						Y2F0aW9uXxATRFZURG9jdW1lbnRM
+						b2NhdGlvblhOU09iamVjdF8QD05T
+						S2V5ZWRBcmNoaXZlctEkJVRyb290
+						gAEACAARABoAIwAtADIANwA8AEIA
+						VwBjAHoAjwCjALYAvQDQANoA7wED
+						AQUBDgEQARIBFAEWAZgBnQGoAbEB
+						ywHPAekB/wIIAhoCHQIiAAAAAAAA
+						AgEAAAAAAAAAJgAAAAAAAAAAAAAA
+						AAAAAiQ=
+						</data>
+						<key>IssueType</key>
+						<string>Uncategorized</string>
+						<key>Message</key>
+						<string>No matches found for Find: Elements matching predicate '"Serialize Experiment" IN identifiers' from input {(
+    Button, label: 'Sign In',
+    Button, label: 'Create new account',
+    Button, label: 'Forgot your password?',
+    Button,
+    Button, label: 'Show'
+)}</string>
+						<key>TestCase</key>
+						<string>FastLaneUITests.testExample()</string>
+					</dict>
+				</array>
+				<key>TestSummaryPath</key>
+				<string>2_Test/action_TestSummaries.plist</string>
+				<key>TestsCount</key>
+				<integer>0</integer>
+				<key>TestsFailedCount</key>
+				<integer>1</integer>
+				<key>WarningCount</key>
+				<integer>0</integer>
+				<key>WarningSummaries</key>
+				<array/>
+			</dict>
+			<key>BuildResult</key>
+			<dict>
+				<key>AnalyzerWarningCount</key>
+				<integer>0</integer>
+				<key>AnalyzerWarningSummaries</key>
+				<array/>
+				<key>ErrorCount</key>
+				<integer>0</integer>
+				<key>ErrorSummaries</key>
+				<array/>
+				<key>HasCodeCoverage</key>
+				<false/>
+				<key>LogPath</key>
+				<string>2_Test/build.xcactivitylog</string>
+				<key>Status</key>
+				<string>IDEActionResultStatus_Succeeded</string>
+				<key>TestFailureSummaries</key>
+				<array/>
+				<key>TestsCount</key>
+				<integer>0</integer>
+				<key>TestsFailedCount</key>
+				<integer>0</integer>
+				<key>WarningCount</key>
+				<integer>0</integer>
+				<key>WarningSummaries</key>
+				<array/>
+			</dict>
+			<key>EndedTime</key>
+			<date>2019-03-19T06:17:49Z</date>
+			<key>RunDestination</key>
+			<dict>
+				<key>LocalComputer</key>
+				<dict>
+					<key>BusSpeedInMHz</key>
+					<integer>100</integer>
+					<key>CPUCount</key>
+					<integer>1</integer>
+					<key>CPUKind</key>
+					<string>Intel Core i7</string>
+					<key>CPUSpeedInMHz</key>
+					<integer>2900</integer>
+					<key>Identifier</key>
+					<string>1EB34D1D-B659-5086-B8B3-2F4B9F68A370</string>
+					<key>IsConcreteDevice</key>
+					<true/>
+					<key>LogicalCPUCoresPerPackage</key>
+					<integer>4</integer>
+					<key>ModelCode</key>
+					<string>MacBookPro9,2</string>
+					<key>ModelName</key>
+					<string>MacBook Pro</string>
+					<key>ModelUTI</key>
+					<string>com.apple.macbookpro-13-unibody</string>
+					<key>Name</key>
+					<string>My Mac</string>
+					<key>NativeArchitecture</key>
+					<string>x86_64</string>
+					<key>OperatingSystemVersion</key>
+					<string>10.14.1</string>
+					<key>OperatingSystemVersionWithBuildNumber</key>
+					<string>10.14.1 (18B75)</string>
+					<key>PhysicalCPUCoresPerPackage</key>
+					<integer>2</integer>
+					<key>Platform</key>
+					<dict>
+						<key>Identifier</key>
+						<string>com.apple.platform.macosx</string>
+						<key>Name</key>
+						<string>macOS</string>
+					</dict>
+					<key>RAMSizeInMegabytes</key>
+					<integer>8192</integer>
+				</dict>
+				<key>Name</key>
+				<string>iPhone 5s</string>
+				<key>TargetArchitecture</key>
+				<string>x86_64</string>
+				<key>TargetDevice</key>
+				<dict>
+					<key>Identifier</key>
+					<string>8F4700C8-CBC8-433C-B21E-B950E94F94F6</string>
+					<key>IsConcreteDevice</key>
+					<true/>
+					<key>ModelCode</key>
+					<string>iPhone6,1</string>
+					<key>ModelName</key>
+					<string>iPhone 5s</string>
+					<key>ModelUTI</key>
+					<string>com.apple.iphone-5s-a1453-d4c5b3</string>
+					<key>Name</key>
+					<string>iPhone 5s</string>
+					<key>NativeArchitecture</key>
+					<string>x86_64</string>
+					<key>OperatingSystemVersion</key>
+					<string>12.1</string>
+					<key>OperatingSystemVersionWithBuildNumber</key>
+					<string>12.1 (16B91)</string>
+					<key>Platform</key>
+					<dict>
+						<key>Identifier</key>
+						<string>com.apple.platform.iphonesimulator</string>
+						<key>Name</key>
+						<string>iOS Simulator</string>
+					</dict>
+				</dict>
+				<key>TargetSDK</key>
+				<dict>
+					<key>Identifier</key>
+					<string>iphonesimulator12.1</string>
+					<key>IsInternal</key>
+					<false/>
+					<key>Name</key>
+					<string>Simulator - iOS 12.1</string>
+					<key>OperatingSystemVersion</key>
+					<string>12.1</string>
+				</dict>
+			</dict>
+			<key>SchemeCommand</key>
+			<string>Test</string>
+			<key>SchemeTask</key>
+			<string>BuildAndAction</string>
+			<key>StartedTime</key>
+			<date>2019-03-19T06:04:14Z</date>
+			<key>Title</key>
+			<string>Testing workspace AR Click Cubes with scheme AR Click Cubes</string>
+		</dict>
+	</array>
+	<key>AnalyzerWarningCount</key>
+	<integer>0</integer>
+	<key>CreatingWorkspaceFilePath</key>
+	<string>/Volumes/G-DRIVE-mobile-USB/dev/ios-apps/ar-apps/ar-click-cubes/AR Click Cubes/AR Click Cubes.xcworkspace</string>
+	<key>ErrorCount</key>
+	<integer>1</integer>
+	<key>ErrorSummaries</key>
+	<array>
+		<dict>
+			<key>IssueType</key>
+			<string>Uncategorized</string>
+			<key>Message</key>
+			<string>AR Click CubesUITests-Runner.app encountered an error (Early unexpected exit, operation never finished bootstrapping - no restart will be attempted. (Underlying error: Lost connection to testmanagerd))</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<string>1.2</string>
+	<key>Running</key>
+	<false/>
+	<key>TestFailureSummaries</key>
+	<array>
+		<dict>
+			<key>DocumentLocationData</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGIiNYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKQHCBkaVSRudWxs2gkKCwwNDg8QERIT
+			FBQVFRYXGBcUW2RvY3VtZW50VVJMXxAUc3RhcnRpbmdDb2x1bW5O
+			dW1iZXJfEBJlbmRpbmdDb2x1bW5OdW1iZXJfEBFjaGFyYWN0ZXJS
+			YW5nZUxlbl8QEGxvY2F0aW9uRW5jb2RpbmdWJGNsYXNzXxAQZW5k
+			aW5nTGluZU51bWJlcll0aW1lc3RhbXBfEBJzdGFydGluZ0xpbmVO
+			dW1iZXJfEBFjaGFyYWN0ZXJSYW5nZUxvY4ACE///////////EACA
+			AxAhgABfEH9maWxlOi8vL1ZvbHVtZXMvRy1EUklWRS1tb2JpbGUt
+			VVNCL2Rldi9pb3MtYXBwcy9hci1hcHBzL2FyLWNsaWNrLWN1YmVz
+			L0FSJTIwQ2xpY2slMjBDdWJlcy9GYXN0TGFuZVVJVGVzdHMvRmFz
+			dExhbmVVSVRlc3RzLnN3aWZ00hscHR5aJGNsYXNzbmFtZVgkY2xh
+			c3Nlc18QF0RWVFRleHREb2N1bWVudExvY2F0aW9uox8gIV8QF0RW
+			VFRleHREb2N1bWVudExvY2F0aW9uXxATRFZURG9jdW1lbnRMb2Nh
+			dGlvblhOU09iamVjdF8QD05TS2V5ZWRBcmNoaXZlctEkJVRyb290
+			gAEACAARABoAIwAtADIANwA8AEIAVwBjAHoAjwCjALYAvQDQANoA
+			7wEDAQUBDgEQARIBFAEWAZgBnQGoAbEBywHPAekB/wIIAhoCHQIi
+			AAAAAAAAAgEAAAAAAAAAJgAAAAAAAAAAAAAAAAAAAiQ=
+			</data>
+			<key>IssueType</key>
+			<string>Uncategorized</string>
+			<key>Message</key>
+			<string>No matches found for Find: Elements matching predicate '"Serialize Experiment" IN identifiers' from input {(
+    Button, label: 'Sign In',
+    Button, label: 'Create new account',
+    Button, label: 'Forgot your password?',
+    Button,
+    Button, label: 'Show'
+)}</string>
+			<key>TestCase</key>
+			<string>FastLaneUITests.testExample()</string>
+		</dict>
+	</array>
+	<key>TestSummaryPath</key>
+	<string>/Volumes/G-DRIVE-mobile-USB/dev/ios-apps/ar-apps/ar-click-cubes/AR Click Cubes/Logs/Test/Run-AR Click Cubes-2019.03.19_01-02-23--0500.xcresult/TestSummaries.plist</string>
+	<key>TestsCount</key>
+	<integer>5</integer>
+	<key>TestsFailedCount</key>
+	<integer>1</integer>
+	<key>WarningCount</key>
+	<integer>0</integer>
+</dict>
+</plist>

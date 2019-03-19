@@ -1,0 +1,94 @@
+01:05:13.785 xcodebuild[83946:17823739] Got a sim device notification for iPhone 5s: {
+    notification = "availableDevices_changed";
+}
+
+01:05:13.786 xcodebuild[83946:17823739] Got a sim device notification for iPhone 5s: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+
+01:05:13.786 xcodebuild[83946:17823739] Sim iPhone 5s state changed to 2
+
+01:05:13.804 xcodebuild[83946:17823726] Got a sim device notification for iPhone 5s: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+
+01:05:14.029 xcodebuild[83946:17823741] Got a sim device notification for iPhone 5s: {
+    notification = "availableDevices_changed";
+}
+
+01:05:14.029 xcodebuild[83946:17823741] Got a sim device notification for iPhone 5s: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+
+01:05:14.029 xcodebuild[83946:17823741] Sim iPhone 5s state changed to 3
+
+01:05:14.029 xcodebuild[83946:17823741] Sim iPhone 5s: Unregistering for sim device notification with token 4
+
+01:05:14.029 xcodebuild[83946:17823741] Calling -[SimDevice getenv:error:] for TESTMANAGERD_SIM_SOCK
+
+01:05:14.118 xcodebuild[83946:17823741] Sim iPhone 5s has testmanagerd socket at /private/tmp/com.apple.launchd.IXcbbg5ukH/com.apple.testmanagerd.unix-domain.socket
+
+01:05:14.119 xcodebuild[83946:17823741] Validating test connection socket path (/private/tmp/com.apple.launchd.IXcbbg5ukH/com.apple.testmanagerd.unix-domain.socket)
+
+01:05:14.119 xcodebuild[83946:17823741] Constructing transport for test connection socket
+
+01:05:14.119 xcodebuild[83946:17823741] Connected socket 37 to testmanagerd for Sim iPhone 5s
+
+01:05:14.132 xcodebuild[83946:17823741] Initiating control session with controller protocol version 29
+
+01:05:58.058 xcodebuild[83946:17823745] Got reply to control session initiation request (result:error): 29: (null)
+
+01:05:58.058 xcodebuild[83946:17823745] Completed protocol exchange, test daemon is running v29.
+
+01:05:58.196 xcodebuild[83946:17824909] Got authorization request for pid 86284
+
+01:05:58.196 xcodebuild[83946:17824896] Requesting authorization for pid 86284
+
+01:06:25.251 xcodebuild[83946:17823741] Got reply to authorization request for pid 86284 (result:error): 1: (null)
+
+01:06:31.321 xcodebuild[83946:17826547] Closing socket 37 to testmanagerd for Sim iPhone 5s
+
+01:06:31.321 xcodebuild[83946:17826549] Lost connection to the test daemon.
+
+01:06:31.321 xcodebuild[83946:17826547] Invalidating <XCTDaemonControlSession: 0x7fbfa2c92f30>
+
+01:06:31.321 xcodebuild[83946:17826547] Sim iPhone 5s: Unregistering for sim device notification with token 4
+
+01:08:20.985 xcodebuild[83946:17831705] Got authorization request for pid 87330
+
+01:08:20.985 xcodebuild[83946:17832346] Calling -[SimDevice getenv:error:] for TESTMANAGERD_SIM_SOCK
+
+01:08:20.992 xcodebuild[83946:17832346] Sim iPhone 5s has testmanagerd socket at /private/tmp/com.apple.launchd.iygPJSebdv/com.apple.testmanagerd.unix-domain.socket
+
+01:08:20.992 xcodebuild[83946:17832346] Validating test connection socket path (/private/tmp/com.apple.launchd.iygPJSebdv/com.apple.testmanagerd.unix-domain.socket)
+
+01:08:20.992 xcodebuild[83946:17832346] Constructing transport for test connection socket
+
+01:08:20.992 xcodebuild[83946:17832346] Connected socket 46 to testmanagerd for Sim iPhone 5s
+
+01:08:20.998 xcodebuild[83946:17830557] Initiating control session with controller protocol version 29
+
+01:08:21.257 xcodebuild[83946:17831705] Got reply to control session initiation request (result:error): 29: (null)
+
+01:08:21.257 xcodebuild[83946:17831705] Completed protocol exchange, test daemon is running v29.
+
+01:08:21.257 xcodebuild[83946:17830557] Requesting authorization for pid 87330
+
+01:08:21.268 xcodebuild[83946:17831705] Got reply to authorization request for pid 87330 (result:error): 1: (null)
+
+01:17:55.128 xcodebuild[83946:17854716] Lost connection to the test daemon.
+
+01:17:55.128 xcodebuild[83946:17821143] Closing socket 46 to testmanagerd for Sim iPhone 5s
+
+01:17:55.176 xcodebuild[83946:17822460] Invalidating <XCTDaemonControlSession: 0x7fbfa1f0cb00>
+
+01:17:55.176 xcodebuild[83946:17822460] Sim iPhone 5s: Unregistering for sim device notification with token 21
+

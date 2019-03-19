@@ -1,0 +1,61 @@
+2019-03-19 01:08:14.254313-0500 AR Click CubesUITests-Runner[87329:17831861] libMobileGestalt MobileGestalt.c:890: MGIsDeviceOneOfType is not supported on this platform.
+2019-03-19 01:08:14.337107-0500 FastLaneUITests-Runner[87330:17831870] libMobileGestalt MobileGestalt.c:890: MGIsDeviceOneOfType is not supported on this platform.
+2019-03-19 01:08:14.992415-0500 FastLaneUITests-Runner[87330:17831870] Running tests...
+2019-03-19 01:08:15.118345-0500 AR Click CubesUITests-Runner[87329:17831861] Running tests...
+2019-03-19 01:08:15.387096-0500 AR Click CubesUITests-Runner[87329:17831861] The bundle “AR Click CubesUITests” couldn’t be loaded because it is damaged or missing necessary resources. Try reinstalling the bundle.
+2019-03-19 01:08:15.387446-0500 AR Click CubesUITests-Runner[87329:17831861] (dlopen_preflight(/Volumes/G-DRIVE-mobile-USB/dev/ios-apps/ar-apps/ar-click-cubes/AR Click Cubes/Build/Products/Debug-iphonesimulator/AR Click CubesUITests-Runner.app/PlugIns/AR Click CubesUITests.xctest/AR Click CubesUITests): Library not loaded: @rpath/AWSAppSync.framework/AWSAppSync
+  Referenced from: /Volumes/G-DRIVE-mobile-USB/dev/ios-apps/ar-apps/ar-click-cubes/AR Click Cubes/Build/Products/Debug-iphonesimulator/AR Click CubesUITests-Runner.app/PlugIns/AR Click CubesUITests.xctest/AR Click CubesUITests
+  Reason: image not found)
+2019-03-19 01:09:22.340796-0500 FastLaneUITests-Runner[87330:17831870] [AXMediaCommon] Unable to look up screen scale
+2019-03-19 01:09:22.341474-0500 FastLaneUITests-Runner[87330:17831870] [AXMediaCommon] Unexpected physical screen orientation
+2019-03-19 01:09:22.429028-0500 FastLaneUITests-Runner[87330:17831870] [AXMediaCommon] Unable to look up screen scale
+2019-03-19 01:09:22.439534-0500 FastLaneUITests-Runner[87330:17831870] [AXMediaCommon] Unable to look up screen scale
+2019-03-19 01:09:22.439738-0500 FastLaneUITests-Runner[87330:17831870] [AXMediaCommon] Unexpected physical screen orientation
+Test Suite 'All tests' started at 2019-03-19 01:09:24.762
+Test Suite 'FastLaneUITests.xctest' started at 2019-03-19 01:09:24.787
+Test Suite 'FastLaneUITests' started at 2019-03-19 01:09:24.792
+Test Case '-[FastLaneUITests.FastLaneUITests testExample]' started.
+    t =     0.00s Start Test at 2019-03-19 01:09:24.802
+    t =     0.26s Set Up
+    t =     0.32s     Open com.inViRtStudios.AR-Click-Cubes
+    t =     0.35s         Launch com.inViRtStudios.AR-Click-Cubes
+    t =    13.08s             Wait for accessibility to load
+    t =    24.64s             Wait for com.inViRtStudios.AR-Click-Cubes to idle
+    t =    25.69s Find the Window
+    t =    26.77s Checking `Expect predicate `exists == 0` for object Other`
+    t =    26.78s     Snapshot accessibility hierarchy for app with pid 88174
+    t =    26.97s     Find: Descendants matching type Other
+    t =    26.97s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x6000033a7ab0)'
+    t =    26.97s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x6000033a7090)'
+snapshot: Cubes
+    t =    27.99s Find the Window
+*** SNAP SHOT PATH: file:///Users/larrynickerson/Library/Caches/tools.fastlane/screenshots/iPhone%205s-Cubes.png
+    t =    33.08s Set device orientation to Portrait
+    t =    33.62s Set device orientation to FaceUp
+    t =    34.15s Set device orientation to Portrait
+    t =    34.70s Tap "Serialize Experiment" Button
+    t =    34.70s     Wait for com.inViRtStudios.AR-Click-Cubes to idle
+    t =    34.75s     Find the "Serialize Experiment" Button
+    t =    35.80s         Find the "Serialize Experiment" Button (retry 1)
+    t =    36.84s         Find the "Serialize Experiment" Button (retry 2)
+    t =    37.55s     Assertion Failure: FastLaneUITests.swift:34: No matches found for Find: Elements matching predicate '"Serialize Experiment" IN identifiers' from input {(
+    Button, label: 'Sign In',
+    Button, label: 'Create new account',
+    Button, label: 'Forgot your password?',
+    Button,
+    Button, label: 'Show'
+)}
+    t =    42.59s Find the Window
+    t =    42.62s Tear Down
+Test Case '-[FastLaneUITests.FastLaneUITests testExample]' failed (42.619 seconds).
+Test Suite 'FastLaneUITests' failed at 2019-03-19 01:10:07.419.
+	 Executed 1 test, with 1 failure (0 unexpected) in 42.619 (42.627) seconds
+Test Suite 'FastLaneUITests.xctest' failed at 2019-03-19 01:10:07.420.
+	 Executed 1 test, with 1 failure (0 unexpected) in 42.619 (42.633) seconds
+Test Suite 'All tests' failed at 2019-03-19 01:10:07.421.
+	 Executed 1 test, with 1 failure (0 unexpected) in 42.619 (42.659) seconds
+
+
+Test session results and logs:
+	/Volumes/G-DRIVE-mobile-USB/dev/ios-apps/ar-apps/ar-click-cubes/AR Click Cubes/Logs/Test/Run-AR Click Cubes-2019.03.19_01-02-23--0500.xcresult
+

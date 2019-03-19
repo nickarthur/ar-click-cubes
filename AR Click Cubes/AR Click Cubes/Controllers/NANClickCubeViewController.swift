@@ -7,38 +7,36 @@
 //
 
 // MARK: imports
+
 import ARKit
 import SceneKit
 import UIKit
 
-import AWSMobileClient
 import AWSAppSync
 import AWSAuthUI
+import AWSMobileClient
 import AWSUserPoolsSignIn
 
 class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
-
+    
     // MARK: - IBOutlets
 
     @IBOutlet var sceneView: ARSCNView!
-    @IBOutlet weak var signInStateLabel: UILabel!
+    @IBOutlet var signInStateLabel: UILabel!
 
     
-    
     // MARK: - Variables
-    //var isLoggedIn = false // TODO: delete me
-    
-    lazy var  appSyncClient: AWSAppSyncClient? = {
+
+    lazy var appSyncClient: AWSAppSyncClient? = {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         return appDelegate.appSyncClient
     }()
 
     let workbenchYOffset: Float = -0.2
-    
+    let clickCubeSceneManager = ClickCubeSceneManager()
+
     
     // MARK: IBActions
-    
-    let clickCubeSceneManager = ClickCubeSceneManager()
 
     @IBAction func performExperiment(_ sender: UIButton) {
         let materialName = "material"
@@ -99,43 +97,19 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
         }
     }
 
-    fileprivate func setupScene() {
-        // Set the view's delegate
-        sceneView.delegate = self
-
-        // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
-
-        // Create a new scene
-        guard let scene = clickCubeSceneManager.scene else {
-            fatalError("unable to create click cube scene")
-        }
-
-        // Set the scene to the view
-        sceneView.scene = scene
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(toggleLoginTapped))
-        setupAppSyncClient()
-
-        setupScene()
-        
-    }
-    
     @objc func toggleLoginTapped() {
+        
         let isSignedIn = AWSMobileClient.sharedInstance().isSignedIn
         // let isLoggedIn = AWSMobileClient.sharedInstance().isLoggedIn
         
         switch isSignedIn {
         case true:
             AWSMobileClient.sharedInstance().signOut()
-            navigationItem.rightBarButtonItem?.title =  "Login"
-            self.signInStateLabel.text = "Logged Out"
+            navigationItem.rightBarButtonItem?.title = "Login"
+            signInStateLabel.text = "Logged Out"
         case false:
             AWSMobileClient.sharedInstance().showSignIn(navigationController: self.navigationController!, { (userState, error) in
+                
                 if(error == nil){       //Successful signin
                     DispatchQueue.main.async { [weak self] in
                         self?.navigationItem.rightBarButtonItem?.title = "Logout"
@@ -143,37 +117,25 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
                     }
                 }
             })
-
+            
         }
-
         
         // _ = navigationController?.popViewController(animated: true)
         
         _ = navigationController?.popToRootViewController(animated: true)
-        
     }
+
+
+    // MARK: - ViewController LifeCycle
     
-    fileprivate func placeSomeClickCubes() {
-        // create some materials
-        var colors: [UIColor] = [#colorLiteral(red: 0, green: 1, blue: 1, alpha: 1), #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1), #colorLiteral(red: 1, green: 0, blue: 1, alpha: 1), #colorLiteral(red: 1, green: 1, blue: 0, alpha: 1), #colorLiteral(red: 0, green: 1, blue: 0, alpha: 1), #colorLiteral(red: 0, green: 0, blue: 1, alpha: 1)] // order of colors matters
-        var coloredMaterials: [SCNMaterial] = []
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setupNavigation()
+        
+        setupAppSyncClient()
 
-        let upperLimit = 5
-        for index in 0 ... upperLimit {
-            let i = upperLimit - index
-            let material = SCNMaterial()
-            material.name = "coloredMaterial_\(i)"
-            material.diffuse.contents = colors[i]
-            coloredMaterials.append(material)
-        }
-
-        // place a cube with unique unshared textures
-        var position = SCNVector3(0.2, -0.1, -0.2)
-        _ = clickCubeSceneManager.placeClickCube(at: position, with: coloredMaterials)
-
-        // place a default textured cube
-        position = SCNVector3(0.15, -0.2, -0.15)
-        _ = clickCubeSceneManager.placeClickCube(at: position)
+        setupScene()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -195,6 +157,7 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
         sceneView.session.pause()
     }
 
+    
     // MARK: - ARSCNViewDelegate
 
     /*
@@ -218,20 +181,46 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
     }
 
+    
+    // MARK: ARKit & SceneKit
+    
+    fileprivate func placeSomeClickCubes() {
+        // create some materials
+        var colors: [UIColor] = [#colorLiteral(red: 0, green: 1, blue: 1, alpha: 1), #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1), #colorLiteral(red: 1, green: 0, blue: 1, alpha: 1), #colorLiteral(red: 1, green: 1, blue: 0, alpha: 1), #colorLiteral(red: 0, green: 1, blue: 0, alpha: 1), #colorLiteral(red: 0, green: 0, blue: 1, alpha: 1)] // order of colors matters
+        var coloredMaterials: [SCNMaterial] = []
+        
+        let upperLimit = 5
+        for index in 0 ... upperLimit {
+            let i = upperLimit - index
+            let material = SCNMaterial()
+            material.name = "coloredMaterial_\(i)"
+            material.diffuse.contents = colors[i]
+            coloredMaterials.append(material)
+        }
+        
+        // place a cube with unique unshared textures
+        var position = SCNVector3(0.2, -0.1, -0.2)
+        _ = clickCubeSceneManager.placeClickCube(at: position, with: coloredMaterials)
+        
+        // place a default textured cube
+        position = SCNVector3(0.15, -0.2, -0.15)
+        _ = clickCubeSceneManager.placeClickCube(at: position)
+    }
+
+    
     // MARK: - AppSync
 
     func setupAppSyncClient() {
-
-        AWSMobileClient.sharedInstance().initialize { (userState, error) in
+        AWSMobileClient.sharedInstance().initialize { userState, error in
             if let userState = userState {
-                switch(userState){
+                switch userState {
                 case .signedIn:
                     DispatchQueue.main.async {
                         self.signInStateLabel.text = "Logged In"
                     }
                 case .signedOut:
-                    AWSMobileClient.sharedInstance().showSignIn(navigationController: self.navigationController!, { (userState, error) in
-                        if(error == nil){       //Successful signin
+                    AWSMobileClient.sharedInstance().showSignIn(navigationController: self.navigationController!, { _, error in
+                        if error == nil { // Successful signin
                             DispatchQueue.main.async {
                                 self.signInStateLabel.text = "Logged In"
                             }
@@ -243,7 +232,7 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
                     AWSMobileClient.sharedInstance().signOut()
                     self.signInStateLabel.text = "Logged Out"
                 }
-                
+
             } else if let error = error {
                 print(error.localizedDescription)
             }
@@ -251,5 +240,27 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
     }
     
     
+    // MARK: - Setup Helpers
     
+    fileprivate func setupNavigation() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(toggleLoginTapped))
+    }
+    
+    fileprivate func setupScene() {
+        // Set the view's delegate
+        sceneView.delegate = self
+        
+        // Show statistics such as fps and timing information
+        sceneView.showsStatistics = true
+        
+        // Create a new scene
+        guard let scene = clickCubeSceneManager.scene else {
+            fatalError("unable to create click cube scene")
+        }
+        
+        // Set the scene to the view
+        sceneView.scene = scene
+    }
+
+
 }

@@ -15,9 +15,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var appSyncClient: AWSAppSyncClient?
 
+    fileprivate func setupLogging() {
+        AWSDDLog.sharedInstance.logLevel = .verbose
+        
+        //File Logger example
+        let fileLogger: AWSDDFileLogger = AWSDDFileLogger() // File Logger
+        fileLogger.rollingFrequency = TimeInterval(60*60*24)  // 24 hours
+        fileLogger.logFileManager.maximumNumberOfLogFiles = 7
+        AWSDDLog.add(fileLogger)
+        
+        //Console example
+        AWSDDLog.add(AWSDDTTYLogger.sharedInstance) // TTY = Xcode console
+
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
+        setupLogging()
         setupMobileClientStateListeners()
         initializeAppSync()
 
@@ -71,8 +86,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: AWSMobileClient
 
     func setupMobileClientStateListeners() {
-        AWSMobileClient.sharedInstance().addUserStateListener(self) { userState, _ in
+        AWSMobileClient.sharedInstance().addUserStateListener(self) { userState, tokens  in
 
+            
+            //print("**** \(String(describing: tokens))")
+            
             switch userState {
             case .guest:
                 print("user is in guest mode.")
@@ -87,11 +105,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             default:
                 print("unsupported")
             }
-
-            let username = AWSMobileClient.sharedInstance().username // String
-            let isSignedIn = AWSMobileClient.sharedInstance().isSignedIn // Boolean
-            let isLoggedIn = AWSMobileClient.sharedInstance().isLoggedIn // Boolean
-            let identityId = AWSMobileClient.sharedInstance().identityId // String
+            
+            var userInfo: [String:String] = [:]
+            userInfo["username"] = AWSMobileClient.sharedInstance().username
+            userInfo["isSignedIn"]  = String(AWSMobileClient.sharedInstance().isSignedIn)
+            userInfo["isLoggedIn"]  = String(AWSMobileClient.sharedInstance().isLoggedIn)
+            userInfo["identityId"]  = AWSMobileClient.sharedInstance().identityId
+       
+            //AWSDDLog.
         }
     }
 }

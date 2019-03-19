@@ -1,0 +1,43 @@
+Standard output and standard error from com.inViRtStudios.AR-Click-Cubes with process ID 88174 beginning at 01:09:37.096
+
+objc[88174]: Class AWSCognitoIdentityASF is implemented in both /Users/larrynickerson/Library/Developer/CoreSimulator/Devices/8F4700C8-CBC8-433C-B21E-B950E94F94F6/data/Containers/Bundle/Application/60F62F54-3EF0-4D28-8D9F-A2EB53BD25A8/AR Click Cubes.app/Frameworks/AWSCognitoIdentityProviderASF.framework/AWSCognitoIdentityProviderASF (0x1076c4e10) and /Users/larrynickerson/Library/Developer/CoreSimulator/Devices/8F4700C8-CBC8-433C-B21E-B950E94F94F6/data/Containers/Bundle/Application/60F62F54-3EF0-4D28-8D9F-A2EB53BD25A8/AR Click Cubes.app/AR Click Cubes (0x106c613e0). One of the two will be used. Which one is undefined.
+2019-03-19 01:09:42:534 AR Click Cubes[88174:17836066] Initializing normalized cache at file:///Users/larrynickerson/Library/Developer/CoreSimulator/Devices/8F4700C8-CBC8-433C-B21E-B950E94F94F6/data/Containers/Data/Application/AC6617FF-1CAC-4F65-A5FB-A3B3A41124E5/tmp/ar-click-cubes-app-db
+2019-03-19 01:09:42:564 AR Click Cubes[88174:17836066] Initializing subscription metadata cache at file:///Users/larrynickerson/Library/Developer/CoreSimulator/Devices/8F4700C8-CBC8-433C-B21E-B950E94F94F6/data/Containers/Data/Application/AC6617FF-1CAC-4F65-A5FB-A3B3A41124E5/tmp/ar-click-cubes-app-db
+2019-03-19 01:09:42:570 AR Click Cubes[88174:17836066] Initializing AppSyncClient
+2019-03-19 01:09:42:618 AR Click Cubes[88174:17836066] Initializing AWSPerformMutationQueue
+2019-03-19 01:09:42:619 AR Click Cubes[88174:17836066] Initializing mutation cache at file:///Users/larrynickerson/Library/Developer/CoreSimulator/Devices/8F4700C8-CBC8-433C-B21E-B950E94F94F6/data/Containers/Data/Application/AC6617FF-1CAC-4F65-A5FB-A3B3A41124E5/tmp/ar-click-cubes-app-db
+2019-03-19 01:09:42:623 AR Click Cubes[88174:17836066] Resuming OperationQueue
+2019-03-19 01:09:42:623 AR Click Cubes[88174:17836171] Loading offline mutations
+2019-03-19 01:09:42:625 AR Click Cubes[88174:17836171] Retrieving stored mutation records
+2019-03-19 01:09:42:634 AR Click Cubes[88174:17836171] Retrieved 0 mutation records from store
+2019-03-19 01:09:42:635 AR Click Cubes[88174:17836191] Finished processing offline mutations
+2019-03-19 01:09:42.708 AR Click Cubes[88174:17836066] Falling back to loading access token from NSUserDefaults because of simulator bug
+2019-03-19 01:09:42.709 AR Click Cubes[88174:17836066] Falling back to storing access token in NSUserDefaults because of simulator bug
+2019-03-19 01:09:42.709 AR Click Cubes[88174:17836066] Falling back to loading access token from NSUserDefaults because of simulator bug
+2019-03-19 01:09:42.709 AR Click Cubes[88174:17836066] Falling back to storing access token in NSUserDefaults because of simulator bug
+2019-03-19 01:09:42.709 AR Click Cubes[88174:17836066] Falling back to loading access token from NSUserDefaults because of simulator bug
+2019-03-19 01:09:42.709 AR Click Cubes[88174:17836066] Falling back to storing access token in NSUserDefaults because of simulator bug
+2019-03-19 01:09:42:893 AR Click Cubes[88174:17836066] AWSMobileClient -> sharedInstance...
+2019-03-19 01:09:42:893 AR Click Cubes[88174:17836066] AWSMobileClient -> sharedInstance...
+2019-03-19 01:09:42:893 AR Click Cubes[88174:17836066] Configuring SignInProvider : CognitoUserPool.
+2019-03-19 01:09:42:894 AR Click Cubes[88174:17836066] Registering SignInProvider AWSCognitoUserPoolsSignInProvider from awsconfiguration.json.
+2019-03-19 01:09:42:896 AR Click Cubes[88174:17836066] Configuring SignInProvider : FacebookSignIn.
+2019-03-19 01:09:42:896 AR Click Cubes[88174:17836066] Registering SignInProvider AWSFacebookSignInProvider from awsconfiguration.json.
+2019-03-19 01:09:42:896 AR Click Cubes[88174:17836066] Configuring SignInProvider FacebookSignIn
+2019-03-19 01:09:42:899 AR Click Cubes[88174:17836066] AWSMobileClient -> sharedInstance...
+2019-03-19 01:09:42:906 AR Click Cubes[88174:17836066] Configuring SignInProvider : CognitoUserPool.
+2019-03-19 01:09:42:906 AR Click Cubes[88174:17836066] Configuring SignInProvider : FacebookSignIn.
+2019-03-19 01:09:42:906 AR Click Cubes[88174:17836066] Presenting SignInViewController
+new material: coloredMaterial_5
+new material: coloredMaterial_4
+new material: coloredMaterial_3
+new material: coloredMaterial_2
+new material: coloredMaterial_1
+new material: coloredMaterial_0
+2019-03-19 01:09:44:182 AR Click Cubes[88174:17836066] Initializing the AWSSignInViewController...
+2019-03-19 01:09:44:184 AR Click Cubes[88174:17836066] URL: file:///Users/larrynickerson/Library/Developer/CoreSimulator/Devices/8F4700C8-CBC8-433C-B21E-B950E94F94F6/data/Containers/Bundle/Application/60F62F54-3EF0-4D28-8D9F-A2EB53BD25A8/AR%20Click%20Cubes.app/Frameworks/AWSAuthUI.framework/AWSAuthUI.bundle/
+2019-03-19 01:09:44:185 AR Click Cubes[88174:17836066] assetsBundle: NSBundle </Users/larrynickerson/Library/Developer/CoreSimulator/Devices/8F4700C8-CBC8-433C-B21E-B950E94F94F6/data/Containers/Bundle/Application/60F62F54-3EF0-4D28-8D9F-A2EB53BD25A8/AR Click Cubes.app/Frameworks/AWSAuthUI.framework/AWSAuthUI.bundle> (not yet loaded)
+2019-03-19 01:09:44:461 AR Click Cubes[88174:17836066] Sign-In Loading...
+2019-03-19 01:09:44:471 AR Click Cubes[88174:17836066] User Pools Enabled. Setting up the view...
+2019-03-19 01:09:44:489 AR Click Cubes[88174:17836066] Operating on Button View=AWSFacebookSignInButton
+2019-03-19 01:09:44.491 AR Click Cubes[88174:17836066] <CATransformLayer: 0x600001d81de0> - changing property contentsGravity in transform-only layer, will have no effect

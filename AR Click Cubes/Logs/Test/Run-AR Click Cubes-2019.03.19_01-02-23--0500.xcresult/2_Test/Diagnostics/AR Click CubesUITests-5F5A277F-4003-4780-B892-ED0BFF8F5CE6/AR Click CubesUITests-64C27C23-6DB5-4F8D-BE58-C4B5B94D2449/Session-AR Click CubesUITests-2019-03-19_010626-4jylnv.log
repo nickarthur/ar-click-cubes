@@ -1,0 +1,1642 @@
+01:06:26.073 xcodebuild[83946:17816146] Beginning test session AR Click CubesUITests-EC99970C-2B2D-45CD-B8D7-383CAC83B65C at 2019-03-19 01:06:26.071 with Xcode 10B61 on target <DVTiPhoneSimulator: 0x7fbfa2413590> {
+		SimDevice: iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)
+} (12.1 (16B91))
+01:06:26.075 xcodebuild[83946:17816146] 	/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
+-workspace
+./AR Click Cubes.xcworkspace
+-scheme
+AR Click Cubes
+-destination
+platform=iOS Simulator,id=8F4700C8-CBC8-433C-B21E-B950E94F94F6
+-derivedDataPath
+/Volumes/G-DRIVE-mobile-USB/dev/ios-apps/ar-apps/ar-click-cubes/AR Click Cubes
+build
+test
+01:06:26.075 xcodebuild[83946:17816146] Launching with Xcode.IDEFoundation.Launcher.PosixSpawn
+01:06:26.081 xcodebuild[83946:17816146] Test standard output and standard error is at /Volumes/G-DRIVE-mobile-USB/dev/ios-apps/ar-apps/ar-click-cubes/AR Click Cubes/Logs/Test/Run-AR Click Cubes-2019.03.19_01-02-23--0500.xcresult/2_Test/Diagnostics/AR Click CubesUITests-5F5A277F-4003-4780-B892-ED0BFF8F5CE6/AR Click CubesUITests-64C27C23-6DB5-4F8D-BE58-C4B5B94D2449/StandardOutputAndStandardError.txt
+01:06:26.202 xcodebuild[83946:17816146] 8F4700C8-CBC8-433C-B21E-B950E94F94F6: Received sim device notification: {
+    notification = "availableDevices_changed";
+}
+01:06:26.208 xcodebuild[83946:17816146] 8F4700C8-CBC8-433C-B21E-B950E94F94F6: Received sim device notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.212 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.212 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.213 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.213 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.213 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.214 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.214 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.755 xcodebuild[83946:17816146] Launch session started.
+01:06:26.759 xcodebuild[83946:17816146] Setting up test runner session
+01:06:26.760 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.761 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.761 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.761 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.761 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.762 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.762 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.762 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.762 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.762 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.763 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.763 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.763 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.763 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.763 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.763 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.763 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.763 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.764 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.768 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.768 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.768 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.769 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.769 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.769 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.769 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.769 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.769 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.769 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.770 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.770 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.770 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.770 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:26.770 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:27.022 xcodebuild[83946:17826547] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    "new_state" = 4;
+    notification = "device_state";
+    "prev_state" = 3;
+}
+01:06:27.263 xcodebuild[83946:17824909] Got a sim device notification for iPhone 5s: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.264 xcodebuild[83946:17824909] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.445 xcodebuild[83946:17816146] 8F4700C8-CBC8-433C-B21E-B950E94F94F6: Received sim device notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.453 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.454 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.454 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.454 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.455 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.455 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.455 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.455 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.455 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.457 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.457 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.457 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.458 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.458 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.458 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.458 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.458 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.458 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.458 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.459 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.459 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.460 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.461 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.462 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.462 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.462 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.462 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.463 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.463 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.463 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.464 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.464 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.464 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.464 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.464 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.465 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.465 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.465 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.465 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.465 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:27.465 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 40.000000, isTerminal = 1, info = {\n    DataMigrationElapsedTime = \"36.57783401012421\";\n    DataMigrationPhaseDescription = kDMMigrationPhaseDescriptionDidFinishWithSuccess;\n} }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutting Down)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:31.322 xcodebuild[83946:17816146] <IDETestOperationCoordinator: 0x7fbfa2c9ac20> is flushing delegate queue, count: 1
+01:06:32.334 xcodebuild[83946:17816146] 8F4700C8-CBC8-433C-B21E-B950E94F94F6: Received sim device notification: {
+    notification = "availableDevices_changed";
+}
+01:06:32.334 xcodebuild[83946:17816146] 8F4700C8-CBC8-433C-B21E-B950E94F94F6: Received sim device notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.334 xcodebuild[83946:17816160] Got a sim device notification for iPhone 5s: {
+    notification = "availableDevices_changed";
+}
+01:06:32.334 xcodebuild[83946:17816160] Got a sim device notification for iPhone 5s: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.334 xcodebuild[83946:17816160] Sim iPhone 5s state changed to 1
+01:06:32.338 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.338 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.338 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.339 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.339 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.339 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.339 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.339 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.339 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.339 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.339 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.340 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.340 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.340 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.340 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.340 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.340 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.340 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.340 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.340 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.340 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.341 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.341 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.341 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.341 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.341 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.341 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.341 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.341 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.341 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.341 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.341 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.342 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.343 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.343 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.343 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.343 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.343 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.343 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.343 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.343 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.344 xcodebuild[83946:17823741] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Shutdown)";
+    "new_state" = 1;
+    notification = "device_state";
+    "prev_state" = 4;
+}
+01:06:32.906 xcodebuild[83946:17816146] 8F4700C8-CBC8-433C-B21E-B950E94F94F6: Received sim device notification: {
+    notification = "availableDevices_changed";
+}
+01:06:32.907 xcodebuild[83946:17816146] 8F4700C8-CBC8-433C-B21E-B950E94F94F6: Received sim device notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.907 xcodebuild[83946:17826549] Got a sim device notification for iPhone 5s: {
+    notification = "availableDevices_changed";
+}
+01:06:32.907 xcodebuild[83946:17826549] Got a sim device notification for iPhone 5s: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.907 xcodebuild[83946:17826549] Sim iPhone 5s state changed to 2
+01:06:32.913 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.913 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.913 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.913 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.913 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.913 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.913 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.913 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.914 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.914 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.914 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.914 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.914 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.914 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.914 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.914 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.914 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.914 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.915 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.915 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.915 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.915 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.915 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.915 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.915 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.915 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.915 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.915 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.915 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.916 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.916 xcodebuild[83946:17823725] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.916 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.916 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.916 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.916 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.916 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.916 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.916 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.916 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.917 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.917 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.917 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    "new_state" = 2;
+    notification = "device_state";
+    "prev_state" = 1;
+}
+01:06:32.932 xcodebuild[83946:17816146] 8F4700C8-CBC8-433C-B21E-B950E94F94F6: Received sim device notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.932 xcodebuild[83946:17826549] Got a sim device notification for iPhone 5s: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.932 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.932 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.933 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.933 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.933 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.933 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.933 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.933 xcodebuild[83946:17816160] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.933 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.933 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.934 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.934 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.934 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.934 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.934 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.934 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.934 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.934 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.935 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.935 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.935 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.935 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.935 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.935 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.935 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.935 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.936 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.936 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.936 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.936 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.936 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.937 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.937 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.937 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.937 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.937 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.937 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.937 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.937 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.937 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.938 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:32.938 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    "SimDeviceNotification_NewBootStatus" = "SimDeviceBootInfo { status = 0 (Booting), elapsed = 0.000000, isTerminal = 0, info = (null) }";
+    "SimDeviceNotification_PreviousBootStatus" = "SimDeviceBootInfo { status = 4294967295 (Finished), elapsed = 0.000000, isTerminal = 1, info = (null) }";
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booting)";
+    notification = "SimDeviceNotificationType_BootStatus";
+}
+01:06:33.157 xcodebuild[83946:17826546] 📱<DVTiPhoneSimulator (0x7fbfa2413590), iPhone 5s, unknown class, 12.1 (16B91), 8F4700C8-CBC8-433C-B21E-B950E94F94F6> simulator was claimed by LaunchSessionClaim_0x7fbfa1c2a4b0
+01:06:33.165 xcodebuild[83946:17816146] 8F4700C8-CBC8-433C-B21E-B950E94F94F6: Received sim device notification: {
+    notification = "availableDevices_changed";
+}
+01:06:33.165 xcodebuild[83946:17816160] Got a sim device notification for iPhone 5s: {
+    notification = "availableDevices_changed";
+}
+01:06:33.166 xcodebuild[83946:17816160] Got a sim device notification for iPhone 5s: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.166 xcodebuild[83946:17816160] Sim iPhone 5s state changed to 3
+01:06:33.166 xcodebuild[83946:17816160] Sim iPhone 5s: Unregistering for sim device notification with token 11
+01:06:33.167 xcodebuild[83946:17816160] Calling -[SimDevice getenv:error:] for TESTMANAGERD_SIM_SOCK
+01:06:33.171 xcodebuild[83946:17816146] 8F4700C8-CBC8-433C-B21E-B950E94F94F6: Received sim device notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.174 xcodebuild[83946:17823725] 📱<DVTiPhoneSimulator (0x7fbfa2413590), iPhone 5s, unknown class, 12.1 (16B91), 8F4700C8-CBC8-433C-B21E-B950E94F94F6> simulator was claimed by LaunchSessionClaim_0x7fbfa1c2a4b0
+01:06:33.175 xcodebuild[83946:17823725] 8F4700C8-CBC8-433C-B21E-B950E94F94F6: Registered for sim device notification, got token 14
+01:06:33.175 xcodebuild[83946:17826549] 8F4700C8-CBC8-433C-B21E-B950E94F94F6: Unregistering for sim device notification with token 14
+01:06:33.176 xcodebuild[83946:17826549] 8F4700C8-CBC8-433C-B21E-B950E94F94F6: Installing app at path: /Volumes/G-DRIVE-mobile-USB/dev/ios-apps/ar-apps/ar-click-cubes/AR Click Cubes/Build/Products/Debug-iphonesimulator/AR Click CubesUITests-Runner.app and options: (null)
+01:06:33.177 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.177 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.178 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.178 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.178 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.178 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.179 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.179 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.179 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.179 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.179 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.180 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.180 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.180 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.180 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.180 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.180 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.180 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.181 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.181 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.181 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.181 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.181 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.182 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.182 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.182 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.182 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.182 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.182 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.182 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.183 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.183 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.183 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.183 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.183 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.183 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.183 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.184 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.184 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.184 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.184 xcodebuild[83946:17816146] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:33.187 xcodebuild[83946:17816160] Sim iPhone 5s is booted but getenv returned nil for test connection socket path; getenv error: Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory".
+ Will retry in 1s (1 attempts so far).
+01:06:33.188 xcodebuild[83946:17826547] /Users/larrynickerson/Library/Developer/CoreSimulator/Devices: Received sim device set notification: {
+    device = "iPhone 5s (8F4700C8-CBC8-433C-B21E-B950E94F94F6, iOS 12.1, Booted)";
+    "new_state" = 3;
+    notification = "device_state";
+    "prev_state" = 2;
+}
+01:06:34.285 xcodebuild[83946:17826546] Calling -[SimDevice getenv:error:] for TESTMANAGERD_SIM_SOCK
+01:06:34.292 xcodebuild[83946:17826546] Sim iPhone 5s has testmanagerd socket at /private/tmp/com.apple.launchd.iygPJSebdv/com.apple.testmanagerd.unix-domain.socket
+01:06:34.292 xcodebuild[83946:17826546] Validating test connection socket path (/private/tmp/com.apple.launchd.iygPJSebdv/com.apple.testmanagerd.unix-domain.socket)
+01:06:34.292 xcodebuild[83946:17826546] Constructing transport for test connection socket
+01:06:34.292 xcodebuild[83946:17826546] Connected socket 37 to testmanagerd for Sim iPhone 5s
+01:06:34.292 xcodebuild[83946:17826546] Received connection for test runner session
+01:06:34.292 xcodebuild[83946:17826546] Listening for proxy connection request from the test bundle
+01:06:34.293 xcodebuild[83946:17826546] Initiating session with identifier: EC99970C-2B2D-45CD-B8D7-383CAC83B65C
+01:06:34.293 xcodebuild[83946:17816146] Test runner session acquired connection.
+01:06:34.293 xcodebuild[83946:17816146] Waiting for test process to launch.
+01:06:39.019 xcodebuild[83946:17816146] Test operation failure: Lost connection to testmanagerd
+01:06:39.020 xcodebuild[83946:17816146] _finishWithError:Error Domain=IDETestOperationsObserverErrorDomain Code=5 "Lost connection to testmanagerd" UserInfo={NSLocalizedDescription=Lost connection to testmanagerd}

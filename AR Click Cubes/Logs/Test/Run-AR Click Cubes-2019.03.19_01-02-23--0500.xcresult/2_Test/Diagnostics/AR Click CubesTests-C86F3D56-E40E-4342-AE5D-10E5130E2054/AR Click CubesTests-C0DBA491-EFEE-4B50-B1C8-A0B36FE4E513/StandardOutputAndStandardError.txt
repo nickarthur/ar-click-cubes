@@ -1,0 +1,84 @@
+objc[86284]: Class AWSCognitoIdentityASF is implemented in both /Users/larrynickerson/Library/Developer/CoreSimulator/Devices/8F4700C8-CBC8-433C-B21E-B950E94F94F6/data/Containers/Bundle/Application/B7481A17-BA5C-4CA5-9691-CAF38B6F0DF5/AR Click Cubes.app/Frameworks/AWSCognitoIdentityProviderASF.framework/AWSCognitoIdentityProviderASF (0x107874e10) and /Users/larrynickerson/Library/Developer/CoreSimulator/Devices/8F4700C8-CBC8-433C-B21E-B950E94F94F6/data/Containers/Bundle/Application/B7481A17-BA5C-4CA5-9691-CAF38B6F0DF5/AR Click Cubes.app/AR Click Cubes (0x106e093e0). One of the two will be used. Which one is undefined.
+2019-03-19 01:05:54.243029-0500 AR Click Cubes[86284:17825334] libMobileGestalt MobileGestalt.c:890: MGIsDeviceOneOfType is not supported on this platform.
+2019-03-19 01:05:54:534 AR Click Cubes[86284:17825334] Initializing normalized cache at file:///Users/larrynickerson/Library/Developer/CoreSimulator/Devices/8F4700C8-CBC8-433C-B21E-B950E94F94F6/data/Containers/Data/Application/A09972C0-7FE7-4EBE-9E77-F670C9ADC805/tmp/ar-click-cubes-app-db
+2019-03-19 01:05:54:570 AR Click Cubes[86284:17825334] Initializing subscription metadata cache at file:///Users/larrynickerson/Library/Developer/CoreSimulator/Devices/8F4700C8-CBC8-433C-B21E-B950E94F94F6/data/Containers/Data/Application/A09972C0-7FE7-4EBE-9E77-F670C9ADC805/tmp/ar-click-cubes-app-db
+2019-03-19 01:05:54:579 AR Click Cubes[86284:17825334] Initializing AppSyncClient
+2019-03-19 01:05:54:582 AR Click Cubes[86284:17825334] Initializing AWSPerformMutationQueue
+2019-03-19 01:05:54:583 AR Click Cubes[86284:17825334] Initializing mutation cache at file:///Users/larrynickerson/Library/Developer/CoreSimulator/Devices/8F4700C8-CBC8-433C-B21E-B950E94F94F6/data/Containers/Data/Application/A09972C0-7FE7-4EBE-9E77-F670C9ADC805/tmp/ar-click-cubes-app-db
+2019-03-19 01:05:54:589 AR Click Cubes[86284:17825334] Resuming OperationQueue
+2019-03-19 01:05:54:589 AR Click Cubes[86284:17825471] Loading offline mutations
+2019-03-19 01:05:54:591 AR Click Cubes[86284:17825471] Retrieving stored mutation records
+2019-03-19 01:05:54:600 AR Click Cubes[86284:17825471] Retrieved 0 mutation records from store
+2019-03-19 01:05:54:601 AR Click Cubes[86284:17825468] Finished processing offline mutations
+2019-03-19 01:05:54.652560-0500 AR Click Cubes[86284:17825334] Falling back to loading access token from NSUserDefaults because of simulator bug
+2019-03-19 01:05:54.658254-0500 AR Click Cubes[86284:17825334] Falling back to storing access token in NSUserDefaults because of simulator bug
+2019-03-19 01:05:54.659373-0500 AR Click Cubes[86284:17825334] Falling back to loading access token from NSUserDefaults because of simulator bug
+2019-03-19 01:05:54.675395-0500 AR Click Cubes[86284:17825334] Falling back to storing access token in NSUserDefaults because of simulator bug
+2019-03-19 01:05:54.676044-0500 AR Click Cubes[86284:17825334] Falling back to loading access token from NSUserDefaults because of simulator bug
+2019-03-19 01:05:54.676893-0500 AR Click Cubes[86284:17825334] Falling back to storing access token in NSUserDefaults because of simulator bug
+2019-03-19 01:05:54:806 AR Click Cubes[86284:17825334] AWSMobileClient -> sharedInstance...
+2019-03-19 01:05:54:807 AR Click Cubes[86284:17825334] AWSMobileClient -> sharedInstance...
+2019-03-19 01:05:54:807 AR Click Cubes[86284:17825334] Configuring SignInProvider : CognitoUserPool.
+2019-03-19 01:05:54:807 AR Click Cubes[86284:17825334] Registering SignInProvider AWSCognitoUserPoolsSignInProvider from awsconfiguration.json.
+2019-03-19 01:05:54:811 AR Click Cubes[86284:17825334] Configuring SignInProvider : FacebookSignIn.
+2019-03-19 01:05:54:811 AR Click Cubes[86284:17825334] Registering SignInProvider AWSFacebookSignInProvider from awsconfiguration.json.
+2019-03-19 01:05:54:811 AR Click Cubes[86284:17825334] Configuring SignInProvider FacebookSignIn
+2019-03-19 01:05:54:813 AR Click Cubes[86284:17825334] AWSMobileClient -> sharedInstance...
+2019-03-19 01:05:54:814 AR Click Cubes[86284:17825334] Configuring SignInProvider : CognitoUserPool.
+2019-03-19 01:05:54:814 AR Click Cubes[86284:17825334] Configuring SignInProvider : FacebookSignIn.
+2019-03-19 01:05:54:814 AR Click Cubes[86284:17825334] Presenting SignInViewController
+2019-03-19 01:05:54.836296-0500 AR Click Cubes[86284:17825334] [Session] ARSession (0x7fb98bf0a080): Unable to run the session, configuration is not supported on this device: <ARWorldTrackingConfiguration: 0x60000269a6d0 autoFocus=Enabled environmentTexturing=None planeDetection=None worldAlignment=Gravity lightEstimation=Enabled videoFormat=(null)>
+2019-03-19 01:05:54.843276-0500 AR Click Cubes[86284:17825334] [Session] Session (0x7fb98bf0a080): did fail with error: Error Domain=com.apple.arkit.error Code=100 "Unsupported configuration." UserInfo={NSLocalizedDescription=Unsupported configuration., NSLocalizedFailureReason=The provided configuration is not supported on this device.}
+new material: coloredMaterial_5
+new material: coloredMaterial_4
+new material: coloredMaterial_3
+new material: coloredMaterial_2
+new material: coloredMaterial_1
+new material: coloredMaterial_0
+2019-03-19 01:05:55:698 AR Click Cubes[86284:17825334] Initializing the AWSSignInViewController...
+2019-03-19 01:05:55:704 AR Click Cubes[86284:17825334] URL: file:///Users/larrynickerson/Library/Developer/CoreSimulator/Devices/8F4700C8-CBC8-433C-B21E-B950E94F94F6/data/Containers/Bundle/Application/B7481A17-BA5C-4CA5-9691-CAF38B6F0DF5/AR%20Click%20Cubes.app/Frameworks/AWSAuthUI.framework/AWSAuthUI.bundle/
+2019-03-19 01:05:55:706 AR Click Cubes[86284:17825334] assetsBundle: NSBundle </Users/larrynickerson/Library/Developer/CoreSimulator/Devices/8F4700C8-CBC8-433C-B21E-B950E94F94F6/data/Containers/Bundle/Application/B7481A17-BA5C-4CA5-9691-CAF38B6F0DF5/AR Click Cubes.app/Frameworks/AWSAuthUI.framework/AWSAuthUI.bundle> (not yet loaded)
+2019-03-19 01:05:55.815613-0500 AR Click Cubes[86284:17825469] [BoringSSL] nw_protocol_boringssl_get_output_frames(1301) [C2.1:2][0x7fb98bc24870] get output frames failed, state 8196
+2019-03-19 01:05:55.819291-0500 AR Click Cubes[86284:17825469] [BoringSSL] nw_protocol_boringssl_get_output_frames(1301) [C2.1:2][0x7fb98bc24870] get output frames failed, state 8196
+2019-03-19 01:05:55.822002-0500 AR Click Cubes[86284:17825469] TIC Read Status [2:0x0]: 1:57
+2019-03-19 01:05:55.822355-0500 AR Click Cubes[86284:17825469] TIC Read Status [2:0x0]: 1:57
+2019-03-19 01:05:55.844407-0500 AR Click Cubes[86284:17825501] [BoringSSL] nw_protocol_boringssl_get_output_frames(1301) [C1.1:2][0x7fb98bc00ef0] get output frames failed, state 8196
+2019-03-19 01:05:55.844649-0500 AR Click Cubes[86284:17825501] [BoringSSL] nw_protocol_boringssl_get_output_frames(1301) [C1.1:2][0x7fb98bc00ef0] get output frames failed, state 8196
+2019-03-19 01:05:55.846696-0500 AR Click Cubes[86284:17825501] TIC Read Status [1:0x0]: 1:57
+2019-03-19 01:05:55.846820-0500 AR Click Cubes[86284:17825501] TIC Read Status [1:0x0]: 1:57
+2019-03-19 01:05:55:879 AR Click Cubes[86284:17825334] Sign-In Loading...
+2019-03-19 01:05:55:888 AR Click Cubes[86284:17825334] User Pools Enabled. Setting up the view...
+2019-03-19 01:05:55:895 AR Click Cubes[86284:17825334] Operating on Button View=AWSFacebookSignInButton
+2019-03-19 01:05:55.899079-0500 AR Click Cubes[86284:17825334] <CATransformLayer: 0x6000014f67a0> - changing property contentsGravity in transform-only layer, will have no effect
+2019-03-19 01:05:55.902352-0500 AR Click Cubes[86284:17825334] [framework] CUIThemeStore: No theme registered with id=0
+2019-03-19 01:05:56.277469-0500 AR Click Cubes[86284:17825334] FBSDKLog: initStore should have been called before calling setUserID
+2019-03-19 01:05:56.793909-0500 AR Click Cubes[86284:17825469] [BoringSSL] nw_protocol_boringssl_get_output_frames(1301) [C4.1:2][0x7fb98bd58630] get output frames failed, state 8196
+2019-03-19 01:05:56.794759-0500 AR Click Cubes[86284:17825469] [BoringSSL] nw_protocol_boringssl_get_output_frames(1301) [C4.1:2][0x7fb98bd58630] get output frames failed, state 8196
+2019-03-19 01:05:56.796260-0500 AR Click Cubes[86284:17825469] TIC Read Status [4:0x0]: 1:57
+2019-03-19 01:05:56.797031-0500 AR Click Cubes[86284:17825469] TIC Read Status [4:0x0]: 1:57
+2019-03-19 01:05:56.853980-0500 AR Click Cubes[86284:17825468] [BoringSSL] nw_protocol_boringssl_get_output_frames(1301) [C3.1:2][0x7fb98bd30300] get output frames failed, state 8196
+2019-03-19 01:05:56.854815-0500 AR Click Cubes[86284:17825468] [BoringSSL] nw_protocol_boringssl_get_output_frames(1301) [C3.1:2][0x7fb98bd30300] get output frames failed, state 8196
+2019-03-19 01:05:56.855732-0500 AR Click Cubes[86284:17825468] TIC Read Status [3:0x0]: 1:57
+2019-03-19 01:05:56.856361-0500 AR Click Cubes[86284:17825468] TIC Read Status [3:0x0]: 1:57
+Test Suite 'All tests' started at 2019-03-19 01:06:25.575
+Test Suite 'AR Click CubesTests.xctest' started at 2019-03-19 01:06:25.578
+Test Suite 'ClickCubeNodeTests' started at 2019-03-19 01:06:25.579
+Test Case '-[AR_Click_CubesTests.ClickCubeNodeTests testUpdateAllMaterialsWithAnArrayOfMaterialsDoesNotThrow]' started.
+Test Case '-[AR_Click_CubesTests.ClickCubeNodeTests testUpdateAllMaterialsWithAnArrayOfMaterialsDoesNotThrow]' passed (0.024 seconds).
+Test Case '-[AR_Click_CubesTests.ClickCubeNodeTests testUpdateAllMaterialsWithIncorrectMaterialCountShouldThrow]' started.
+Test Case '-[AR_Click_CubesTests.ClickCubeNodeTests testUpdateAllMaterialsWithIncorrectMaterialCountShouldThrow]' passed (0.006 seconds).
+Test Case '-[AR_Click_CubesTests.ClickCubeNodeTests testUpdateAllMaterialsWithOneMaterial]' started.
+Test Case '-[AR_Click_CubesTests.ClickCubeNodeTests testUpdateAllMaterialsWithOneMaterial]' passed (0.005 seconds).
+Test Case '-[AR_Click_CubesTests.ClickCubeNodeTests testUpdateNamedMaterialWithMaterial]' started.
+Test Case '-[AR_Click_CubesTests.ClickCubeNodeTests testUpdateNamedMaterialWithMaterial]' passed (0.005 seconds).
+Test Suite 'ClickCubeNodeTests' passed at 2019-03-19 01:06:25.622.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.040 (0.044) seconds
+Test Suite 'AR Click CubesTests.xctest' passed at 2019-03-19 01:06:25.623.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.040 (0.045) seconds
+Test Suite 'All tests' passed at 2019-03-19 01:06:25.624.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.040 (0.049) seconds
+
+
+Test session results and logs:
+	/Volumes/G-DRIVE-mobile-USB/dev/ios-apps/ar-apps/ar-click-cubes/AR Click Cubes/Logs/Test/Run-AR Click Cubes-2019.03.19_01-02-23--0500.xcresult
+

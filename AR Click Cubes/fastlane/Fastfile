@@ -1,0 +1,76 @@
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "2.118.1"
+
+default_platform :ios
+
+platform :ios do
+
+    lane :screenshots do
+      capture_screenshots
+      frame_screenshots(white: true)
+      upload_to_app_store
+    end
+
+    lane :tests do
+        run_tests(scheme: "AR Click Cubes")
+    end
+
+    lane :beta do
+        build_app(scheme: "AR Click Cubes")
+        upload_to_testflight(changelog: "First Build")
+    end
+
+    lane :betabits do
+        build_app(scheme: "AR Click Cubes",
+        workspace: "AR Click Cubes.xcworkspace",
+        include_bitcode: true)
+        upload_to_testflight(changelog: "First Build")
+    end
+
+
+    desc "Creating a code signing certificate and provisioning profile"
+    lane :provision do
+        produce(
+            app_name: 'YOUR_UNIQUE_APP_NAME',
+            language: 'English',
+            app_version: '1.0',
+            sku: '123abc'
+        )
+        cert
+        sigh(force: true)
+    end
+
+    lane :screenshot do
+        capture_screenshots
+        frame_screenshots(white: true)
+        upload_to_app_store
+    end
+
+    desc "Create ipa"
+    lane :build do
+        increment_build_number
+        gym
+    end
+
+    desc "Upload to App Store and submit for review"
+    lane :upload do
+        deliver(
+            submit_for_review: true
+        )
+    end
+
+    desc "Provision, take screenshots, build and upload to App Store"
+    lane :do_everything do
+        provision
+        screenshot
+        build
+        upload
+    end
+
+    error do |lane, exception|
+    # This block is called if there was an error running a lane.
+    end
+
+end
+

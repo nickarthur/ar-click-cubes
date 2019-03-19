@@ -12,6 +12,10 @@ target 'AR Click Cubes' do
   pod 'AWSAuthUI', '~> 2.9.0'            # Optional dependency required to use drop-in UI
   pod 'AWSUserPoolsSignIn', '~> 2.9.0'   # Optional dependency required to use drop-in UI
 
+  pod 'AWSFacebookSignIn', '~> 2.9.0'    # Add this new dependency
+  pod 'AWSGoogleSignIn', '~> 2.9.0'      # Add this new dependency
+  pod 'GoogleSignIn', '~> 4.0'           # Add this new dependency
+
   pod 'SSZipArchive'
 
   target 'AR Click CubesTests' do

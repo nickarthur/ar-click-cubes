@@ -1,24 +1,53 @@
 PODS:
-  - AWSAppSync (2.9.2):
-    - AWSCore (~> 2.8.0)
+  - AWSAppSync (2.10.3):
+    - AWSCore (~> 2.9.0)
     - ReachabilitySwift (~> 4.3.0)
     - SQLite.swift (= 0.11.5)
-  - AWSAuthCore (2.8.4):
-    - AWSCore (= 2.8.4)
-  - AWSAuthUI (2.8.4):
-    - AWSAuthCore (= 2.8.4)
-    - AWSCore (= 2.8.4)
-  - AWSCognitoIdentityProvider (2.8.4):
+  - AWSAuthCore (2.9.3):
+    - AWSCore (= 2.9.3)
+  - AWSAuthUI (2.9.3):
+    - AWSAuthCore (= 2.9.3)
+    - AWSCore (= 2.9.3)
+  - AWSCognitoIdentityProvider (2.9.3):
     - AWSCognitoIdentityProviderASF (= 1.0.1)
-    - AWSCore (= 2.8.4)
+    - AWSCore (= 2.9.3)
   - AWSCognitoIdentityProviderASF (1.0.1)
-  - AWSCore (2.8.4)
-  - AWSMobileClient (2.8.4):
-    - AWSAuthCore (= 2.8.4)
-    - AWSCognitoIdentityProvider (= 2.8.4)
-  - AWSUserPoolsSignIn (2.8.4):
-    - AWSAuthCore (= 2.8.4)
-    - AWSCognitoIdentityProvider (= 2.8.4)
+  - AWSCore (2.9.3)
+  - AWSFacebookSignIn (2.9.3):
+    - AWSAuthCore (= 2.9.3)
+    - FBSDKCoreKit (~> 4.0)
+    - FBSDKLoginKit (~> 4.0)
+  - AWSGoogleSignIn (2.9.3):
+    - AWSAuthCore (= 2.9.3)
+  - AWSMobileClient (2.9.3):
+    - AWSAuthCore (= 2.9.3)
+    - AWSCognitoIdentityProvider (= 2.9.3)
+  - AWSUserPoolsSignIn (2.9.3):
+    - AWSAuthCore (= 2.9.3)
+    - AWSCognitoIdentityProvider (= 2.9.3)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - FBSDKCoreKit (4.41.0):
+    - Bolts (~> 1.9)
+  - FBSDKLoginKit (4.41.0):
+    - FBSDKCoreKit
+  - GoogleSignIn (4.4.0):
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.2.0):
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+  - GoogleToolboxForMac/Defines (2.2.0)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.2.0)":
+    - GoogleToolboxForMac/DebugUtils (= 2.2.0)
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.0)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.2.0)"
+  - GTMSessionFetcher/Core (1.2.1)
   - ReachabilitySwift (4.3.0)
   - SQLite.swift (0.11.5):
     - SQLite.swift/standard (= 0.11.5)
@@ -26,10 +55,13 @@ PODS:
   - SSZipArchive (2.1.4)
 
 DEPENDENCIES:
-  - AWSAppSync (~> 2.9.0)
-  - AWSAuthUI (~> 2.8.0)
-  - AWSMobileClient (~> 2.8.0)
-  - AWSUserPoolsSignIn (~> 2.8.0)
+  - AWSAppSync (~> 2.10.0)
+  - AWSAuthUI (~> 2.9.0)
+  - AWSFacebookSignIn (~> 2.9.0)
+  - AWSGoogleSignIn (~> 2.9.0)
+  - AWSMobileClient (~> 2.9.0)
+  - AWSUserPoolsSignIn (~> 2.9.0)
+  - GoogleSignIn (~> 4.0)
   - SSZipArchive
 
 SPEC REPOS:
@@ -40,25 +72,41 @@ SPEC REPOS:
     - AWSCognitoIdentityProvider
     - AWSCognitoIdentityProviderASF
     - AWSCore
+    - AWSFacebookSignIn
+    - AWSGoogleSignIn
     - AWSMobileClient
     - AWSUserPoolsSignIn
+    - Bolts
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - GoogleSignIn
+    - GoogleToolboxForMac
+    - GTMSessionFetcher
     - ReachabilitySwift
     - SQLite.swift
     - SSZipArchive
 
 SPEC CHECKSUMS:
-  AWSAppSync: 8abeeedb432c6354699e7f55abab805e411dfd8c
-  AWSAuthCore: ac2536f54f73a2914c236e266cbec02a49f57d69
-  AWSAuthUI: dd68ce1af153c0f5aa7521c0bd89a633d0a24cc5
-  AWSCognitoIdentityProvider: ba1858e7524b29254172ae333e1f96ddc93507dc
+  AWSAppSync: cc5e6716f712cf9a9bdc176e471027516ac5087d
+  AWSAuthCore: 616e8c65607d7d4b29a1320e62fe2c6586f2f396
+  AWSAuthUI: 268b85517ea5b0ed1a8898b572f31af012b4cac5
+  AWSCognitoIdentityProvider: 827e8d7ec506dd09ed4f72afe7be587a6dd85af5
   AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
-  AWSCore: 734b0d67c2c77f6edae9e5520431a37310ea4193
-  AWSMobileClient: 59072ca49e82706c6d958f7a08e4a285d7197af1
-  AWSUserPoolsSignIn: 1eb61512db85bf0d043f79eda77de0ee09035bcf
+  AWSCore: 5cbb6c6ccfad4b55e494c2e8df87781512f7881e
+  AWSFacebookSignIn: bc464cd835f52064c9866794cfdf7009920c84ce
+  AWSGoogleSignIn: c1cd0eaaa05cbe946dec2039c9ed14376cda8284
+  AWSMobileClient: 57b907ae11832376a2d7cf07eba5fbe2c6b8cfa4
+  AWSUserPoolsSignIn: 2402bd83d3cd32af1440671ec7919f07cdacd59c
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FBSDKCoreKit: 974810fe3806173f3777c68062fa8ed6fa59b59d
+  FBSDKLoginKit: 159a5c2eebe6a0774c3b128f5085128679233d2b
+  GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
+  GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
+  GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
   SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
   SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
 
-PODFILE CHECKSUM: add19878c875bd073e19b29e86ceb2abc8ac4ac5
+PODFILE CHECKSUM: e249fd8256c7ebe9694ae95d3c9b9312acb15e09
 
 COCOAPODS: 1.6.0.beta.1

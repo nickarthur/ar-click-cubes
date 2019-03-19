@@ -1,7 +1,7 @@
 {
     "identityPoolName": "arclickcubesapi1aeb71d0_identitypool_1aeb71d0",
     "allowUnauthenticatedIdentities": true,
-    "thirdPartyAuth": false,
+    "thirdPartyAuth": true,
     "lambdaLogPolicy": "cognito1aeb71d0_lambda_log_policy",
     "openIdLambdaRoleName": "cognito1aeb71d0_openid_lambda_role",
     "openIdRolePolicy": "cognito1aeb71d0_openid_pass_role_policy",
@@ -21,7 +21,7 @@
     "smsAuthenticationMessage": "Your authentication code is {####}",
     "smsVerificationMessage": "Your verification code is {####}",
     "emailVerificationSubject": "Your verification code",
-    "emailVerificationMessage": "Your verification code is {####}",
+    "emailVerificationMessage": " verification code: {####}",
     "defaultPasswordPolicy": true,
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [],
@@ -41,7 +41,7 @@
     "userpoolClientLambdaRole": "cognito1aeb71d0_userpoolclient_lambda_role",
     "userpoolClientLogPolicy": "cognito1aeb71d0_userpoolclient_lambda_log_policy",
     "userpoolClientLambdaPolicy": "cognito1aeb71d0_userpoolclient_lambda_iam_policy",
-    "userpoolClientSetAttributes": true,
+    "userpoolClientSetAttributes": false,
     "useDefault": "manual",
     "authSelections": "identityPoolAndUserPool",
     "resourceName": "cognito1aeb71d0",
@@ -65,5 +65,9 @@
             "UnauthRole",
             "Arn"
         ]
-    }
+    },
+    "authProviders": [
+        "graph.facebook.com"
+    ],
+    "selectedParties": "{\"graph.facebook.com\":\"2730220373684711\"}"
 }
