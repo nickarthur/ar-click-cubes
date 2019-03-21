@@ -42,7 +42,37 @@ platform :ios do
         add_git_tag
         build_app(scheme: "#{ENV['APP_SCHEME']}")
         # enable_automatic_code_signing(path: "#{ENV['APP_NAME']}.xcodeproj")
-        upload_to_testflight
+
+        upload_to_testflight(
+            beta_app_feedback_email: "nickarthur.night.002@gmail.com",
+            beta_app_description: "This is a description of my app",
+            demo_account_required: false,
+            notify_external_testers: true,
+            changelog: "This is my changelog of things that have changed in a log",
+            beta_app_review_info: {
+                contact_email: "nickarthur.night.002@gmail.com",
+                contact_first_name: "Lawrence",
+                contact_last_name: "Nickerson",
+                contact_phone: "15122553414}",
+                demo_account_name: "N/A",
+                demo_account_password: "N/A",
+                notes: "this is review note for the reviewer <3 thank you for reviewing"
+            },
+            localized_app_info: {
+                "default": {
+                    feedback_email: "nickarthur.night.002@gmail.com",
+                    marketing_url: "https://example.com/marketing-defafult",
+                    privacy_policy_url: "https://termsfeed.com/privacy-policy/c665768f9f70bebf917094f5dfca94f8",
+                    description: "Default description",
+                }
+            },
+            localized_build_info: {
+                "default": {
+                    whats_new: "Default changelog",
+                }
+            }
+        )
+
     end
 
     lane :screenshots do
