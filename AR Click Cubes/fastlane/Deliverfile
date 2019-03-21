@@ -1,0 +1,28 @@
+# The Deliverfile allows you to store various iTunes Connect metadata
+# For more information, check out the docs
+# https://docs.fastlane.tools/actions/deliver/
+
+price_tier 0
+app_review_information(
+  first_name: "Lawrence",
+  last_name: "Nickerson",
+  phone_number: "1 512 255-3414",
+  email_address: "nickarthur.night.002@gmail.com",
+  demo_user: "N/A",       # add the user if testers will need to log in
+  demo_password: "N/A",   # add the password if testers need it
+  notes: "ANY NOTES FOR TESTING"
+)
+# if you app has more complex structure, check out /fastlane/metadata/review_information folder
+
+submission_information({
+    export_compliance_encryption_updated: false,
+    export_compliance_uses_encryption: false,
+    content_rights_contains_third_party_content: false,
+    add_id_info_uses_idfa: false
+})
+
+automatic_release false
+
+app_icon './fastlane/metadata/AppIcon.png'
+
+app_rating_config_path "./fastlane/metadata/itunes_rating_config.json"
