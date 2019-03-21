@@ -82,6 +82,7 @@
 		737951F82240EAD600CD7EBC /* makeappicon.com */ = {isa = PBXFileReference; lastKnownFileType = folder; path = makeappicon.com; sourceTree = "<group>"; };
 		737951FA2240EC9A00CD7EBC /* LaunchImage.0001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.0001.png; sourceTree = "<group>"; };
 		738BD2BF22347ABA007D94D9 /* API */ = {isa = PBXFileReference; lastKnownFileType = folder; name = API; path = "AR Click Cubes/API"; sourceTree = "<group>"; };
+		738F9CBB22439F1D00AD1891 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7395FD472222A00C005357F2 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		73A11A752240A077004D9270 /* FastLaneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastLaneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73A11A772240A079004D9270 /* FastLaneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastLaneUITests.swift; sourceTree = "<group>"; };
@@ -149,6 +150,7 @@
 		73535006221E825C00065E06 = {
 			isa = PBXGroup;
 			children = (
+				738F9CBB22439F1D00AD1891 /* .gitignore */,
 				737951F92240EB2E00CD7EBC /* images-on-disk */,
 				737951F82240EAD600CD7EBC /* makeappicon.com */,
 				73A11A842240DEF7004D9270 /* amplify */,
@@ -389,17 +391,25 @@
 				TargetAttributes = {
 					7353500E221E825C00065E06 = {
 						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 7R57VS437T;
+						ProvisioningStyle = Manual;
 					};
 					73535024221E825D00065E06 = {
 						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 7R57VS437T;
+						ProvisioningStyle = Manual;
 						TestTargetID = 7353500E221E825C00065E06;
 					};
 					7353502F221E825D00065E06 = {
 						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 7R57VS437T;
+						ProvisioningStyle = Manual;
 						TestTargetID = 7353500E221E825C00065E06;
 					};
 					73A11A742240A077004D9270 = {
 						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 7R57VS437T;
+						ProvisioningStyle = Manual;
 						TestTargetID = 7353500E221E825C00065E06;
 					};
 				};
@@ -722,9 +732,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -784,9 +796,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -813,7 +827,9 @@
 			baseConfigurationReference = 001BE30EEF8D4893A0768464 /* Pods-AR Click Cubes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7R57VS437T;
 				INFOPLIST_FILE = "AR Click Cubes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -822,6 +838,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.inViRtStudios.AR-Click-Cubes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -832,7 +849,9 @@
 			baseConfigurationReference = 96A882EBF05186DBC82475A7 /* Pods-AR Click Cubes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Lawrence Nickerson (7R57VS437T)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7R57VS437T;
 				INFOPLIST_FILE = "AR Click Cubes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -841,6 +860,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.inViRtStudios.AR-Click-Cubes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.inViRtStudios.AR-Click-Cubes";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -852,7 +872,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7R57VS437T;
 				INFOPLIST_FILE = "AR Click CubesTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -874,7 +894,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7R57VS437T;
 				INFOPLIST_FILE = "AR Click CubesTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -895,7 +915,7 @@
 			baseConfigurationReference = 1CDD77C4408FE1BF4FD9E972 /* Pods-AR Click CubesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7R57VS437T;
 				INFOPLIST_FILE = "AR Click CubesUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -916,7 +936,7 @@
 			baseConfigurationReference = F98A74D3ED23E9F95923BF98 /* Pods-AR Click CubesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7R57VS437T;
 				INFOPLIST_FILE = "AR Click CubesUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -935,7 +955,7 @@
 		73A11A7D2240A079004D9270 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7R57VS437T;
 				INFOPLIST_FILE = FastLaneUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -954,7 +974,7 @@
 		73A11A7E2240A079004D9270 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7R57VS437T;
 				INFOPLIST_FILE = FastLaneUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

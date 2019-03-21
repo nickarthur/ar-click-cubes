@@ -2,28 +2,80 @@
 # Update this, if you use features of a newer version
 fastlane_version "2.118.1"
 
+fastlane_require 'dotenv'
+
+before_all do
+    Dotenv.overload '.env.secret'
+end
+
 default_platform :ios
 
 platform :ios do
 
+    lane :testEnvVars do
+        puts "the scheme #{ENV['APP_SCHEME']}"
+        puts "the id #{ENV['APP_IDENTIFIER']}"
+        puts "#{ENV['APP_SCHEME']}"
+        # Loaded from .env (by fastlane)
+        # puts "STUFF: #{ENV['STUFF']}"
+
+        # Loaded from .env.secret (by us in before_all)
+        # puts "SOME_API_TOKEN: #{ENV['SOME_API_TOKEN']}"
+
+        # Loaded from .env.(<env>) where <env> is passed in from `fastlane test --env <env>` (by fastlane)
+        # Ex: `fastlane test --env config` loads .env.config1
+        # puts "CONFIG: #{ENV['CONFIG']}"
+    end
+
+    lane :release do
+        match(
+            git_url: "https://www.github.com/nickarthur/certificates.git",
+            type: "appstore",
+            app_identifier: "#{ENV['APP_IDENTIFIER']}",
+            force: true,
+            readonly: false)
+        # sync_code_signing
+        # disable_automatic_code_signing(path: "#{ENV['APP_NAME']}.xcodeproj")
+        ensure_git_status_clean
+        increment_build_number
+        commit_version_bump
+        add_git_tag
+        build_app(scheme: "#{ENV['APP_SCHEME']}")
+        # enable_automatic_code_signing(path: "#{ENV['APP_NAME']}.xcodeproj")
+        upload_to_testflight
+    end
+
     lane :screenshots do
-      capture_screenshots
-      frame_screenshots(white: true)
-      upload_to_app_store
+        capture_screenshots
+        frame_screenshots(white: true)
+        upload_to_app_store
+    end
+
+    lane :frame do
+        frame_screenshots(white: true)
+        upload_to_app_store
     end
 
     lane :tests do
-        run_tests(scheme: "AR Click Cubes")
+        run_tests(scheme: "#{ENV['APP_SCHEME']}")
     end
 
     lane :beta do
-        build_app(scheme: "AR Click Cubes")
+        ensure_git_status_clean
+        increment_build_number
+        commit_version_bump
+        add_git_tag
+        build_app(scheme: "#{ENV['APP_SCHEME']}")
         upload_to_testflight(changelog: "First Build")
     end
 
     lane :betabits do
-        build_app(scheme: "AR Click Cubes",
-        workspace: "AR Click Cubes.xcworkspace",
+        ensure_git_status_clean
+        increment_build_number
+        commit_version_bump
+        add_git_tag
+        build_app(scheme: "#{ENV['APP_SCHEME']}",
+        workspace: "#{ENV['APP_NAME']}.xcworkspace",
         include_bitcode: true)
         upload_to_testflight(changelog: "First Build")
     end
@@ -32,10 +84,10 @@ platform :ios do
     desc "Creating a code signing certificate and provisioning profile"
     lane :provision do
         produce(
-            app_name: 'YOUR_UNIQUE_APP_NAME',
+            app_name: "#{ENV['APP_NAME']}",
             language: 'English',
             app_version: '1.0',
-            sku: '123abc'
+            sku: "#{ENV['APP_IDENTIFIER']}"
         )
         cert
         sigh(force: true)
@@ -49,7 +101,10 @@ platform :ios do
 
     desc "Create ipa"
     lane :build do
+        ensure_git_status_clean
         increment_build_number
+        commit_version_bump
+        add_git_tag
         gym
     end
 

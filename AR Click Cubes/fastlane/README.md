@@ -15,16 +15,67 @@ Install _fastlane_ using
 or alternatively using `brew cask install fastlane`
 
 # Available Actions
-### screenshots
+## iOS
+### ios testEnvVars
 ```
-fastlane screenshots
-```
-
-### tests
-```
-fastlane tests
+fastlane ios testEnvVars
 ```
 
+### ios release
+```
+fastlane ios release
+```
+
+### ios screenshots
+```
+fastlane ios screenshots
+```
+
+### ios frame
+```
+fastlane ios frame
+```
+
+### ios tests
+```
+fastlane ios tests
+```
+
+### ios beta
+```
+fastlane ios beta
+```
+
+### ios betabits
+```
+fastlane ios betabits
+```
+
+### ios provision
+```
+fastlane ios provision
+```
+Creating a code signing certificate and provisioning profile
+### ios screenshot
+```
+fastlane ios screenshot
+```
+
+### ios build
+```
+fastlane ios build
+```
+Create ipa
+### ios upload
+```
+fastlane ios upload
+```
+Upload to App Store and submit for review
+### ios do_everything
+```
+fastlane ios do_everything
+```
+Provision, take screenshots, build and upload to App Store
 
 ----
 
