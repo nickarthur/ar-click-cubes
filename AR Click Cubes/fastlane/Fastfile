@@ -12,6 +12,15 @@ default_platform :ios
 
 platform :ios do
 
+    lane :incrementBuildNumber do
+        # Automatically increments the last part of the build number.
+        increment_build_number_in_plist(scheme: "#{ENV['APP_SCHEME']}")
+    end
+
+    lane :incrementVersion do
+        increment_version_number_in_plist(scheme: "#{ENV['APP_SCHEME']}") # Automatically increment patch version number.
+    end
+
     lane :testEnvVars do
         puts "the scheme #{ENV['APP_SCHEME']}"
         puts "the id #{ENV['APP_IDENTIFIER']}"
@@ -28,6 +37,8 @@ platform :ios do
     end
 
     lane :release do
+        increment_build_number_in_plist(
+            build_number: 0) # reset build number to 0 for a new release
         match(
             git_url: "https://www.github.com/nickarthur/certificates.git",
             type: "appstore",
@@ -37,7 +48,7 @@ platform :ios do
         # sync_code_signing
         # disable_automatic_code_signing(path: "#{ENV['APP_NAME']}.xcodeproj")
         ensure_git_status_clean
-        increment_build_number
+        increment_version_number_in_plist # Automatically increment patch version number.
         commit_version_bump
         add_git_tag
         build_app(scheme: "#{ENV['APP_SCHEME']}")
@@ -54,8 +65,8 @@ platform :ios do
                 contact_first_name: "Lawrence",
                 contact_last_name: "Nickerson",
                 contact_phone: "15122553414}",
-                demo_account_name: "N/A",
-                demo_account_password: "N/A",
+                demo_account_name: "testuser",
+                demo_account_password: "P@ssw0rd",
                 notes: "this is review note for the reviewer <3 thank you for reviewing"
             },
             localized_app_info: {
@@ -90,38 +101,38 @@ platform :ios do
         run_tests(scheme: "#{ENV['APP_SCHEME']}")
     end
 
-    lane :beta do
+    lane :uploadNewBetaBuild do
         ensure_git_status_clean
-        increment_build_number
+        increment_build_number_in_plist # Automatically increments the last part of the build number.
         commit_version_bump
         add_git_tag
         build_app(scheme: "#{ENV['APP_SCHEME']}")
-        upload_to_testflight(changelog: "First Build")
+        upload_to_testflight(changelog: "updated build...")
     end
 
     lane :betabits do
         ensure_git_status_clean
-        increment_build_number
+        increment_build_number_in_plist # Automatically increments the last part of the build number.
         commit_version_bump
         add_git_tag
         build_app(scheme: "#{ENV['APP_SCHEME']}",
         workspace: "#{ENV['APP_NAME']}.xcworkspace",
         include_bitcode: true)
-        upload_to_testflight(changelog: "First Build")
+        upload_to_testflight(changelog: "another build...")
     end
 
 
-    desc "Creating a code signing certificate and provisioning profile"
-    lane :provision do
-        produce(
-            app_name: "#{ENV['APP_NAME']}",
-            language: 'English',
-            app_version: '1.0',
-            sku: "#{ENV['APP_IDENTIFIER']}"
-        )
-        cert
-        sigh(force: true)
-    end
+    #desc "Creating a code signing certificate and provisioning profile"
+    #lane :provision do
+    #    produce(
+    #        app_name: "#{ENV['APP_NAME']}",
+    #        language: 'English',
+    #        app_version: '1.0',
+    #        sku: "#{ENV['APP_IDENTIFIER']}"
+    #    )
+    #    cert
+    #    sigh(force: true)
+    #end
 
     lane :screenshot do
         capture_screenshots
@@ -132,7 +143,7 @@ platform :ios do
     desc "Create ipa"
     lane :build do
         ensure_git_status_clean
-        increment_build_number
+        increment_version_number_in_plist # Automatically increment patch version number.
         commit_version_bump
         add_git_tag
         gym

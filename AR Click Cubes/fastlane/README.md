@@ -16,6 +16,16 @@ or alternatively using `brew cask install fastlane`
 
 # Available Actions
 ## iOS
+### ios incrementBuildNumber
+```
+fastlane ios incrementBuildNumber
+```
+
+### ios incrementVersion
+```
+fastlane ios incrementVersion
+```
+
 ### ios testEnvVars
 ```
 fastlane ios testEnvVars
@@ -41,9 +51,9 @@ fastlane ios frame
 fastlane ios tests
 ```
 
-### ios beta
+### ios uploadNewBetaBuild
 ```
-fastlane ios beta
+fastlane ios uploadNewBetaBuild
 ```
 
 ### ios betabits
@@ -51,11 +61,6 @@ fastlane ios beta
 fastlane ios betabits
 ```
 
-### ios provision
-```
-fastlane ios provision
-```
-Creating a code signing certificate and provisioning profile
 ### ios screenshot
 ```
 fastlane ios screenshot
