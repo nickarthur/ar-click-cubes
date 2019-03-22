@@ -55,6 +55,8 @@ platform :ios do
         # enable_automatic_code_signing(path: "#{ENV['APP_NAME']}.xcodeproj")
 
         upload_to_testflight(
+            distribute_external: true
+            uses_non_exempt_encryption: false,
             beta_app_feedback_email: "nickarthur.night.002@gmail.com",
             beta_app_description: "Click Screen to place cubes",
             demo_account_required: true,
@@ -83,7 +85,6 @@ platform :ios do
                 }
             }
         )
-
     end
 
     lane :screenshots do
@@ -107,7 +108,11 @@ platform :ios do
         commit_version_bump
         add_git_tag
         build_app(scheme: "#{ENV['APP_SCHEME']}")
-        upload_to_testflight(changelog: "updated build...")
+
+        upload_to_testflight(changelog: "updated build...",
+            distribute_external: true,
+            uses_non_exempt_encryption: false
+        )
     end
 
     lane :betabits do
@@ -168,5 +173,11 @@ platform :ios do
     # This block is called if there was an error running a lane.
     end
 
+    desc "Try using pilot to distribute a build externally"
+    lane :pilotDistributeToTesters do
+        pilot(distribute_external: true,
+            changelog: 'Misc. bug fixes and improvements throughout the app.'
+        )
+    end
 end
 
