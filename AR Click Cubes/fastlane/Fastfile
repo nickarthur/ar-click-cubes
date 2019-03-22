@@ -48,7 +48,7 @@ platform :ios do
         ensure_git_status_clean
         increment_build_number_in_plist(scheme: "#{ENV['APP_SCHEME']}",
         build_number: "1") # reset build number to 1 for a new release
-        increment_version_number_in_plist # Automatically increment patch version number.
+        increment_version_number_in_plist(scheme: "#{ENV['APP_SCHEME']}") # Automatically increment patch version number.
         commit_version_bump
         add_git_tag
         build_app(scheme: "#{ENV['APP_SCHEME']}")
