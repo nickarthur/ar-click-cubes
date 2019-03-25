@@ -16,8 +16,13 @@ target 'AR Click Cubes' do
   pod 'AWSGoogleSignIn', '~> 2.9.0'      # Add this new dependency
   pod 'GoogleSignIn', '~> 4.0'           # Add this new dependency
 
+  # google admob
+  pod 'Google-Mobile-Ads-SDK'
+  
+  # to zip and unzip
   pod 'SSZipArchive'
 
+  
   target 'AR Click CubesTests' do
     inherit! :search_paths
     # Pods for testing
