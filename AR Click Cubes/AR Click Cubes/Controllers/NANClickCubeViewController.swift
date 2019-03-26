@@ -16,6 +16,9 @@ import AWSAppSync
 import AWSAuthUI
 import AWSMobileClient
 import AWSUserPoolsSignIn
+import GoogleMobileAds
+
+let kInterstitialAdUnitID = "ca-app-pub-3940256099942544/4411468910"
 
 class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
     
@@ -25,20 +28,50 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet var signInStateLabel: UILabel!
 
+    @IBOutlet weak var bannerAdButton: UIButton!
+    
+    @IBOutlet weak var interstitialAdButton: UIButton!
+    
+    @IBOutlet weak var rewardedVideoAdButton: UIButton!
     
     // MARK: - Variables
 
+    let workbenchYOffset: Float = -0.2
+    let clickCubeSceneManager = ClickCubeSceneManager()
+    
+    var welcomeAlert: UIAlertController!
+    
+    // AdMob
+    lazy var bannerView: GADBannerView = {
+        return GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+    }()
+    
+    /// The interstitial ad.
+    private(set) var interstitial: GADInterstitial = {
+            return  GADInterstitial(adUnitID: kInterstitialAdUnitID)
+    }()
+
+    
+    // Appsync
     lazy var appSyncClient: AWSAppSyncClient? = {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         return appDelegate.appSyncClient
     }()
 
-    let workbenchYOffset: Float = -0.2
-    let clickCubeSceneManager = ClickCubeSceneManager()
-
     
-    // MARK: IBActions
-
+    // MARK: - IBActions
+    @IBAction func showBannerAd(_ sender: UIButton) {
+        loadBannerAd(bannerView)
+    }
+    
+    @IBAction func showInterstitialAd(_ sender: UIButton) {
+        presentInterstitialAd()
+    }
+    
+    @IBAction func showRewardedVideoAd(_ sender: UIButton) {
+        presentRewardBasedVideoAd()
+    }
+    
     @IBAction func performExperiment(_ sender: UIButton) {
         let materialName = "material"
         let filename = materialName.appending(".plist")
@@ -132,6 +165,14 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupWecomeAlert()
+        
+        setupRewardBasedVideoAd()
+        
+        setupInterstitial(interstitial)
+        
+        setupBannerView(bannerView)
+        
         setupTempLaunchSceneView()
         
         setupNavigation()
@@ -139,6 +180,8 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
         setupAppSyncClient()
 
         setupScene()
+        
+        welcomeUser()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -324,4 +367,43 @@ class NANClickCubeViewController: UIViewController, ARSCNViewDelegate {
         }
     }
 
+    // MARK: - AdMob
+    fileprivate func resetInterstitialAd( ) {
+        // pre-load next ad
+        if interstitial.hasBeenUsed {
+            interstitial = GADInterstitial(adUnitID: kInterstitialAdUnitID)
+        } else {
+            print("Interstitial not used yet")
+        }
+            interstitial.load(GADRequest())
+    }
+    
+    fileprivate func presentInterstitialAd() {
+        if (interstitial.isReady) {
+            self.interstitial.present(fromRootViewController: self)
+            resetInterstitialAd()
+        } else {
+            print("Ad wasn't ready")
+        }
+    }
+    
+    // MARK: - GADRewardBasedVideoAdDelegate
+    public override func rewardBasedVideoAd(_ rewardBasedVideoAd: GADRewardBasedVideoAd,
+                                   didRewardUserWith reward: GADAdReward) {
+        print("OVERRIDE: Reward received with currency: \(reward.type), amount \(reward.amount).")
+    }
+    
+    // MARK: - General
+    fileprivate func welcomeUser() {
+        present(welcomeAlert, animated: true, completion: nil)
+    }
+    
+    func setupWecomeAlert() {
+        welcomeAlert = UIAlertController(title: "Welcome Aboard!", message: "Place some Cubes", preferredStyle: .alert)
+        welcomeAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { [weak self] _ in
+            if let self = self {
+                self.presentInterstitialAd()
+            }
+        }))
+    }
 }

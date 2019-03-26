@@ -35,6 +35,7 @@ PODS:
     - Bolts (~> 1.9)
   - FBSDKLoginKit (4.41.0):
     - FBSDKCoreKit
+  - Google-Mobile-Ads-SDK (7.41.0)
   - GoogleSignIn (4.4.0):
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
     - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
@@ -61,6 +62,7 @@ DEPENDENCIES:
   - AWSGoogleSignIn (~> 2.9.0)
   - AWSMobileClient (~> 2.9.0)
   - AWSUserPoolsSignIn (~> 2.9.0)
+  - Google-Mobile-Ads-SDK
   - GoogleSignIn (~> 4.0)
   - SSZipArchive
 
@@ -79,6 +81,7 @@ SPEC REPOS:
     - Bolts
     - FBSDKCoreKit
     - FBSDKLoginKit
+    - Google-Mobile-Ads-SDK
     - GoogleSignIn
     - GoogleToolboxForMac
     - GTMSessionFetcher
@@ -100,6 +103,7 @@ SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   FBSDKCoreKit: 974810fe3806173f3777c68062fa8ed6fa59b59d
   FBSDKLoginKit: 159a5c2eebe6a0774c3b128f5085128679233d2b
+  Google-Mobile-Ads-SDK: 101ce89b94fdf60ec64ba7b6e9b9d812dc765936
   GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
   GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
@@ -107,6 +111,6 @@ SPEC CHECKSUMS:
   SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
   SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
 
-PODFILE CHECKSUM: e249fd8256c7ebe9694ae95d3c9b9312acb15e09
+PODFILE CHECKSUM: 362bf0e569fa632c63f4c41b2251982c614a6ecd
 
 COCOAPODS: 1.6.0.beta.1
