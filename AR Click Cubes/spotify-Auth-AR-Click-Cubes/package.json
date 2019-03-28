@@ -1,0 +1,22 @@
+{
+  "name": "spotify-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "node-fetch": "^2.3.0",
+    "spotify-web-api-node": "^4.0.0"
+  },
+  "engines": {
+    "node": "6.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "makekeys": "node utils/bytestokey.js aes-128-cbc secret",
+    "decrypt": "node utils/encrypt-practice-server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
