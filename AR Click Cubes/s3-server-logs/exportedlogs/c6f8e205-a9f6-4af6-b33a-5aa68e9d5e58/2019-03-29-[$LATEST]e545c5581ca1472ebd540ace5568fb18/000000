@@ -1,0 +1,487 @@
+2019-03-29T10:04:50.457Z START RequestId: e8e9c156-1853-4fcf-b0e7-a930b6e135d4 Version: $LATEST
+
+2019-03-29T10:04:50.498Z 2019-03-29T10:04:50.498Z	e8e9c156-1853-4fcf-b0e7-a930b6e135d4	!!!! @@@@ client_id: 7d65c0e3ab7a44e881f47374ee1f578a
+
+
+2019-03-29T10:04:50.498Z 2019-03-29T10:04:50.498Z	e8e9c156-1853-4fcf-b0e7-a930b6e135d4	!!!! @@@@ process.env.CLIENT_ID: 7d65c0e3ab7a44e881f47374ee1f578a
+
+
+2019-03-29T10:04:50.498Z 2019-03-29T10:04:50.498Z	e8e9c156-1853-4fcf-b0e7-a930b6e135d4	!!!! @@@@ clientId: 7d65c0e3ab7a44e881f47374ee1f578a
+
+
+2019-03-29T10:04:50.498Z 2019-03-29T10:04:50.498Z	e8e9c156-1853-4fcf-b0e7-a930b6e135d4	!!!!! @@@@@@ **** path: /spotify-Auth-AR-Click-Cubes/swap
+
+2019-03-29T10:04:50.498Z 2019-03-29T10:04:50.498Z	e8e9c156-1853-4fcf-b0e7-a930b6e135d4	!!!!!@@@@@@@ **** method: POST
+
+2019-03-29T10:04:50.498Z 2019-03-29T10:04:50.498Z	e8e9c156-1853-4fcf-b0e7-a930b6e135d4	*&*&*&^^%%^%%^^^^^^^%%^^^^^!!!@@@@@@@@
+
+ event: {"body-json":"code=AQCKSqVFNezEUbq8-ko0guQWY-7E_43Z21VM2EhWAtOiGFeiPSLP0XfmU9Fo26vk1lQ0X2LgXqXRM1Md-ImWoiUaelCr5eMC5TuvpWMfxfz8LTvlDCbO5_ws6GH_3u99KUn2rlX2BoJOJcDZqaib5AatO8cECnWMuFShRP5AwPnIBu3nrPwfA1GetiCWc50pF4layqIkYxuyp5Bbh_bCC7KNkJic5u5sLeCII-NlSTMybwxPRqgWEEt_CPlD8-WHtH2mbDBEZFbMYW6J2oX1pcnCvrWyhSHXs435JX0mxbKtwOlVXmFZttXS-7Tjr3GFfb5sm8X6sFrBJV346RMmf3XJtTaLERU4WkmTvpSB7hs5o8lN9iVwqmxg4KIQ","params":{"path":{},"querystring":{},"header":{"accept":"*/*","accept-encoding":"br, gzip, deflate","accept-language":"en-us","content-type":"application/x-www-form-urlencoded","Host":"lfytweatz7.execute-api.us-east-1.amazonaws.com","User-Agent":"SPTLoginSampleAppSwift/1 CFNetwork/976 Darwin/18.2.0","X-Amzn-Trace-Id":"Root=1-5c9dedc1-b788a4e7da0fd7150a6768eb","X-Forwarded-For":"173.174.93.222","X-Forwarded-Port":"443","X-Forwarded-Proto":"https"}},"stage-variables":{},"context":{"account-id":"","api-id":"lfytweatz7","api-key":"","authorizer-principal-id":"","caller":"","cognito-authentication-provider":"","cognito-authentication-type":"","cognito-identity-id":"","cognito-identity-pool-id":"","http-method":"POST","stage":"default","source-ip":"173.174.93.222","user":"","user-agent":"SPTLoginSampleAppSwift/1 CFNetwork/976 Darwin/18.2.0","user-arn":"","request-id":"16e4ba82-520a-11e9-ad90-3d17dc5cb0e0","resource-id":"q32d83","resource-path":"/spotify-Auth-AR-Click-Cubes/swap"},"data":{"code":"AQCKSqVFNezEUbq8-ko0guQWY-7E_43Z21VM2EhWAtOiGFeiPSLP0XfmU9Fo26vk1lQ0X2LgXqXRM1Md-ImWoiUaelCr5eMC5TuvpWMfxfz8LTvlDCbO5_ws6GH_3u99KUn2rlX2BoJOJcDZqaib5AatO8cECnWMuFShRP5AwPnIBu3nrPwfA1GetiCWc50pF4layqIkYxuyp5Bbh_bCC7KNkJic5u5sLeCII-NlSTMybwxPRqgWEEt_CPlD8-WHtH2mbDBEZFbMYW6J2oX1pcnCvrWyhSHXs435JX0mxbKtwOlVXmFZttXS-7Tjr3GFfb5sm8X6sFrBJV346RMmf3XJtTaLERU4WkmTvpSB7hs5o8lN9iVwqmxg4KIQ"}}
+
+
+
+2019-03-29T10:04:50.517Z 2019-03-29T10:04:50.517Z	e8e9c156-1853-4fcf-b0e7-a930b6e135d4	!!!! @@@@ CODE: AQCKSqVFNezEUbq8-ko0guQWY-7E_43Z21VM2EhWAtOiGFeiPSLP0XfmU9Fo26vk1lQ0X2LgXqXRM1Md-ImWoiUaelCr5eMC5TuvpWMfxfz8LTvlDCbO5_ws6GH_3u99KUn2rlX2BoJOJcDZqaib5AatO8cECnWMuFShRP5AwPnIBu3nrPwfA1GetiCWc50pF4layqIkYxuyp5Bbh_bCC7KNkJic5u5sLeCII-NlSTMybwxPRqgWEEt_CPlD8-WHtH2mbDBEZFbMYW6J2oX1pcnCvrWyhSHXs435JX0mxbKtwOlVXmFZttXS-7Tjr3GFfb5sm8X6sFrBJV346RMmf3XJtTaLERU4WkmTvpSB7hs5o8lN9iVwqmxg4KIQ
+
+2019-03-29T10:04:51.178Z 2019-03-29T10:04:51.178Z	e8e9c156-1853-4fcf-b0e7-a930b6e135d4	The token expires in 3600
+
+2019-03-29T10:04:51.178Z 2019-03-29T10:04:51.178Z	e8e9c156-1853-4fcf-b0e7-a930b6e135d4	The access token is BQD3dzlqgBTIU0aL5yf4eoNqc9bnfbrU5dCdzZOm78X7eTCHabIjGbd-zHztkvLif91FWMsdVTlCDGpJ0LauOqIPxIKHCWoHlJzKtIM6n9vdX5tY-MkkmYIBWIXb1ln2vjHqeG_4t0CG4YEaWGTX_WKZ8TTwttRYKAhfk6jmFR3dgkseUL_iytg
+
+2019-03-29T10:04:51.178Z 2019-03-29T10:04:51.178Z	e8e9c156-1853-4fcf-b0e7-a930b6e135d4	The refresh token is AQDVnEorv_9ms_goE9XAXvVqjgNY8ytv-_PDJ9tpykM42dobH7ExcSCHo7JeL_nZFDNFKyTGMnIqhyssufioK2CsTHs1SrSh0rPx3UYxpm6Hhx-Ep2d4IOdbcvu65p2ztTbRLw
+
+2019-03-29T10:04:51.178Z 2019-03-29T10:04:51.178Z	e8e9c156-1853-4fcf-b0e7-a930b6e135d4	**** SWAP DATA FROM SPOTIFY: 
+ {
+  "body": {
+    "access_token": "BQD3dzlqgBTIU0aL5yf4eoNqc9bnfbrU5dCdzZOm78X7eTCHabIjGbd-zHztkvLif91FWMsdVTlCDGpJ0LauOqIPxIKHCWoHlJzKtIM6n9vdX5tY-MkkmYIBWIXb1ln2vjHqeG_4t0CG4YEaWGTX_WKZ8TTwttRYKAhfk6jmFR3dgkseUL_iytg",
+    "token_type": "Bearer",
+    "expires_in": 3600,
+    "refresh_token": "AQDVnEorv_9ms_goE9XAXvVqjgNY8ytv-_PDJ9tpykM42dobH7ExcSCHo7JeL_nZFDNFKyTGMnIqhyssufioK2CsTHs1SrSh0rPx3UYxpm6Hhx-Ep2d4IOdbcvu65p2ztTbRLw",
+    "scope": "playlist-read-private app-remote-control user-library-read user-follow-read user-read-recently-played user-top-read"
+  },
+  "headers": {
+    "server": "nginx",
+    "date": "Fri, 29 Mar 2019 10:04:51 GMT",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "connection": "close",
+    "vary": "Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "strict-transport-security": "max-age=31536000",
+    "content-encoding": "gzip"
+  },
+  "statusCode": 200
+}
+
+
+2019-03-29T10:04:51.197Z 2019-03-29T10:04:51.197Z	e8e9c156-1853-4fcf-b0e7-a930b6e135d4	**** unencrypted refresh token: AQDVnEorv_9ms_goE9XAXvVqjgNY8ytv-_PDJ9tpykM42dobH7ExcSCHo7JeL_nZFDNFKyTGMnIqhyssufioK2CsTHs1SrSh0rPx3UYxpm6Hhx-Ep2d4IOdbcvu65p2ztTbRLw
+
+2019-03-29T10:04:51.197Z 2019-03-29T10:04:51.197Z	e8e9c156-1853-4fcf-b0e7-a930b6e135d4	**** encrypted refresh token: 21ba926ed887ec0c372582ac4c3e1d4d:c660f6985cb3e13f10f4f90ef9d86c348b771cc374505d3eaaceb9379dcc21467875d0a603526dc72047a6c44330c0ac9bc63603307c1d368bc42f5ba0e55974aa1a9d8fb8d14a015eeb721233d8280a496ba5d7cb73342ca5a1803423327ede41a7a0d7dcb886b1c63f37ab00416fe75300179fd1981676f6afecf0c75af2423acdd3149acf3061b88582e068f8dff1
+
+2019-03-29T10:04:51.198Z END RequestId: e8e9c156-1853-4fcf-b0e7-a930b6e135d4
+
+2019-03-29T10:04:51.198Z REPORT RequestId: e8e9c156-1853-4fcf-b0e7-a930b6e135d4	Duration: 777.81 ms	Billed Duration: 800 ms 	Memory Size: 128 MB	Max Memory Used: 82 MB	
+
+2019-03-29T10:09:13.920Z START RequestId: f161b745-ef01-4b93-9f1c-f6c32026ac27 Version: $LATEST
+
+2019-03-29T10:09:13.997Z 2019-03-29T10:09:13.937Z	f161b745-ef01-4b93-9f1c-f6c32026ac27	!!!! @@@@ client_id: 7d65c0e3ab7a44e881f47374ee1f578a
+
+
+2019-03-29T10:09:13.997Z 2019-03-29T10:09:13.937Z	f161b745-ef01-4b93-9f1c-f6c32026ac27	!!!! @@@@ process.env.CLIENT_ID: 7d65c0e3ab7a44e881f47374ee1f578a
+
+
+2019-03-29T10:09:13.997Z 2019-03-29T10:09:13.937Z	f161b745-ef01-4b93-9f1c-f6c32026ac27	!!!! @@@@ clientId: 7d65c0e3ab7a44e881f47374ee1f578a
+
+
+2019-03-29T10:09:13.997Z 2019-03-29T10:09:13.937Z	f161b745-ef01-4b93-9f1c-f6c32026ac27	!!!!! @@@@@@ **** path: undefined
+
+2019-03-29T10:09:13.997Z 2019-03-29T10:09:13.937Z	f161b745-ef01-4b93-9f1c-f6c32026ac27	!!!!!@@@@@@@ **** method: undefined
+
+2019-03-29T10:09:13.997Z 2019-03-29T10:09:13.937Z	f161b745-ef01-4b93-9f1c-f6c32026ac27	*&*&*&^^%%^%%^^^^^^^%%^^^^^!!!@@@@@@@@
+
+ event: {}
+
+
+
+2019-03-29T10:09:13.997Z 2019-03-29T10:09:13.938Z	f161b745-ef01-4b93-9f1c-f6c32026ac27	undefined
+
+2019-03-29T10:09:13.997Z 2019-03-29T10:09:13.938Z	f161b745-ef01-4b93-9f1c-f6c32026ac27	**** encoded = N2Q2NWMwZTNhYjdhNDRlODgxZjQ3Mzc0ZWUxZjU3OGE6YzUwNzk4YjlkNmIyNDA5OWI0ZTUyYmFjZGY1YTNjMDk=
+
+2019-03-29T10:09:14.299Z 2019-03-29T10:09:14.299Z	f161b745-ef01-4b93-9f1c-f6c32026ac27	Response {
+  size: 0,
+  timeout: 0,
+  [Symbol(Body internals)]: 
+   { body: 
+      Gunzip {
+        _readableState: 
+         ReadableState {
+           objectMode: false,
+           highWaterMark: 16384,
+           buffer: BufferList { head: null, tail: null, length: 0 },
+           length: 0,
+           pipes: null,
+           pipesCount: 0,
+           flowing: null,
+           ended: false,
+           endEmitted: false,
+           reading: false,
+           sync: false,
+           needReadable: true,
+           emittedReadable: false,
+           readableListening: false,
+           resumeScheduled: false,
+           destroyed: false,
+           defaultEncoding: 'utf8',
+           awaitDrain: 0,
+           readingMore: false,
+           decoder: null,
+           encoding: null },
+        readable: true,
+        domain: null,
+        _events: 
+         { end: 
+            [ { [Function: bound onceWrapper]
+                [length]: 0,
+                [name]: 'bound onceWrapper',
+                listener: 
+                 { [Function: onend]
+                   [length]: 0,
+                   [name]: 'onend',
+                   [prototype]: onend { [constructor]: [Circular] } } },
+              { [Function: bound onceWrapper]
+                [length]: 0,
+                [name]: 'bound onceWrapper',
+                listener: 
+                 { [Function: close]
+                   [length]: 1,
+                   [name]: 'close',
+                   [prototype]: close { [constructor]: [Circular] } } },
+              [length]: 2 ],
+           prefinish: 
+            { [Function: prefinish]
+              [length]: 0,
+              [name]: 'prefinish',
+              [prototype]: prefinish { [constructor]: [Circular] } },
+           unpipe: 
+            { [Function: onunpipe]
+              [length]: 2,
+              [name]: 'onunpipe',
+              [prototype]: onunpipe { [constructor]: [Circular] } },
+           drain: 
+            { [Function]
+              [length]: 0,
+              [name]: '',
+              [prototype]: { [constructor]: [Circular] } },
+           error: 
+            [ { [Function: onerror]
+                [length]: 1,
+                [name]: 'onerror',
+                [prototype]: onerror { [constructor]: [Circular] } },
+              { [Function]
+                [length]: 1,
+                [name]: '',
+                [prototype]: { [constructor]: [Circular] } },
+              [length]: 2 ],
+           close: 
+            { [Function: bound onceWrapper]
+              [length]: 0,
+              [name]: 'bound onceWrapper',
+              listener: 
+               { [Function: onclose]
+                 [length]: 0,
+                 [name]: 'onclose',
+                 [prototype]: onclose { [constructor]: [Circular] } } },
+           finish: 
+            { [Function: bound onceWrapper]
+              [length]: 0,
+              [name]: 'bound onceWrapper',
+              listener: 
+               { [Function: onfinish]
+                 [length]: 0,
+                 [name]: 'onfinish',
+                 [prototype]: onfinish { [constructor]: [Circular] } } } },
+        _eventsCount: 7,
+        _maxListeners: undefined,
+        _writableState: 
+         WritableState {
+           objectMode: false,
+           highWaterMark: 16384,
+           finalCalled: false,
+           needDrain: false,
+           ending: true,
+           ended: true,
+           finished: false,
+           destroyed: false,
+           decodeStrings: true,
+           defaultEncoding: 'utf8',
+           length: 161,
+           writing: true,
+           corked: 0,
+           sync: false,
+           bufferProcessing: false,
+           onwrite: { [Function: bound onwrite] [length]: 1, [name]: 'bound onwrite' },
+           writecb: 
+            { [Function: nop]
+              [length]: 0,
+              [name]: 'nop',
+              [prototype]: nop { [constructor]: [Circular] } },
+           writelen: 161,
+           bufferedRequest: null,
+           lastBufferedRequest: null,
+           pendingcb: 1,
+           prefinished: false,
+           errorEmitted: false,
+           bufferedRequestCount: 0,
+           corkedRequestsFree: 
+            { next: null,
+              entry: null,
+              finish: { [Function: bound onCorkedFinish] [length]: 1, [name]: 'bound onCorkedFinish' } } },
+        writable: false,
+        allowHalfOpen: true,
+        _transformState: 
+         { afterTransform: { [Function: bound afterTransform] [length]: 2, [name]: 'bound afterTransform' },
+           needTransform: false,
+           transforming: true,
+           writecb: { [Function: bound onwrite] [length]: 1, [name]: 'bound onwrite' },
+           writechunk: <Buffer 1f 8b 08 00 00 00 00 00 00 03 1d 8d cb 0a 82 40 14 40 ff e5 ae 5d f8 80 82 76 be 52 09 c9 07 da 63 33 e8 74 09 0d 1d 9b ab 99 46 ff 9e b9 3d 1c ce f9 ... >,
+           writeencoding: 'buffer' },
+        bytesRead: 0,
+        _opts: { flush: 2, finishFlush: 2 },
+        _chunkSize: 16384,
+        _flushFlag: 2,
+        _finishFlushFlag: 2,
+        _scheduledFlushFlag: 0,
+        _handle: 
+         Zlib {
+           onerror: { [Function: bound zlibOnError] [length]: 2, [name]: 'bound zlibOnError' },
+           buffer: <Buffer 1f 8b 08 00 00 00 00 00 00 03 1d 8d cb 0a 82 40 14 40 ff e5 ae 5d f8 80 82 76 be 52 09 c9 07 da 63 33 e8 74 09 0d 1d 9b ab 99 46 ff 9e b9 3d 1c ce f9 ... >,
+           callback: 
+            { [Function: callback]
+              [length]: 2,
+              [name]: 'callback',
+              [prototype]: callback { [constructor]: [Circular] } } },
+        _hadError: false,
+        _buffer: <Buffer 7b 22 61 63 63 65 73 73 5f 74 6f 6b 65 6e 22 3a 22 42 51 41 73 55 46 67 4d 6e 6a 73 75 50 55 52 31 4b 31 64 32 37 43 6f 79 52 71 44 53 44 56 58 63 48 ... >,
+        _offset: 0,
+        _level: -1,
+        _strategy: 0 },
+     disturbed: false,
+     error: null },
+  [Symbol(Response internals)]: 
+   { url: 'https://accounts.spotify.com/api/token',
+     status: 200,
+     statusText: 'OK',
+     headers: 
+      Headers {
+        [Symbol(map)]: 
+         { server: [ 'nginx', [length]: 1 ],
+           date: [ 'Fri, 29 Mar 2019 10:09:14 GMT', [length]: 1 ],
+           'content-type': [ 'application/json', [length]: 1 ],
+           'transfer-encoding': [ 'chunked', [length]: 1 ],
+           connection: [ 'close', [length]: 1 ],
+           vary: [ 'Accept-Encoding', [length]: 1 ],
+           'x-content-type-options': [ 'nosniff', [length]: 1 ],
+           'strict-transport-security': [ 'max-age=31536000', [length]: 1 ],
+           'content-encoding': [ 'gzip', [length]: 1 ] } } } }
+
+2019-03-29T10:09:14.300Z 2019-03-29T10:09:14.300Z	f161b745-ef01-4b93-9f1c-f6c32026ac27	-----------------------------------------------
+
+2019-03-29T10:09:14.300Z 2019-03-29T10:09:14.300Z	f161b745-ef01-4b93-9f1c-f6c32026ac27	{ access_token: 'BQAsUFgMnjsuPUR1K1d27CoyRqDSDVXcHmbvrGcRtEo3srjwCsEAPS3PzpyirbQZIBebQzHumAYW2Mw2VOI',
+  token_type: 'Bearer',
+  expires_in: 3600,
+  scope: '' }
+
+2019-03-29T10:09:14.337Z END RequestId: f161b745-ef01-4b93-9f1c-f6c32026ac27
+
+2019-03-29T10:09:14.337Z REPORT RequestId: f161b745-ef01-4b93-9f1c-f6c32026ac27	Duration: 379.46 ms	Billed Duration: 400 ms 	Memory Size: 128 MB	Max Memory Used: 83 MB	
+
+2019-03-29T10:11:40.178Z START RequestId: 7dccd8b2-98d2-4c03-bdd2-8ad3f70904ac Version: $LATEST
+
+2019-03-29T10:11:40.197Z 2019-03-29T10:11:40.180Z	7dccd8b2-98d2-4c03-bdd2-8ad3f70904ac	!!!! @@@@ client_id: 7d65c0e3ab7a44e881f47374ee1f578a
+
+
+2019-03-29T10:11:40.197Z 2019-03-29T10:11:40.180Z	7dccd8b2-98d2-4c03-bdd2-8ad3f70904ac	!!!! @@@@ process.env.CLIENT_ID: 7d65c0e3ab7a44e881f47374ee1f578a
+
+
+2019-03-29T10:11:40.197Z 2019-03-29T10:11:40.180Z	7dccd8b2-98d2-4c03-bdd2-8ad3f70904ac	!!!! @@@@ clientId: 7d65c0e3ab7a44e881f47374ee1f578a
+
+
+2019-03-29T10:11:40.197Z 2019-03-29T10:11:40.180Z	7dccd8b2-98d2-4c03-bdd2-8ad3f70904ac	!!!!! @@@@@@ **** path: undefined
+
+2019-03-29T10:11:40.197Z 2019-03-29T10:11:40.180Z	7dccd8b2-98d2-4c03-bdd2-8ad3f70904ac	!!!!!@@@@@@@ **** method: undefined
+
+2019-03-29T10:11:40.197Z 2019-03-29T10:11:40.180Z	7dccd8b2-98d2-4c03-bdd2-8ad3f70904ac	*&*&*&^^%%^%%^^^^^^^%%^^^^^!!!@@@@@@@@
+
+ event: {"refresh_token":"21ba926ed887ec0c372582ac4c3e1d4d:c660f6985cb3e13f10f4f90ef9d86c348b771cc374505d3eaaceb9379dcc21467875d0a603526dc72047a6c44330c0ac9bc63603307c1d368bc42f5ba0e55974aa1a9d8fb8d14a015eeb721233d8280a496ba5d7cb73342ca5a1803423327ede41a7a0d7dcb886b1c63f37ab00416fe75300179fd1981676f6afecf0c75af2423acdd3149acf3061b88582e068f8dff1"}
+
+
+
+2019-03-29T10:11:40.197Z 2019-03-29T10:11:40.180Z	7dccd8b2-98d2-4c03-bdd2-8ad3f70904ac	undefined
+
+2019-03-29T10:11:40.197Z 2019-03-29T10:11:40.180Z	7dccd8b2-98d2-4c03-bdd2-8ad3f70904ac	**** encoded = N2Q2NWMwZTNhYjdhNDRlODgxZjQ3Mzc0ZWUxZjU3OGE6YzUwNzk4YjlkNmIyNDA5OWI0ZTUyYmFjZGY1YTNjMDk=
+
+2019-03-29T10:11:40.399Z 2019-03-29T10:11:40.399Z	7dccd8b2-98d2-4c03-bdd2-8ad3f70904ac	Response {
+  size: 0,
+  timeout: 0,
+  [Symbol(Body internals)]: 
+   { body: 
+      Gunzip {
+        _readableState: 
+         ReadableState {
+           objectMode: false,
+           highWaterMark: 16384,
+           buffer: BufferList { head: null, tail: null, length: 0 },
+           length: 0,
+           pipes: null,
+           pipesCount: 0,
+           flowing: null,
+           ended: false,
+           endEmitted: false,
+           reading: false,
+           sync: false,
+           needReadable: true,
+           emittedReadable: false,
+           readableListening: false,
+           resumeScheduled: false,
+           destroyed: false,
+           defaultEncoding: 'utf8',
+           awaitDrain: 0,
+           readingMore: false,
+           decoder: null,
+           encoding: null },
+        readable: true,
+        domain: null,
+        _events: 
+         { end: 
+            [ { [Function: bound onceWrapper]
+                [length]: 0,
+                [name]: 'bound onceWrapper',
+                listener: 
+                 { [Function: onend]
+                   [length]: 0,
+                   [name]: 'onend',
+                   [prototype]: onend { [constructor]: [Circular] } } },
+              { [Function: bound onceWrapper]
+                [length]: 0,
+                [name]: 'bound onceWrapper',
+                listener: 
+                 { [Function: close]
+                   [length]: 1,
+                   [name]: 'close',
+                   [prototype]: close { [constructor]: [Circular] } } },
+              [length]: 2 ],
+           prefinish: 
+            { [Function: prefinish]
+              [length]: 0,
+              [name]: 'prefinish',
+              [prototype]: prefinish { [constructor]: [Circular] } },
+           unpipe: 
+            { [Function: onunpipe]
+              [length]: 2,
+              [name]: 'onunpipe',
+              [prototype]: onunpipe { [constructor]: [Circular] } },
+           drain: 
+            { [Function]
+              [length]: 0,
+              [name]: '',
+              [prototype]: { [constructor]: [Circular] } },
+           error: 
+            [ { [Function: onerror]
+                [length]: 1,
+                [name]: 'onerror',
+                [prototype]: onerror { [constructor]: [Circular] } },
+              { [Function]
+                [length]: 1,
+                [name]: '',
+                [prototype]: { [constructor]: [Circular] } },
+              [length]: 2 ],
+           close: 
+            { [Function: bound onceWrapper]
+              [length]: 0,
+              [name]: 'bound onceWrapper',
+              listener: 
+               { [Function: onclose]
+                 [length]: 0,
+                 [name]: 'onclose',
+                 [prototype]: onclose { [constructor]: [Circular] } } },
+           finish: 
+            { [Function: bound onceWrapper]
+              [length]: 0,
+              [name]: 'bound onceWrapper',
+              listener: 
+               { [Function: onfinish]
+                 [length]: 0,
+                 [name]: 'onfinish',
+                 [prototype]: onfinish { [constructor]: [Circular] } } } },
+        _eventsCount: 7,
+        _maxListeners: undefined,
+        _writableState: 
+         WritableState {
+           objectMode: false,
+           highWaterMark: 16384,
+           finalCalled: false,
+           needDrain: false,
+           ending: true,
+           ended: true,
+           finished: false,
+           destroyed: false,
+           decodeStrings: true,
+           defaultEncoding: 'utf8',
+           length: 160,
+           writing: true,
+           corked: 0,
+           sync: false,
+           bufferProcessing: false,
+           onwrite: { [Function: bound onwrite] [length]: 1, [name]: 'bound onwrite' },
+           writecb: 
+            { [Function: nop]
+              [length]: 0,
+              [name]: 'nop',
+              [prototype]: nop { [constructor]: [Circular] } },
+           writelen: 160,
+           bufferedRequest: null,
+           lastBufferedRequest: null,
+           pendingcb: 1,
+           prefinished: false,
+           errorEmitted: false,
+           bufferedRequestCount: 0,
+           corkedRequestsFree: 
+            { next: null,
+              entry: null,
+              finish: { [Function: bound onCorkedFinish] [length]: 1, [name]: 'bound onCorkedFinish' } } },
+        writable: false,
+        allowHalfOpen: true,
+        _transformState: 
+         { afterTransform: { [Function: bound afterTransform] [length]: 2, [name]: 'bound afterTransform' },
+           needTransform: false,
+           transforming: true,
+           writecb: { [Function: bound onwrite] [length]: 1, [name]: 'bound onwrite' },
+           writechunk: <Buffer 1f 8b 08 00 00 00 00 00 00 03 1d 8d b1 0e 82 30 14 00 ff e5 cd 0c 44 a0 a2 1b 85 e0 80 a8 c4 5a 13 97 06 9b 67 40 12 79 50 54 c0 f8 ef 22 eb e5 72 f7 ... >,
+           writeencoding: 'buffer' },
+        bytesRead: 0,
+        _opts: { flush: 2, finishFlush: 2 },
+        _chunkSize: 16384,
+        _flushFlag: 2,
+        _finishFlushFlag: 2,
+        _scheduledFlushFlag: 0,
+        _handle: 
+         Zlib {
+           onerror: { [Function: bound zlibOnError] [length]: 2, [name]: 'bound zlibOnError' },
+           buffer: <Buffer 1f 8b 08 00 00 00 00 00 00 03 1d 8d b1 0e 82 30 14 00 ff e5 cd 0c 44 a0 a2 1b 85 e0 80 a8 c4 5a 13 97 06 9b 67 40 12 79 50 54 c0 f8 ef 22 eb e5 72 f7 ... >,
+           callback: 
+            { [Function: callback]
+              [length]: 2,
+              [name]: 'callback',
+              [prototype]: callback { [constructor]: [Circular] } } },
+        _hadError: false,
+        _buffer: <Buffer 7b 22 61 63 63 65 73 73 5f 74 6f 6b 65 6e 22 3a 22 42 51 43 75 54 70 7a 36 51 56 70 70 4b 41 68 33 30 71 34 36 68 6f 63 35 42 51 68 41 4c 78 73 56 62 ... >,
+        _offset: 0,
+        _level: -1,
+        _strategy: 0 },
+     disturbed: false,
+     error: null },
+  [Symbol(Response internals)]: 
+   { url: 'https://accounts.spotify.com/api/token',
+     status: 200,
+     statusText: 'OK',
+     headers: 
+      Headers {
+        [Symbol(map)]: 
+         { server: [ 'nginx', [length]: 1 ],
+           date: [ 'Fri, 29 Mar 2019 10:11:40 GMT', [length]: 1 ],
+           'content-type': [ 'application/json', [length]: 1 ],
+           'transfer-encoding': [ 'chunked', [length]: 1 ],
+           connection: [ 'close', [length]: 1 ],
+           vary: [ 'Accept-Encoding', [length]: 1 ],
+           'x-content-type-options': [ 'nosniff', [length]: 1 ],
+           'strict-transport-security': [ 'max-age=31536000', [length]: 1 ],
+           'content-encoding': [ 'gzip', [length]: 1 ] } } } }
+
+2019-03-29T10:11:40.400Z 2019-03-29T10:11:40.400Z	7dccd8b2-98d2-4c03-bdd2-8ad3f70904ac	-----------------------------------------------
+
+2019-03-29T10:11:40.400Z 2019-03-29T10:11:40.400Z	7dccd8b2-98d2-4c03-bdd2-8ad3f70904ac	{ access_token: 'BQCuTpz6QVppKAh30q46hoc5BQhALxsVb4CqtTZyPjTNWSFsC8D26kVp7s8KvMxaOzwFTB5fM8GqkB9_VpU',
+  token_type: 'Bearer',
+  expires_in: 3600,
+  scope: '' }
+
+2019-03-29T10:11:40.457Z END RequestId: 7dccd8b2-98d2-4c03-bdd2-8ad3f70904ac
+
+2019-03-29T10:11:40.457Z REPORT RequestId: 7dccd8b2-98d2-4c03-bdd2-8ad3f70904ac	Duration: 219.92 ms	Billed Duration: 300 ms 	Memory Size: 128 MB	Max Memory Used: 83 MB	
+

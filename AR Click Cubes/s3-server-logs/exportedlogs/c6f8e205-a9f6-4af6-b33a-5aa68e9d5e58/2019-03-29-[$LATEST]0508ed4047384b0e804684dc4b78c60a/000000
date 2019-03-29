@@ -1,0 +1,32 @@
+2019-03-29T11:21:51.304Z START RequestId: 20020859-7d9c-40dc-8585-9335d33b5858 Version: $LATEST
+
+2019-03-29T11:21:51.905Z 2019-03-29T11:21:51.904Z	20020859-7d9c-40dc-8585-9335d33b5858	(node:1) UnhandledPromiseRejectionWarning
+
+2019-03-29T11:21:51.905Z 2019-03-29T11:21:51.905Z	20020859-7d9c-40dc-8585-9335d33b5858	(node:1) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+
+2019-03-29T11:21:51.944Z 2019-03-29T11:21:51.944Z	20020859-7d9c-40dc-8585-9335d33b5858	(node:1) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+
+2019-03-29T11:21:51.984Z END RequestId: 20020859-7d9c-40dc-8585-9335d33b5858
+
+2019-03-29T11:21:51.984Z REPORT RequestId: 20020859-7d9c-40dc-8585-9335d33b5858	Duration: 656.29 ms	Billed Duration: 700 ms 	Memory Size: 128 MB	Max Memory Used: 82 MB	
+
+2019-03-29T11:22:35.229Z START RequestId: 7ff7008e-6283-4d9a-90c6-42c2cd0c6625 Version: $LATEST
+
+2019-03-29T11:22:35.463Z 2019-03-29T11:22:35.445Z	7ff7008e-6283-4d9a-90c6-42c2cd0c6625	(node:1) UnhandledPromiseRejectionWarning
+
+2019-03-29T11:22:35.463Z 2019-03-29T11:22:35.445Z	7ff7008e-6283-4d9a-90c6-42c2cd0c6625	(node:1) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
+
+2019-03-29T11:22:35.463Z END RequestId: 7ff7008e-6283-4d9a-90c6-42c2cd0c6625
+
+2019-03-29T11:22:35.464Z REPORT RequestId: 7ff7008e-6283-4d9a-90c6-42c2cd0c6625	Duration: 212.91 ms	Billed Duration: 300 ms 	Memory Size: 128 MB	Max Memory Used: 82 MB	
+
+2019-03-29T11:23:33.070Z START RequestId: 6cdadf01-3e26-42dc-8bbf-05611d2d5686 Version: $LATEST
+
+2019-03-29T11:23:33.339Z 2019-03-29T11:23:33.339Z	6cdadf01-3e26-42dc-8bbf-05611d2d5686	(node:1) UnhandledPromiseRejectionWarning
+
+2019-03-29T11:23:33.339Z 2019-03-29T11:23:33.339Z	6cdadf01-3e26-42dc-8bbf-05611d2d5686	(node:1) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+
+2019-03-29T11:23:33.339Z END RequestId: 6cdadf01-3e26-42dc-8bbf-05611d2d5686
+
+2019-03-29T11:23:33.339Z REPORT RequestId: 6cdadf01-3e26-42dc-8bbf-05611d2d5686	Duration: 266.66 ms	Billed Duration: 300 ms 	Memory Size: 128 MB	Max Memory Used: 82 MB	
+
