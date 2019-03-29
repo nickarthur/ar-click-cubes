@@ -9,83 +9,17 @@ const fetch = require('node-fetch');
 const client_id = process.env.CLIENT_ID; // Your client id
 const client_secret = process.env.CLIENT_SECRET; // Your secret
 const encryption_key = process.env.ENCRYPTION_KEY;
+
 const SpotifyWebApi = require('spotify-web-api-node');
 const URL = require('url');
 
 exports.handler = (event, context, callback) => {
-  // done is called in order to send information back to the client
   let done = (err, res) => {
     if (err) {
-      callback(null, {
-        statusCode: 400,
-        body: JSON.stringify({
-          type: 'error'
-        }),
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Headers':
-            'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'
-        }
-      });
+      callback(null, err);
     } else {
-      callback(null, {
-        statusCode: 200,
-        body: JSON.stringify({
-          type: 'success',
-          done: res
-        }),
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Headers':
-            'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'
-        }
-      });
+      callback(null, res);
     }
-  };
-
-  // retrieve access token from Spotify API
-  let getAccessToken = queryStringParameters => {
-    // build Spotify API querystring according to the "Your application requests authorization"
-    //    section of https://developer.spotify.com/web-api/authorization-guide/#implicit-grant-flow
-    let url = 'https://accounts.spotify.com/api/token';
-    let encoded = new Buffer(client_id + ':' + client_secret).toString('base64');
-    console.log('**** encoded = ' + encoded);
-
-    let params = {
-      grant_type: 'client_credentials'
-    };
-
-    const formParams = Object.keys(params)
-      .map(key => {
-        return encodeURIComponent(key) + '=' + encodeURIComponent(params[key]);
-      })
-      .join('&');
-    console.log('**** formParams = ' + encoded);
-    return fetch(url, {
-      method: 'POST',
-      headers: {
-        Authorization: 'Basic ' + encoded,
-        Accept: 'application/json',
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      body: formParams
-    })
-      .then(response => {
-        console.log(util.inspect(response, { showHidden: true, depth: null }));
-        return response.json();
-      })
-      .then(json => {
-        console.log('-----------------------------------------------');
-        console.log(util.inspect(json, { showHidden: true, depth: null }));
-        done(null, {
-          json: json
-        });
-      })
-      .catch(error => {
-        done({
-          error: error
-        });
-      });
   };
 
   // enter here
@@ -115,14 +49,32 @@ exports.handler = (event, context, callback) => {
     //      "**** code: ${myURL.searchParams.get('code')}");  // Prints code
     // hopefully
 
-    const path = event.path;
-    const method = event.httpMethod;
+    console.log(`!!!! @@@@ client_id: ${client_id}\n`);
+    console.log(`!!!! @@@@ process.env.CLIENT_ID: ${process.env.CLIENT_ID}\n`);
+    console.log(`!!!! @@@@ clientId: ${clientId}\n`);
 
-    console.log('**** path: ${path}');
-    console.log('**** method: ${method}');
+    var path = ''
+    var method = ''
+    if (event.context) {
+      path = event.context["resource-path"]
+      method = event.context["http-method"];
+    } else {
+      path = event["path"]
+      method = event["httpMethod"]
+    }
 
-    if (path === '/swap' && method === 'POST') {
+    console.log(`!!!!! @@@@@@ **** path: ${path}`);
+    console.log(`!!!!!@@@@@@@ **** method: ${method}`);
+
+    console.log(`*&*&*&^^%%^%%^^^^^^^%%^^^^^!!!@@@@@@@@\n\n event: ${JSON.stringify(event)}\n\n`);
+    // =========================================================================
+    // ===================================== SWAP ==============================
+    if (path === '/spotify-Auth-AR-Click-Cubes/swap' && method === 'POST') {
       // swap token
+      // get the code from the request data
+
+      const code = event.data.code
+      console.log(`!!!! @@@@ CODE: ${code}`)
 
       // Retrieve an access token and a refresh token
       spotifyApi.authorizationCodeGrant(code).then(function(data) {
@@ -135,30 +87,39 @@ exports.handler = (event, context, callback) => {
           spotifyApi.setAccessToken(data.body['access_token']);
           spotifyApi.setRefreshToken(data.body['refresh_token']);
 
+          console.log(`**** SWAP DATA FROM SPOTIFY: \n ${JSON.stringify(data,null,2)}\n`);
 
+          console.log(`**** unencrypted refresh token: ${data.body['refresh_token']}`)
 
+          data.body['refresh_token'] = encrypt(data.body['refresh_token'])
+          console.log(`**** encrypted refresh token: ${data.body['refresh_token']}`)
+          done(null, data.body);
       });
-    } else if (path === '/refresh' && method === 'POST') {
+    // =========================================================================
+    // ============================== REFRESH ==================================
+    } else if (path === '/spotify-Auth-AR-Click-Cubes/refresh' && method === 'POST') {
       // refresh token
+
+      // get the refresh token from the post data and set it into the api before
+      // making the refreshAccessToken call below
+      console.log(`EVENT DATA: ${JSON.stringify(event.data)}`)
+      spotifyApi.setRefreshToken(decrypt(event.data['refresh_token']));
+
       // clientId, clientSecret and refreshToken has been set on the api object
       // previous to this call.
       spotifyApi.refreshAccessToken().then(
         function(data) {
-          console.log('The access token has been refreshed!');
+          console.log(`The access token has been refreshed! ${JSON.stringify(data)}`);
 
           // Save the access token so that it's used in future calls
               spotifyApi.setAccessToken(data.body['access_token']);
-              done(null,data)
+              done(null,data.body)
         },
         function(err) {
           console.log('Could not refresh access token', err);
           done(err);
         }
       );
-    } else {
-      // console log the query string parameters
-      console.log(util.inspect(event.queryStringParameters, { showHidden: true, depth: null }));
-      getAccessToken(event.queryStringParameters);
     }
   } catch (error) {
     console.log('initialization error');
